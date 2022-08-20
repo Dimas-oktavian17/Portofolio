@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Zeitplan – Landing Page UI Design (Community)</title>
+    <!-- Font family (patua one,poppins,source-code-pro) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Patua+One&family=Poppins&family=Source+Sans+Pro&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <!-- core Css -->
+    <link rel="stylesheet" href="./src/output.css">
+    <!-- flowbite -->
+    <!-- <link rel="stylesheet" href="../node_modules/flowbite/dist/flowbite.css"> -->
+    <script src="../node_modules/flowbite/dist/flowbite.js" defer></script>
+</head>
+
+<body class="box-border bg-main">
+    <!-- header section -->
+    <header class="container ">
+        <nav class="border-gray-200 px-2 mb-10 font-header " id="nav">
+            <div class="fixed bg-white max-w-5xl mx-auto py-8  z-[999] w-[95%]  flex flex-wrap  justify-between
+                 rounded-xl lg:w-[98%] ">
+                <a href="#beranda" class="flex">
+                    <img src="./asset/icon/image 3.svg" alt="logo">
+                    <span class="self-center font-poppins font-semibold text-lg tracking-wider text-black pl-4">
+                        ZEITPLAN
+                    </span>
+                </a>
+                <div class="flex   md:order-2">
+                    <button data-collapse-toggle="mobile-menu-3" type="button"
+                        class="md:hidden group text-gray-400 hover:text-gray-900 rounded-lg inline-flex items-center justify-center"
+                        aria-controls="mobile-menu-3" aria-expanded="false" id="hamburger">
+                        <span class="sr-only">Open main menu</span>
+                        <div class="flex flex-col items-end ">
+                            <p class="bg-black transition duration-300 ease-in-out w-[30px] h-[5px] rounded-lg ">
+                            </p>
+                            <p class="bg-black transition duration-300 ease-in-out w-[30px] h-[5px] my-1 rounded-lg  ">
+                            </p>
+                            <p class="bg-black transition duration-300 ease-in-out w-[30px] h-[5px] rounded-lg ">
+                            </p>
+                        </div>
+                        <svg class="w-6 h-6 hidden" id="hamburger" fill="currentColor" viewBox="0 0 20 20"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                                clip-rule="evenodd"></path>
+                        </svg>
+                        <svg class="hidden w-6 h-6" id="close" fill="currentColor" viewBox="0 0 20 20"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                                clip-rule="evenodd"></path>
+                        </svg>
+                    </button>
+                </div>
+                <div class="hidden backdrop-blur-md md:backdrop-blur-0 md:flex justify-between md:justify-end items-center w-full md:w-auto md:order-3"
+                    id="mobile-menu-3">
+                    <ul
+                        class="flex-col md:flex-row flex md:items-center md:space-x-8 mt-4 md:mt-0 md:mr-8 md:text-sm md:font-medium">
+                        <li>
+                            <a href="#beranda"
+                                class="link bg-[#FE5E44] font-header font-semibold text-base text-white  block pl-3 pr-4 py-2 rounded md:bg-transparent  md:p-0  dark:bg-slate-700 dark:text-slate-50 dark:hover:text-slate-100 lg:dark:bg-transparent "
+                                aria-current="page">Beranda</a>
+                        </li>
+                        <li>
+                            <a href="#fitur"
+                                class="link font-header text-black opacity-50 text-base font-normal hover:bg-gray-50 border-b border-gray-100 md:hover:bg-transparent md:border-0 block pl-3 pr-4 py-2 md:hover:text-primary md:p-0 dark:lg:hover:bg-transparent dark:hover:bg-slate-600 dark:text-primary2hover dark:hover:text-slate-50 dark:border-slate-600 ">
+                                Fitur-fitur
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#teknologi"
+                                class="link font-header text-black opacity-50 text-base font-normal hover:bg-gray-50 border-b border-gray-100 md:hover:bg-transparent md:border-0 block pl-3 pr-4 py-2 md:hover:text-primary md:p-0 dark:lg:hover:bg-transparent dark:hover:bg-slate-600 dark:text-primary2hover dark:hover:text-slate-50 dark:border-slate-600 ">
+                                Harga
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#about"
+                                class="link font-header  text-black opacity-50 text-base font-normal hover:bg-gray-50 border-b border-gray-100 md:hover:bg-transparent md:border-0 block pl-3 pr-4 py-2 md:hover:text-primary md:p-0 dark:lg:hover:bg-transparent dark:hover:bg-slate-600 dark:text-primary2hover dark:hover:text-slate-50 dark:border-slate-600 ">
+                                Testimoni
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#faq"
+                                class="link font-header text-white text-base font-semibold bg-[#FE5E44] gap-[15px] py-[10px] px-[20px] rounded-[5px] h-[40px] shadow-md shadow-[#ff563a24] block">
+                                Download
+                                <svg class="inline-block" width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M4.16665 10.8333H14.05L11.025 14.4667C10.9549 14.5509 10.9022 14.6482 10.8697 14.7528C10.8373 14.8575 10.8257 14.9675 10.8358 15.0766C10.8561 15.297 10.9631 15.5002 11.1333 15.6417C11.3035 15.7831 11.5229 15.8512 11.7432 15.8309C11.9636 15.8105 12.1669 15.7035 12.3083 15.5333L16.475 10.5333C16.503 10.4936 16.5281 10.4518 16.55 10.4083C16.55 10.3667 16.5916 10.3417 16.6083 10.3C16.6461 10.2045 16.6659 10.1027 16.6666 10C16.6659 9.89727 16.6461 9.79556 16.6083 9.70001C16.6083 9.65834 16.5666 9.63334 16.55 9.59167C16.5281 9.54822 16.503 9.50644 16.475 9.46667L12.3083 4.46667C12.23 4.3726 12.1318 4.29695 12.0209 4.2451C11.91 4.19325 11.7891 4.16647 11.6666 4.16667C11.4719 4.16629 11.2832 4.23411 11.1333 4.35834C11.0489 4.4283 10.9792 4.51421 10.9281 4.61117C10.8769 4.70813 10.8454 4.81422 10.8354 4.92336C10.8253 5.03251 10.8369 5.14257 10.8694 5.24724C10.9019 5.35191 10.9548 5.44913 11.025 5.53334L14.05 9.16667H4.16665C3.94563 9.16667 3.73367 9.25447 3.57739 9.41075C3.42111 9.56703 3.33331 9.77899 3.33331 10C3.33331 10.221 3.42111 10.433 3.57739 10.5893C3.73367 10.7455 3.94563 10.8333 4.16665 10.8333Z"
+                                        fill="white" />
+                                </svg>
+
+                            </a>
+                        </li>
+                        <!-- Darkmode -->
+                        <!-- <label for="default-toggle" class="inline-flex relative items-center cursor-pointer">
+                            <input type="checkbox" value="" id="default-toggle" class="sr-only peer">
+                            <div
+                                class="w-11 h-6 bg-gray-200 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600">
+                            </div>
+                            <span class="ml-3 text-sm font-medium text-dark dark:text-primary2hover">
+                                Dark-Mode
+                            </span>
+                        </label> -->
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+    <!-- main section -->
+    <main class="pt-16 " id="main">
+        <div class="container">
+            <div class="pb-16 bg-main lg:flex lg:flex-row">
+                <!-- deksripsi -->
+                <div class="flex flex-col items-start pl-8 w-full lg:pl-0 lg:w-1/2">
+                    <h1 class="font-main font-normal text-5xl leading-[60px] text-[#0E144A] lg:pr-4">
+                        Sebuah cara mudah mengatur jadwal kuliah kamu
+                    </h1>
+                    <h2 class="font-header font-normal text-lg text-[#6F6F6F]
+                            pb-10 lg:pr-4">
+                        Datang kuliah terlambat karena ketiduran itu tidak
+                        masalah; datang kuliah karena lupa jadwal itu
+                        sangatlah tidak keren.
+                        Aplikasi ini adalah sahabat kamu sekarang, brodie~
+                    </h2>
+                    <div class="flex flex-row items-start gap-[15px] pb-20">
+                        <div
+                            class="flex flex-row justify-center items-center py-[15px] px-[50px] gap-[10px] bg-[#FE5E44] shadow-lg  rounded-[5px]">
+                            <p class="font-header font-semibold text-base
+                                                           leading-5 text-white">
+                                Learn More
+                            </p>
+                        </div>
+                        <div
+                            class="flex flex-row justify-center items-center py-[15px] px-[50px] gap-[10px] bg-[#fe5e441a] border border-solid border-[#fe5e4433]">
+                            <p class="font-header font-semibold text-base
+                                                   leading-5 text-[#FE5E44]">
+                                Learn More
+                            </p>
+                        </div>
+                    </div>
+                    <!-- testimoni -->
+                    <div class="pt-20 w-64 lg:w-[31.313rem] lg:h-[15.813rem]">
+                        <div class="flex flex-col items-start p-[1.875rem] gap-5 bg-white rounded-md 
+                        shadow-[#fe5e441a] shadow-lg">
+                            <!-- star -->
+                            <div class="flex flex-row items-start gap-[5px] w-[7.5rem] h-5">
+                                <div class="flex flex-row justify-center items-center w-5 h-5 bg-[#FFC93F]">
+                                    <img src="./asset/icon/Vector.svg" alt="star">
+                                </div>
+                                <div class="flex flex-row justify-center items-center w-5 h-5 bg-gray-300">
+                                    <img src="./asset/icon/Vector.svg" alt="star">
+                                </div>
+                                <div class="flex flex-row justify-center items-center w-5 h-5 bg-gray-300">
+                                    <img src="./asset/icon/Vector.svg" alt="star">
+                                </div>
+                                <div class="flex flex-row justify-center items-center w-5 h-5 bg-gray-300">
+                                    <img src="./asset/icon/Vector.svg" alt="star">
+                                </div>
+                                <div class="flex flex-row justify-center items-center w-5 h-5 bg-gray-300">
+                                    <img src="./asset/icon/Vector.svg" alt="star">
+                                </div>
+                            </div>
+                            <!-- deskripsi -->
+                            <p class="font-poppins font-normal text-base text-[#0E144A]">
+                                “Aplikasi sialan, ini gw jadi kagak bisa alesan lagi buat bolos kelas Pak Sanusi
+                                yang galak itu! Tapi aku sekarang jadi
+                                rajin kuliah, terima kasih garena!”
+                            </p>
+                            <!-- footer -->
+                            <div
+                                class="flex flex-row justify-between items-center gap-[10px] w-[25.563rem] h-[3.438rem]">
+                                <div class="flex flex-row items-center gap-5 w-[17.875rem] h-[3.438rem]">
+                                    <img src="./asset/profil/unsplash_SE4Xc1WvIkU.svg" alt="profil">
+                                    <div class="flex flex-col items-start gap-1 w-[13.188rem] h-[2.875rem]">
+                                        <h1 class="font-poppins font-medium text-base text-black">
+                                            P-Star 7
+                                        </h1>
+                                        <p class="font-poppins font-medium text-[12px] text-[#0E144A] opacity-60">
+                                            Mahasiswa Boating School Ny. Puff
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="flex flex-row items-start gap-[10px] w-20 h-[2.188rem]">
+                                    <button
+                                        class="group hover:bg-red-400 transition-all w-9 h-9 rounded-[50%] bg-[#FE5E44] flex justify-center items-center">
+                                        <svg class=" group-hover:fill-slate-300" width="9" height="15"
+                                            viewBox="0 0 9 15" fill="white" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M7.41667 13.3333L1.58334 7.49996L7.41667 1.66663" stroke="#FE5E44"
+                                                stroke-width="0" stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+
+                                    </button>
+                                    <button
+                                        class="group hover:bg-red-400 transition-all w-9 h-9 rounded-[50%] bg-[#FE5E44] flex justify-center items-center">
+                                        <svg class=" group-hover:fill-slate-300" width="9" height="15"
+                                            viewBox="0 0 9 15" fill="white" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1.58331 13.3333L7.41665 7.49996L1.58331 1.66663" stroke="#FE5E44"
+                                                stroke-width="0" stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- mockup -->
+                <div class="w-full pt-7 lg:w-1/2 ">
+                    <figure>
+                        <img src="./asset/mockup/Group 11.svg" alt="mockup" width="581" height="652">
+                    </figure>
+                </div>
+            </div>
+        </div>
+        <!-- section fitur -->
+        <div class="flex flex-row justify-between items-center py-[6.25rem] gap-5 bg-white">
+            <div class="container">
+                <div class="flex flex-row">
+                    <!-- deskripsi -->
+                    <div class="flex flex-col items-start w-[23.063rem] h-[27.25rem] pr-32 lg:w-1/2">
+                        <h1 class="font-main font-normal text-[38px] leading-[42px] text-[#0E144A] pb-2">
+                            Kenapa Kamu Sangat Harus Pakai Aplikasi Yang Keren Ini?
+                        </h1>
+                        <p class="font-header font-normal text-lg text-[#0E144A] opacity-60 pt-3 pb-10">
+                            Sejujurnya aplikasi kita ini seringkali bermasalah. Kadang-kadang gak bisa submit data,
+                            kadang
+                            dibukanya lambat, kadang
+                            tiba-tiba logout sendiri, untung gak berdua.
+                        </p>
+                        <!-- donwlod quantity -->
+                        <div class="flex flex-row items-start gap-[42px] h-[52px] pb-10">
+                            <!-- box -->
+                            <div class="flex flex-col items-start gap-[10px] h-[52px]">
+                                <h1 class="font-inter font-normal text-xs tracking-widest text-[#0c1b4d99]">
+                                    TOTAL DON’TLOUD
+                                </h1>
+                                <p class="font-inter font-semibold text-[#0C1B4D]">1,501,234</p>
+                            </div>
+                            <span class=" w-[1px] h-[52px] bg-[#0c1b4d99] opacity-10"></span>
+                            <!-- box -->
+                            <div class="flex flex-col items-start gap-[10px] h-[52px]">
+                                <h1 class="font-inter font-normal text-xs tracking-widest text-[#0c1b4d99]">
+                                    TOTAL USERS
+                                </h1>
+                                <p class="font-inter font-semibold text-[#0C1B4D]">1,318,829</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- fitur -->
+                    <div class="flex flex-col items-start gap-[30px] w-[41.813rem] h-[31.75rem] lg:w-1/2">
+                        <!-- wraper -->
+                        <div class="flex flex-row items-start gap-[30px] h-[14.938rem]">
+                            <!-- box -->
+                            <div class="flex flex-col items-start p-10 gap-[25px]  bg-[#fe5e440d]">
+                                <!-- icon & title -->
+                                <div class="flex flex-row items-center gap-5 w-[11.25rem] h-[3.125rem] ]">
+                                    <!-- icon -->
+                                    <div
+                                        class="flex flex-row items-start p-[13px] gap-[10px] w-[50px] h-[50px] bg-[#fe5e4433]">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M12 8C16.9706 8 21 6.65685 21 5C21 3.34315 16.9706 2 12 2C7.02944 2 3 3.34315 3 5C3 6.65685 7.02944 8 12 8Z"
+                                                stroke="#FE5E44" stroke-width="2" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                            <path d="M21 12C21 13.66 17 15 12 15C7 15 3 13.66 3 12" stroke="#FE5E44"
+                                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M3 5V19C3 20.66 7 22 12 22C17 22 21 20.66 21 19V5" stroke="#FE5E44"
+                                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </div>
+                                    <p class="font-header font-semibold text-lg text-black">Aplikasi Gratis</p>
+                                </div>
+                                <p class="font-header font-normal text-base text-black">
+                                    Semua fitur di aplikasi ini adalah gratis, tapi data privasi kamu akan kami jual ke
+                                    agen khusus US.
+                                </p>
+                            </div>
+                            <!-- box -->
+                            <div class="flex flex-col items-start p-10 gap-[25px]  bg-[#fe5e440d]">
+                                <!-- icon & title -->
+                                <div class="flex flex-row items-center gap-5 w-[11.25rem] h-[3.125rem] ]">
+                                    <!-- icon -->
+                                    <div
+                                        class="flex flex-row items-start p-[13px] gap-[10px] w-[50px] h-[50px] bg-[#fe5e4433]">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M12 8C16.9706 8 21 6.65685 21 5C21 3.34315 16.9706 2 12 2C7.02944 2 3 3.34315 3 5C3 6.65685 7.02944 8 12 8Z"
+                                                stroke="#FE5E44" stroke-width="2" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                            <path d="M21 12C21 13.66 17 15 12 15C7 15 3 13.66 3 12" stroke="#FE5E44"
+                                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M3 5V19C3 20.66 7 22 12 22C17 22 21 20.66 21 19V5" stroke="#FE5E44"
+                                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </div>
+                                    <p class="font-header font-semibold text-lg text-black">Aplikasi Gratis</p>
+                                </div>
+                                <p class="font-header font-normal text-base text-black">
+                                    Semua fitur di aplikasi ini adalah gratis, tapi data privasi kamu akan kami jual ke
+                                    agen khusus US.
+                                </p>
+                            </div>
+                        </div>
+                        <!-- wraper -->
+                        <div class="flex flex-row items-start gap-[30px] h-[14.938rem]">
+                            <!-- box -->
+                            <div class="flex flex-col items-start p-10 gap-[25px]  bg-[#fe5e440d]">
+                                <!-- icon & title -->
+                                <div class="flex flex-row items-center gap-5 w-[11.25rem] h-[3.125rem] ]">
+                                    <!-- icon -->
+                                    <div
+                                        class="flex flex-row items-start p-[13px] gap-[10px] w-[50px] h-[50px] bg-[#fe5e4433]">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M12 8C16.9706 8 21 6.65685 21 5C21 3.34315 16.9706 2 12 2C7.02944 2 3 3.34315 3 5C3 6.65685 7.02944 8 12 8Z"
+                                                stroke="#FE5E44" stroke-width="2" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                            <path d="M21 12C21 13.66 17 15 12 15C7 15 3 13.66 3 12" stroke="#FE5E44"
+                                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M3 5V19C3 20.66 7 22 12 22C17 22 21 20.66 21 19V5" stroke="#FE5E44"
+                                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </div>
+                                    <p class="font-header font-semibold text-lg text-black">Aplikasi Gratis</p>
+                                </div>
+                                <p class="font-header font-normal text-base text-black">
+                                    Semua fitur di aplikasi ini adalah gratis, tapi data privasi kamu akan kami jual ke
+                                    agen khusus US.
+                                </p>
+                            </div>
+                            <!-- box -->
+                            <div class="flex flex-col items-start p-10 gap-[25px]  bg-[#fe5e440d]">
+                                <!-- icon & title -->
+                                <div class="flex flex-row items-center gap-5 w-[11.25rem] h-[3.125rem] ]">
+                                    <!-- icon -->
+                                    <div
+                                        class="flex flex-row items-start p-[13px] gap-[10px] w-[50px] h-[50px] bg-[#fe5e4433]">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M12 8C16.9706 8 21 6.65685 21 5C21 3.34315 16.9706 2 12 2C7.02944 2 3 3.34315 3 5C3 6.65685 7.02944 8 12 8Z"
+                                                stroke="#FE5E44" stroke-width="2" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                            <path d="M21 12C21 13.66 17 15 12 15C7 15 3 13.66 3 12" stroke="#FE5E44"
+                                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M3 5V19C3 20.66 7 22 12 22C17 22 21 20.66 21 19V5" stroke="#FE5E44"
+                                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </div>
+                                    <p class="font-header font-semibold text-lg text-black">Aplikasi Gratis</p>
+                                </div>
+                                <p class="font-header font-normal text-base text-black">
+                                    Semua fitur di aplikasi ini adalah gratis, tapi data privasi kamu akan kami jual ke
+                                    agen khusus US.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- section keungulan -->
+        <div class="flex flex-row justify-center items-center py-[100px] gap-[31px] bg-white">
+            <div class="container">
+                <div class="lg:flex lg:flex-row">
+
+                    <!-- mockup -->
+                    <div class="flex flex-row justify-center items-start gap-[10px] h-[42.438rem] lg:w-1/2">
+                        <figure>
+                            <img src="./asset/mockup/Group 20.svg" alt="Mockup">
+                        </figure>
+                    </div>
+                    <!-- deskripsi -->
+                    <div class="flex flex-col items-start h-[39rem] pt-8 pl-8 lg:w-1/2">
+                        <h1 class="font-main font-normal text-[38px] leading-[52px] text-[#0E144A] pb-2">
+                            Memangnya ada fitur apa aja sih di aplikasi yang katanya keren ini? Jadi penasaran nich~
+                        </h1>
+                        <p class="font-header font-normal text-lg text-[#0E144A] opacity-60 pt-3 pb-10">
+                            Aplikasi sekeren ini akan membuat kamu tidak
+                            dapat memberi alasan apapun untuk bolos matkul
+                            dosen (HAHA MAMPUS!). Lagian
+                            lo kuliah tapi jarang masuk, titip absen doang!
+                        </p>
+                        <!-- wraper -->
+                        <div class="flex flex-row items-start gap-[30px] h-[8.813rem] pb-6">
+                            <!-- box -->
+                            <div class="flex flex-col items-start gap-[10px] h-[8.813rem]">
+                                <!-- icon & deksripsi -->
+                                <svg width="35" height="36" viewBox="0 0 35 36" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_248_476)">
+                                        <path
+                                            d="M7.29166 7.79171C5.01386 9.05118 3.22264 11.0362 2.20294 13.4309C1.18324 15.8257 0.993637 18.4927 1.66429 21.0076C2.33494 23.5226 3.82732 25.741 5.90403 27.3101C7.98075 28.8791 10.5225 29.7086 13.125 29.6667H26.25C27.0955 29.6657 27.9344 29.5177 28.7292 29.2292M32.9729 25.2188C33.4428 24.1094 33.6304 22.901 33.5191 21.7014C33.4078 20.5018 33.001 19.3484 32.3351 18.3445C31.6691 17.3405 30.7648 16.5172 29.7029 15.9481C28.6411 15.379 27.4547 15.0819 26.25 15.0834H24.4125C23.8172 12.7391 22.508 10.6378 20.6661 9.07016C18.8242 7.50257 16.5406 6.54619 14.1312 6.33337L32.9729 25.2188Z"
+                                            stroke="#FE5E44" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path d="M1.45834 1.95837L33.5417 34.0417" stroke="#FE5E44" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_248_476">
+                                            <rect width="35" height="35" fill="white" transform="translate(0 0.5)" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                                <h1 class="font-main font-normal text-base
+                                                            text-[#0E144A]">
+                                    Tidak Tersimpan Otomatis
+                                </h1>
+                                <p class="font-header font-normal text-base text-[#0E144A] opacity-60">
+                                    Kalo lo pelupa ya udah dah, jadwal lo bakal gak kesimpen tuh.
+                                </p>
+                            </div>
+                            <!-- box -->
+                            <div class="flex flex-col items-start gap-[10px] h-[8.813rem]">
+                                <!-- icon & deksripsi -->
+                                <svg width="35" height="36" viewBox="0 0 35 36" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_248_476)">
+                                        <path
+                                            d="M7.29166 7.79171C5.01386 9.05118 3.22264 11.0362 2.20294 13.4309C1.18324 15.8257 0.993637 18.4927 1.66429 21.0076C2.33494 23.5226 3.82732 25.741 5.90403 27.3101C7.98075 28.8791 10.5225 29.7086 13.125 29.6667H26.25C27.0955 29.6657 27.9344 29.5177 28.7292 29.2292M32.9729 25.2188C33.4428 24.1094 33.6304 22.901 33.5191 21.7014C33.4078 20.5018 33.001 19.3484 32.3351 18.3445C31.6691 17.3405 30.7648 16.5172 29.7029 15.9481C28.6411 15.379 27.4547 15.0819 26.25 15.0834H24.4125C23.8172 12.7391 22.508 10.6378 20.6661 9.07016C18.8242 7.50257 16.5406 6.54619 14.1312 6.33337L32.9729 25.2188Z"
+                                            stroke="#FE5E44" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path d="M1.45834 1.95837L33.5417 34.0417" stroke="#FE5E44" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_248_476">
+                                            <rect width="35" height="35" fill="white" transform="translate(0 0.5)" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                                <h1 class="font-main font-normal text-base
+                                                                                        text-[#0E144A]">
+                                    Tidak Tersimpan Otomatis
+                                </h1>
+                                <p class="font-header font-normal text-base text-[#0E144A] opacity-60">
+                                    Kalo lo pelupa ya udah dah, jadwal lo bakal gak kesimpen tuh.
+                                </p>
+                            </div>
+                        </div>
+                        <!-- wraper -->
+                        <div class="flex flex-row items-start gap-[30px] h-[8.813rem] pt-6">
+                            <!-- box -->
+                            <div class="flex flex-col items-start gap-[10px] h-[8.813rem]">
+                                <!-- icon & deksripsi -->
+                                <svg width="35" height="36" viewBox="0 0 35 36" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_248_476)">
+                                        <path
+                                            d="M7.29166 7.79171C5.01386 9.05118 3.22264 11.0362 2.20294 13.4309C1.18324 15.8257 0.993637 18.4927 1.66429 21.0076C2.33494 23.5226 3.82732 25.741 5.90403 27.3101C7.98075 28.8791 10.5225 29.7086 13.125 29.6667H26.25C27.0955 29.6657 27.9344 29.5177 28.7292 29.2292M32.9729 25.2188C33.4428 24.1094 33.6304 22.901 33.5191 21.7014C33.4078 20.5018 33.001 19.3484 32.3351 18.3445C31.6691 17.3405 30.7648 16.5172 29.7029 15.9481C28.6411 15.379 27.4547 15.0819 26.25 15.0834H24.4125C23.8172 12.7391 22.508 10.6378 20.6661 9.07016C18.8242 7.50257 16.5406 6.54619 14.1312 6.33337L32.9729 25.2188Z"
+                                            stroke="#FE5E44" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path d="M1.45834 1.95837L33.5417 34.0417" stroke="#FE5E44" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_248_476">
+                                            <rect width="35" height="35" fill="white" transform="translate(0 0.5)" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                                <h1 class="font-main font-normal text-base
+                                                                                    text-[#0E144A]">
+                                    Tidak Tersimpan Otomatis
+                                </h1>
+                                <p class="font-header font-normal text-base text-[#0E144A] opacity-60">
+                                    Kalo lo pelupa ya udah dah, jadwal lo bakal gak kesimpen tuh.
+                                </p>
+                            </div>
+                            <!-- box -->
+                            <div class="flex flex-col items-start gap-[10px] h-[8.813rem]">
+                                <!-- icon & deksripsi -->
+                                <svg width="35" height="36" viewBox="0 0 35 36" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_248_476)">
+                                        <path
+                                            d="M7.29166 7.79171C5.01386 9.05118 3.22264 11.0362 2.20294 13.4309C1.18324 15.8257 0.993637 18.4927 1.66429 21.0076C2.33494 23.5226 3.82732 25.741 5.90403 27.3101C7.98075 28.8791 10.5225 29.7086 13.125 29.6667H26.25C27.0955 29.6657 27.9344 29.5177 28.7292 29.2292M32.9729 25.2188C33.4428 24.1094 33.6304 22.901 33.5191 21.7014C33.4078 20.5018 33.001 19.3484 32.3351 18.3445C31.6691 17.3405 30.7648 16.5172 29.7029 15.9481C28.6411 15.379 27.4547 15.0819 26.25 15.0834H24.4125C23.8172 12.7391 22.508 10.6378 20.6661 9.07016C18.8242 7.50257 16.5406 6.54619 14.1312 6.33337L32.9729 25.2188Z"
+                                            stroke="#FE5E44" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path d="M1.45834 1.95837L33.5417 34.0417" stroke="#FE5E44" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_248_476">
+                                            <rect width="35" height="35" fill="white" transform="translate(0 0.5)" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                                <h1
+                                    class="font-main font-normal text-base
+                                                                                                                text-[#0E144A]">
+                                    Tidak Tersimpan Otomatis
+                                </h1>
+                                <p class="font-header font-normal text-base text-[#0E144A] opacity-60">
+                                    Kalo lo pelupa ya udah dah, jadwal lo bakal gak kesimpen tuh.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Setting container  */
+.bg-main {
+  background: linear-gradient(180deg, rgba(255, 244, 242, 0.4) 0%, #fff0ee 100%)
+    no-repeat;
+  height: inherit;
+}
+
+@layer components {
+  .container {
+    @apply max-w-5xl mx-auto py-8;
+  }
+}
+
+.container {
+  max-width: 64rem !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  padding-top: 2rem !important;
+  padding-bottom: 2rem !important;
+}
