@@ -21,7 +21,7 @@
     <script src="../node_modules/flowbite/dist/flowbite.js" defer></script>
 </head>
 
-<body class="box-border bg-main">
+<body class="box-border bg-main overflow-x-hidden">
     <!-- header section -->
     <header class="container ">
         <nav class="border-gray-200 px-2 mb-10 font-header " id="nav">
@@ -121,35 +121,37 @@
         <div class="container">
             <div class="pb-16 bg-main lg:flex lg:flex-row">
                 <!-- deksripsi -->
-                <div class="flex flex-col items-start pl-8 w-full lg:pl-0 lg:w-1/2">
-                    <h1 class="font-main font-normal text-5xl leading-[60px] text-[#0E144A] lg:pr-4">
-                        Sebuah cara mudah mengatur jadwal kuliah kamu
-                    </h1>
-                    <h2 class="font-header font-normal text-lg text-[#6F6F6F]
-                            pb-10 lg:pr-4">
-                        Datang kuliah terlambat karena ketiduran itu tidak
-                        masalah; datang kuliah karena lupa jadwal itu
-                        sangatlah tidak keren.
-                        Aplikasi ini adalah sahabat kamu sekarang, brodie~
-                    </h2>
-                    <div class="flex flex-row items-start gap-[15px] pb-20">
-                        <div
-                            class="flex flex-row justify-center items-center py-[15px] px-[50px] gap-[10px] bg-[#FE5E44] shadow-lg  rounded-[5px]">
-                            <p class="font-header font-semibold text-base
-                                                           leading-5 text-white">
-                                Learn More
-                            </p>
-                        </div>
-                        <div
-                            class="flex flex-row justify-center items-center py-[15px] px-[50px] gap-[10px] bg-[#fe5e441a] border border-solid border-[#fe5e4433]">
-                            <p class="font-header font-semibold text-base
-                                                   leading-5 text-[#FE5E44]">
-                                Learn More
-                            </p>
+                <div class="flex flex-col items-start  w-full lg:pl-0 lg:w-1/2">
+                    <div class="pl-8">
+                        <h1 class="font-main font-normal text-5xl leading-[60px] text-[#0E144A] lg:pr-4">
+                            Sebuah cara mudah mengatur jadwal kuliah kamu
+                        </h1>
+                        <h2 class="font-header font-normal text-lg text-[#6F6F6F]
+                                                pb-10 lg:pr-4">
+                            Datang kuliah terlambat karena ketiduran itu tidak
+                            masalah; datang kuliah karena lupa jadwal itu
+                            sangatlah tidak keren.
+                            Aplikasi ini adalah sahabat kamu sekarang, brodie~
+                        </h2>
+                        <div class="flex flex-row items-start gap-[15px] pb-20">
+                            <div
+                                class="flex flex-row justify-center items-center py-[15px] px-[50px] gap-[10px] bg-[#FE5E44] shadow-lg  rounded-[5px]">
+                                <p class="font-header font-semibold text-base
+                                                                               leading-5 text-white">
+                                    Learn More
+                                </p>
+                            </div>
+                            <div
+                                class="flex flex-row justify-center items-center py-[15px] px-[50px] gap-[10px] bg-[#fe5e441a] border border-solid border-[#fe5e4433]">
+                                <p class="font-header font-semibold text-base
+                                                                       leading-5 text-[#FE5E44]">
+                                    Learn More
+                                </p>
+                            </div>
                         </div>
                     </div>
                     <!-- testimoni -->
-                    <div class="pt-20 w-64 lg:w-[31.313rem] lg:h-[15.813rem]">
+                    <div class="flex flex-col self-center pt-20 w-72 lg:self-start lg:w-[31.313rem] lg:h-[15.813rem]">
                         <div class="flex flex-col items-start p-[1.875rem] gap-5 bg-white rounded-md 
                         shadow-[#fe5e441a] shadow-lg">
                             <!-- star -->
@@ -177,11 +179,11 @@
                                 rajin kuliah, terima kasih garena!”
                             </p>
                             <!-- footer -->
-                            <div
-                                class="flex flex-row justify-between items-center gap-[10px] w-[25.563rem] h-[3.438rem]">
-                                <div class="flex flex-row items-center gap-5 w-[17.875rem] h-[3.438rem]">
+                            <div class="flex flex-col justify-between items-center gap-[10px]  lg:h-[3.438rem] lg:w-[25.563rem]
+                                        lg:flex-row lg:justify-between lg:items-center">
+                                <div class="flex flex-row items-center gap-5 lg:h-[3.438rem] lg:w-[17.875rem]">
                                     <img src="./asset/profil/unsplash_SE4Xc1WvIkU.svg" alt="profil">
-                                    <div class="flex flex-col items-start gap-1 w-[13.188rem] h-[2.875rem]">
+                                    <div class="flex flex-col items-start gap-1 lg:w-[13.188rem] lg:h-[2.875rem]">
                                         <h1 class="font-poppins font-medium text-base text-black">
                                             P-Star 7
                                         </h1>
@@ -190,7 +192,7 @@
                                         </p>
                                     </div>
                                 </div>
-                                <div class="flex flex-row items-start gap-[10px] w-20 h-[2.188rem]">
+                                <div class="flex flex-row items-start gap-[10px] lg:h-[2.188rem] lg:w-20">
                                     <button
                                         class="group hover:bg-red-400 transition-all w-9 h-9 rounded-[50%] bg-[#FE5E44] flex justify-center items-center">
                                         <svg class=" group-hover:fill-slate-300" width="9" height="15"
@@ -223,12 +225,12 @@
             </div>
         </div>
         <!-- section fitur -->
-        <div class="flex flex-row justify-between items-center py-[6.25rem] gap-5 bg-white">
+        <div class="flex flex-row justify-between items-center pt-[6.25rem] pb-80 gap-5 bg-white lg:pb-0">
             <div class="container">
-                <div class="flex flex-row">
+                <div class="lg:flex lg:flex-row">
                     <!-- deskripsi -->
-                    <div class="flex flex-col items-start w-[23.063rem] h-[27.25rem] pr-32 lg:w-1/2">
-                        <h1 class="font-main font-normal text-[38px] leading-[42px] text-[#0E144A] pb-2">
+                    <div class="flex flex-col items-start w-full pl-8 lg:w-[75%] lg:pr-14 lg:h-[27.25rem] ">
+                        <h1 class="font-main font-normal text-[2.375rem] leading-[42px] text-[#0E144A] pb-2 ">
                             Kenapa Kamu Sangat Harus Pakai Aplikasi Yang Keren Ini?
                         </h1>
                         <p class="font-header font-normal text-lg text-[#0E144A] opacity-60 pt-3 pb-10">
@@ -241,7 +243,7 @@
                         <div class="flex flex-row items-start gap-[42px] h-[52px] pb-10">
                             <!-- box -->
                             <div class="flex flex-col items-start gap-[10px] h-[52px]">
-                                <h1 class="font-inter font-normal text-xs tracking-widest text-[#0c1b4d99]">
+                                <h1 class="font-inter font-normal text-xs  text-[#0c1b4d99] lg:tracking-widest">
                                     TOTAL DON’TLOUD
                                 </h1>
                                 <p class="font-inter font-semibold text-[#0C1B4D]">1,501,234</p>
@@ -249,7 +251,7 @@
                             <span class=" w-[1px] h-[52px] bg-[#0c1b4d99] opacity-10"></span>
                             <!-- box -->
                             <div class="flex flex-col items-start gap-[10px] h-[52px]">
-                                <h1 class="font-inter font-normal text-xs tracking-widest text-[#0c1b4d99]">
+                                <h1 class="font-inter font-normal text-xs  text-[#0c1b4d99] lg:tracking-widest">
                                     TOTAL USERS
                                 </h1>
                                 <p class="font-inter font-semibold text-[#0C1B4D]">1,318,829</p>
@@ -257,13 +259,15 @@
                         </div>
                     </div>
                     <!-- fitur -->
-                    <div class="flex flex-col items-start gap-[30px] w-[41.813rem] h-[31.75rem] lg:w-1/2">
+                    <div class="flex flex-col items-start gap-[30px] w-full  h-[31.75rem] pt-16 lg:pt-0  xl:w-1/2">
                         <!-- wraper -->
-                        <div class="flex flex-row items-start gap-[30px] h-[14.938rem]">
+                        <div class="flex flex-col items-start gap-[30px]  lg:pb-0 lg:flex-row lg:w-[40%]">
                             <!-- box -->
-                            <div class="flex flex-col items-start p-10 gap-[25px]  bg-[#fe5e440d]">
+                            <div
+                                class="flex flex-col items-center p-10 mx-5  gap-[25px] bg-[#fe5e440d] rounded-lg lg:rounded-none lg:mx-0 lg:items-start">
                                 <!-- icon & title -->
-                                <div class="flex flex-row items-center gap-5 w-[11.25rem] h-[3.125rem] ]">
+                                <div
+                                    class="flex flex-col items-center gap-5 lg:w-[11.25rem] lg:h-[3.125rem] lg:flex-row">
                                     <!-- icon -->
                                     <div
                                         class="flex flex-row items-start p-[13px] gap-[10px] w-[50px] h-[50px] bg-[#fe5e4433]">
@@ -281,15 +285,17 @@
                                     </div>
                                     <p class="font-header font-semibold text-lg text-black">Aplikasi Gratis</p>
                                 </div>
-                                <p class="font-header font-normal text-base text-black">
+                                <p class="font-header font-normal text-base text-black text-center lg:text-left">
                                     Semua fitur di aplikasi ini adalah gratis, tapi data privasi kamu akan kami jual ke
                                     agen khusus US.
                                 </p>
                             </div>
                             <!-- box -->
-                            <div class="flex flex-col items-start p-10 gap-[25px]  bg-[#fe5e440d]">
+                            <div
+                                class="flex flex-col items-center p-10 mx-5  gap-[25px] bg-[#fe5e440d] rounded-lg lg:rounded-none lg:mx-0 lg:items-start">
                                 <!-- icon & title -->
-                                <div class="flex flex-row items-center gap-5 w-[11.25rem] h-[3.125rem] ]">
+                                <div
+                                    class="flex flex-col items-center gap-5 lg:w-[11.25rem] lg:h-[3.125rem] lg:flex-row">
                                     <!-- icon -->
                                     <div
                                         class="flex flex-row items-start p-[13px] gap-[10px] w-[50px] h-[50px] bg-[#fe5e4433]">
@@ -307,18 +313,20 @@
                                     </div>
                                     <p class="font-header font-semibold text-lg text-black">Aplikasi Gratis</p>
                                 </div>
-                                <p class="font-header font-normal text-base text-black">
+                                <p class="font-header font-normal text-base text-black text-center lg:text-left">
                                     Semua fitur di aplikasi ini adalah gratis, tapi data privasi kamu akan kami jual ke
                                     agen khusus US.
                                 </p>
                             </div>
                         </div>
                         <!-- wraper -->
-                        <div class="flex flex-row items-start gap-[30px] h-[14.938rem]">
+                        <div class="flex flex-col items-start gap-[30px]  lg:pb-0 lg:flex-row lg:w-[40%]">
                             <!-- box -->
-                            <div class="flex flex-col items-start p-10 gap-[25px]  bg-[#fe5e440d]">
+                            <div
+                                class="flex flex-col items-center p-10 mx-5  gap-[25px] bg-[#fe5e440d] rounded-lg lg:rounded-none lg:mx-0 lg:items-start">
                                 <!-- icon & title -->
-                                <div class="flex flex-row items-center gap-5 w-[11.25rem] h-[3.125rem] ]">
+                                <div
+                                    class="flex flex-col items-center gap-5 lg:w-[11.25rem] lg:h-[3.125rem] lg:flex-row">
                                     <!-- icon -->
                                     <div
                                         class="flex flex-row items-start p-[13px] gap-[10px] w-[50px] h-[50px] bg-[#fe5e4433]">
@@ -336,15 +344,17 @@
                                     </div>
                                     <p class="font-header font-semibold text-lg text-black">Aplikasi Gratis</p>
                                 </div>
-                                <p class="font-header font-normal text-base text-black">
+                                <p class="font-header font-normal text-base text-black text-center lg:text-left">
                                     Semua fitur di aplikasi ini adalah gratis, tapi data privasi kamu akan kami jual ke
                                     agen khusus US.
                                 </p>
                             </div>
                             <!-- box -->
-                            <div class="flex flex-col items-start p-10 gap-[25px]  bg-[#fe5e440d]">
+                            <div
+                                class="flex flex-col items-center p-10 mx-5  gap-[25px] bg-[#fe5e440d] rounded-lg lg:rounded-none lg:mx-0 lg:items-start">
                                 <!-- icon & title -->
-                                <div class="flex flex-row items-center gap-5 w-[11.25rem] h-[3.125rem] ]">
+                                <div
+                                    class="flex flex-col items-center gap-5 lg:w-[11.25rem] lg:h-[3.125rem] lg:flex-row">
                                     <!-- icon -->
                                     <div
                                         class="flex flex-row items-start p-[13px] gap-[10px] w-[50px] h-[50px] bg-[#fe5e4433]">
@@ -362,7 +372,7 @@
                                     </div>
                                     <p class="font-header font-semibold text-lg text-black">Aplikasi Gratis</p>
                                 </div>
-                                <p class="font-header font-normal text-base text-black">
+                                <p class="font-header font-normal text-base text-black text-center lg:text-left">
                                     Semua fitur di aplikasi ini adalah gratis, tapi data privasi kamu akan kami jual ke
                                     agen khusus US.
                                 </p>
@@ -373,31 +383,33 @@
             </div>
         </div>
         <!-- section keungulan -->
-        <div class="flex flex-row justify-center items-center py-[100px] gap-[31px] bg-white">
+        <div class="flex flex-row justify-center items-center py-40 gap-[31px] bg-white">
             <div class="container">
-                <div class="lg:flex lg:flex-row">
-
+                <div class="mt-96 lg:mt-0 lg:flex lg:flex-row">
                     <!-- mockup -->
-                    <div class="flex flex-row justify-center items-start gap-[10px] h-[42.438rem] lg:w-1/2">
+                    <div
+                        class="flex flex-row justify-center items-start gap-[10px] lg:pl-8 lg:h-[42.438rem] lg:w-1/2 xl:pl-0">
                         <figure>
-                            <img src="./asset/mockup/Group 20.svg" alt="Mockup">
+                            <img src="./asset/mockup/Group 20 (1).svg" class="w-72 lg:w-full" alt="Mockup">
                         </figure>
                     </div>
                     <!-- deskripsi -->
-                    <div class="flex flex-col items-start h-[39rem] pt-8 pl-8 lg:w-1/2">
-                        <h1 class="font-main font-normal text-[38px] leading-[52px] text-[#0E144A] pb-2">
-                            Memangnya ada fitur apa aja sih di aplikasi yang katanya keren ini? Jadi penasaran nich~
+                    <div class="flex flex-col items-start  pt-8 lg:w-1/2">
+                        <h1 class="font-main font-normal text-[38px] leading-[52px] text-[#0E144A] pl-8 pb-2">
+                            Memangnya ada fitur apa aja sih di aplikasi yang katanya keren ini? Jadi penasaran
+                            nich~
                         </h1>
-                        <p class="font-header font-normal text-lg text-[#0E144A] opacity-60 pt-3 pb-10">
+                        <p class="font-header font-normal text-lg text-[#0E144A] opacity-60 pt-3 pb-10 pl-8">
                             Aplikasi sekeren ini akan membuat kamu tidak
                             dapat memberi alasan apapun untuk bolos matkul
                             dosen (HAHA MAMPUS!). Lagian
                             lo kuliah tapi jarang masuk, titip absen doang!
                         </p>
                         <!-- wraper -->
-                        <div class="flex flex-row items-start gap-[30px] h-[8.813rem] pb-6">
+                        <div class="flex flex-col items-center  gap-[30px] pb-6 lg:pl-8 lg:flex-row lg:items-start">
                             <!-- box -->
-                            <div class="flex flex-col items-start gap-[10px] h-[8.813rem]">
+                            <div
+                                class="flex flex-col items-center text-center lg:text-left lg:items-start gap-[10px] h-[8.813rem]">
                                 <!-- icon & deksripsi -->
                                 <svg width="35" height="36" viewBox="0 0 35 36" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
@@ -415,16 +427,16 @@
                                         </clipPath>
                                     </defs>
                                 </svg>
-                                <h1 class="font-main font-normal text-base
-                                                            text-[#0E144A]">
+                                <h1 class="font-main font-normal text-base text-[#0E144A] ">
                                     Tidak Tersimpan Otomatis
                                 </h1>
-                                <p class="font-header font-normal text-base text-[#0E144A] opacity-60">
+                                <p class="font-header font-normal text-base text-[#0E144A] opacity-60 px-8 lg:px-0">
                                     Kalo lo pelupa ya udah dah, jadwal lo bakal gak kesimpen tuh.
                                 </p>
                             </div>
                             <!-- box -->
-                            <div class="flex flex-col items-start gap-[10px] h-[8.813rem]">
+                            <div
+                                class="flex flex-col items-center text-center lg:text-left lg:items-start gap-[10px] h-[8.813rem]">
                                 <!-- icon & deksripsi -->
                                 <svg width="35" height="36" viewBox="0 0 35 36" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
@@ -442,46 +454,19 @@
                                         </clipPath>
                                     </defs>
                                 </svg>
-                                <h1 class="font-main font-normal text-base
-                                                                                        text-[#0E144A]">
+                                <h1 class="font-main font-normal text-base text-[#0E144A]">
                                     Tidak Tersimpan Otomatis
                                 </h1>
-                                <p class="font-header font-normal text-base text-[#0E144A] opacity-60">
+                                <p class="font-header font-normal text-base text-[#0E144A] opacity-60 px-8 lg:px-0">
                                     Kalo lo pelupa ya udah dah, jadwal lo bakal gak kesimpen tuh.
                                 </p>
                             </div>
                         </div>
                         <!-- wraper -->
-                        <div class="flex flex-row items-start gap-[30px] h-[8.813rem] pt-6">
+                        <div class="flex flex-col items-center gap-[30px] pt-6 lg:pl-8 lg:flex-row lg:items-start">
                             <!-- box -->
-                            <div class="flex flex-col items-start gap-[10px] h-[8.813rem]">
-                                <!-- icon & deksripsi -->
-                                <svg width="35" height="36" viewBox="0 0 35 36" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <g clip-path="url(#clip0_248_476)">
-                                        <path
-                                            d="M7.29166 7.79171C5.01386 9.05118 3.22264 11.0362 2.20294 13.4309C1.18324 15.8257 0.993637 18.4927 1.66429 21.0076C2.33494 23.5226 3.82732 25.741 5.90403 27.3101C7.98075 28.8791 10.5225 29.7086 13.125 29.6667H26.25C27.0955 29.6657 27.9344 29.5177 28.7292 29.2292M32.9729 25.2188C33.4428 24.1094 33.6304 22.901 33.5191 21.7014C33.4078 20.5018 33.001 19.3484 32.3351 18.3445C31.6691 17.3405 30.7648 16.5172 29.7029 15.9481C28.6411 15.379 27.4547 15.0819 26.25 15.0834H24.4125C23.8172 12.7391 22.508 10.6378 20.6661 9.07016C18.8242 7.50257 16.5406 6.54619 14.1312 6.33337L32.9729 25.2188Z"
-                                            stroke="#FE5E44" stroke-width="2" stroke-linecap="round"
-                                            stroke-linejoin="round" />
-                                        <path d="M1.45834 1.95837L33.5417 34.0417" stroke="#FE5E44" stroke-width="2"
-                                            stroke-linecap="round" stroke-linejoin="round" />
-                                    </g>
-                                    <defs>
-                                        <clipPath id="clip0_248_476">
-                                            <rect width="35" height="35" fill="white" transform="translate(0 0.5)" />
-                                        </clipPath>
-                                    </defs>
-                                </svg>
-                                <h1 class="font-main font-normal text-base
-                                                                                    text-[#0E144A]">
-                                    Tidak Tersimpan Otomatis
-                                </h1>
-                                <p class="font-header font-normal text-base text-[#0E144A] opacity-60">
-                                    Kalo lo pelupa ya udah dah, jadwal lo bakal gak kesimpen tuh.
-                                </p>
-                            </div>
-                            <!-- box -->
-                            <div class="flex flex-col items-start gap-[10px] h-[8.813rem]">
+                            <div
+                                class="flex flex-col items-center text-center lg:text-left lg:items-start gap-[10px] h-[8.813rem]">
                                 <!-- icon & deksripsi -->
                                 <svg width="35" height="36" viewBox="0 0 35 36" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
@@ -501,16 +486,179 @@
                                 </svg>
                                 <h1
                                     class="font-main font-normal text-base
-                                                                                                                text-[#0E144A]">
+                                                                                                            text-[#0E144A]">
                                     Tidak Tersimpan Otomatis
                                 </h1>
-                                <p class="font-header font-normal text-base text-[#0E144A] opacity-60">
+                                <p class="font-header font-normal text-base text-[#0E144A] opacity-60 px-8 lg:px-0">
+                                    Kalo lo pelupa ya udah dah, jadwal lo bakal gak kesimpen tuh.
+                                </p>
+                            </div>
+                            <!-- box -->
+                            <div
+                                class="flex flex-col items-center text-center lg:text-left lg:items-start gap-[10px] h-[8.813rem]">
+                                <!-- icon & deksripsi -->
+                                <svg width="35" height="36" viewBox="0 0 35 36" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_248_476)">
+                                        <path
+                                            d="M7.29166 7.79171C5.01386 9.05118 3.22264 11.0362 2.20294 13.4309C1.18324 15.8257 0.993637 18.4927 1.66429 21.0076C2.33494 23.5226 3.82732 25.741 5.90403 27.3101C7.98075 28.8791 10.5225 29.7086 13.125 29.6667H26.25C27.0955 29.6657 27.9344 29.5177 28.7292 29.2292M32.9729 25.2188C33.4428 24.1094 33.6304 22.901 33.5191 21.7014C33.4078 20.5018 33.001 19.3484 32.3351 18.3445C31.6691 17.3405 30.7648 16.5172 29.7029 15.9481C28.6411 15.379 27.4547 15.0819 26.25 15.0834H24.4125C23.8172 12.7391 22.508 10.6378 20.6661 9.07016C18.8242 7.50257 16.5406 6.54619 14.1312 6.33337L32.9729 25.2188Z"
+                                            stroke="#FE5E44" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path d="M1.45834 1.95837L33.5417 34.0417" stroke="#FE5E44" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_248_476">
+                                            <rect width="35" height="35" fill="white" transform="translate(0 0.5)" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                                <h1
+                                    class="font-main font-normal text-base
+                                                                                                                                        text-[#0E144A]">
+                                    Tidak Tersimpan Otomatis
+                                </h1>
+                                <p class="font-header font-normal text-base text-[#0E144A] opacity-60 px-8 lg:px-0">
                                     Kalo lo pelupa ya udah dah, jadwal lo bakal gak kesimpen tuh.
                                 </p>
                             </div>
                         </div>
                     </div>
                 </div>
+
+            </div>
+        </div>
+        <!-- about -->
+        <div class="bg-[#fe5e440d]  ">
+            <div class="container">
+                <div class="flex flex-col items-center py-[6.25rem]">
+                    <h1 class="font-main font-normal text-[38px] leading-[52px] text-center text-[#0E144A] lg:px-60">
+                        Main catur sambil bersepeda,
+                        beda harga beda fitur
+                    </h1>
+                    <p
+                        class="font-header font-normal text-lg leading-8 text-center text-[#0E144A] opacity-60 pt-5 pb-[6.25rem] lg:px-56">
+                        Aplikasi ini gratis sebenernya,
+                        brodie. Tapi kalo mau bayar gapapa juga sih, untuk gantinya kami kasih fitur yang
+                        spesial buat kamu!
+                    </p>
+                </div>
+                <div class="flex justify-center items-center">
+                    <div class="lg:w-1/2">
+                        <div class="flex flex-col items-start pb-8 lg:items-center bg-white shadow-lg rounded-xl ">
+                            <figure>
+                                <img src="" alt="">
+                            </figure>
+                            <h1
+                                class="font-inter font-semibold text-sm tracking-widest text-[#FE5E44] pb-5 pl-8 lg:pl-0">
+                                Manusia Nolep
+                            </h1>
+                            <h2 class="font-main font-normal text-4xl text-[#0C0E2B] pb-[5px] pl-8 lg:pl-0">Dimas
+                                Oktavian</h2>
+                            <p class="font-header font-normal text-lg text-[#0c0e2b99] pb-5 pr-8 pl-8
+                             lg:px-12 lg:text-center">
+                                Seorang Nolepers yang binggung
+                                melakukan apa dan akhirnya menjadi pecandu programming!
+                                Mengapa memilih progamming?
+                            </p>
+                            <!-- List -->
+                            <div class="flex flex-col pl-8 pb-8 lg:pl-0">
+                                <!-- wraper row lg for list -->
+                                <div class="lg:flex lg:flex-row">
+                                    <!-- centang -->
+                                    <div class="flex flex-row items-center gap-[15px] lg:pr-2 ">
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="10" cy="10" r="10" fill="#F1FEF8" />
+                                            <path d="M15.2001 7.19995L8.6001 13.6L5.6001 10.6909" stroke="#28F09D"
+                                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                        <p class="font-header font-normal text-lg text-[#0C0E2B]">
+                                            Jadwal Tak Terbatas
+                                        </p>
+                                    </div>
+                                    <div class="flex flex-row items-center gap-[15px] lg:pl-2">
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="10" cy="10" r="10" fill="#F1FEF8" />
+                                            <path d="M15.2001 7.19995L8.6001 13.6L5.6001 10.6909" stroke="#28F09D"
+                                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                        <p class="font-header font-normal text-lg text-[#0C0E2B]">
+                                            Jadwal Tak Terbatas
+                                        </p>
+                                    </div>
+                                </div>
+                                <!-- wraper row lg for list -->
+                                <div class="lg:flex lg:flex-row">
+                                    <!-- centang -->
+                                    <div class="flex flex-row items-center gap-[15px] lg:pr-2">
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="10" cy="10" r="10" fill="#F1FEF8" />
+                                            <path d="M15.2001 7.19995L8.6001 13.6L5.6001 10.6909" stroke="#28F09D"
+                                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                        <p class="font-header font-normal text-lg text-[#0C0E2B]">
+                                            Jadwal Tak Terbatas
+                                        </p>
+                                    </div>
+                                    <div class="flex flex-row items-center gap-[15px] lg:pl-2">
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="10" cy="10" r="10" fill="#F1FEF8" />
+                                            <path d="M15.2001 7.19995L8.6001 13.6L5.6001 10.6909" stroke="#28F09D"
+                                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                        <p class="font-header font-normal text-lg text-[#0C0E2B]">
+                                            Jadwal Tak Terbatas
+                                        </p>
+                                    </div>
+                                </div>
+                                <!-- wraper row lg for list -->
+                                <div class="lg:flex lg:flex-row">
+                                    <!-- centang -->
+                                    <div class="flex flex-row items-center gap-[15px] lg:pr-2">
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="10" cy="10" r="10" fill="#F1FEF8" />
+                                            <path d="M15.2001 7.19995L8.6001 13.6L5.6001 10.6909" stroke="#28F09D"
+                                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                        <p class="font-header font-normal text-lg text-[#0C0E2B]">
+                                            Jadwal Tak Terbatas
+                                        </p>
+                                    </div>
+                                    <div class="flex flex-row items-center gap-[15px] lg:pl-2">
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="10" cy="10" r="10" fill="#F1FEF8" />
+                                            <path d="M15.2001 7.19995L8.6001 13.6L5.6001 10.6909" stroke="#28F09D"
+                                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                        <p class="font-header font-normal text-lg text-[#0C0E2B]">
+                                            Jadwal Tak Terbatas
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div
+                                class="flex justify-self-center self-center lg:block lg:justify-self-auto lg:self-auto">
+                                <button class="flex flex-row justify-center items-center py-[15px] px-[50px] gap-[10px] bg-[#FE5E44] rounded-[5px] shadow-lg shadow-[#ff563a24] font-header font-semibold text-base text-white 
+                                            lg:w-80">
+                                    Tutup
+                                </button>
+                            </div>
+
+                        </div>
+                        <p class="font-header text-base text-center text-[#0E144A99] opacity-60 pt-28">
+                            Harap Diingat: Harga di atas belum termasuk KKM, dan harga sewaktu-waktu bisa
+                            berubah secara mendadak seperti pengumuman
+                            PPKM darurat.
+                        </p>
+                    </div>
+                </div>
+
 
             </div>
         </div>
