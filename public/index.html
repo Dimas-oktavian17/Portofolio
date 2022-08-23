@@ -16,8 +16,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
     <!-- core Css -->
     <link rel="stylesheet" href="./src/output.css">
+    <!-- JS -->
+    <script src="../public/src/index.js" defer></script>
     <!-- flowbite -->
-    <!-- <link rel="stylesheet" href="../node_modules/flowbite/dist/flowbite.css"> -->
     <script src="../node_modules/flowbite/dist/flowbite.js" defer></script>
 </head>
 
@@ -25,15 +26,15 @@
     <!-- header section -->
     <header class="container ">
         <nav class="border-gray-200 px-2 mb-10 font-header " id="nav">
-            <div class="fixed bg-white max-w-5xl mx-auto py-8  z-[999] w-[95%]  flex flex-wrap  justify-between
+            <div class="fixed backdrop-blur max-w-5xl mx-auto py-8  z-[999] w-[95%]  flex flex-wrap  justify-between
                  rounded-xl lg:w-[98%] ">
                 <a href="#beranda" class="flex">
-                    <img src="./asset/icon/image 3.svg" alt="logo">
+                    <img src="./asset/icon/image 3.svg" alt="logo" class="pl-4">
                     <span class="self-center font-poppins font-semibold text-lg tracking-wider text-black pl-4">
                         ZEITPLAN
                     </span>
                 </a>
-                <div class="flex   md:order-2">
+                <div class="flex  md:order-2">
                     <button data-collapse-toggle="mobile-menu-3" type="button"
                         class="md:hidden group text-gray-400 hover:text-gray-900 rounded-lg inline-flex items-center justify-center"
                         aria-controls="mobile-menu-3" aria-expanded="false" id="hamburger">
@@ -63,36 +64,36 @@
                 <div class="hidden backdrop-blur-md md:backdrop-blur-0 md:flex justify-between md:justify-end items-center w-full md:w-auto md:order-3"
                     id="mobile-menu-3">
                     <ul
-                        class="flex-col md:flex-row flex md:items-center md:space-x-8 mt-4 md:mt-0 md:mr-8 md:text-sm md:font-medium">
-                        <li>
-                            <a href="#beranda"
-                                class="link bg-[#FE5E44] font-header font-semibold text-base text-white  block pl-3 pr-4 py-2 rounded md:bg-transparent  md:p-0  dark:bg-slate-700 dark:text-slate-50 dark:hover:text-slate-100 lg:dark:bg-transparent "
-                                aria-current="page">Beranda</a>
-                        </li>
-                        <li>
-                            <a href="#fitur"
-                                class="link font-header text-black opacity-50 text-base font-normal hover:bg-gray-50 border-b border-gray-100 md:hover:bg-transparent md:border-0 block pl-3 pr-4 py-2 md:hover:text-primary md:p-0 dark:lg:hover:bg-transparent dark:hover:bg-slate-600 dark:text-primary2hover dark:hover:text-slate-50 dark:border-slate-600 ">
-                                Fitur-fitur
-                            </a>
+                        class="flex-col md:flex-row flex md:items-center md:space-x-8 mt-4 md:mt-0 md:mr-8 md:text-sm  t-medium">
+
+                        <a href="#beranda"
+                            class=" text-[#FE5E44] font-header font-semibold text-base block pl-3 pr-4 py-2 rounded md:bg-transparent  md:p-0  dark:bg-slate-700 dark:text-slate-50 dark:hover:text-slate-100 lg:dark:bg-transparent "
+                            aria-current="page">Beranda</a>
+
+
+                        <a href="#fitur"
+                            class="font-header text-black opacity-50 text-base font-normal hover:bg-gray-50 border-b border-gray-100 md:hover:bg-transparent md:border-0 block pl-3 pr-4 py-2 md:hover:text-[#FE5E44] md:p-0 dark:lg:hover:bg-transparent dark:hover:bg-slate-600 dark:text-primary2hover dark:hover:text-slate-50 dark:border-slate-600 ">
+                            Mengapa?
+                        </a>
                         </li>
                         <li>
                             <a href="#teknologi"
-                                class="link font-header text-black opacity-50 text-base font-normal hover:bg-gray-50 border-b border-gray-100 md:hover:bg-transparent md:border-0 block pl-3 pr-4 py-2 md:hover:text-primary md:p-0 dark:lg:hover:bg-transparent dark:hover:bg-slate-600 dark:text-primary2hover dark:hover:text-slate-50 dark:border-slate-600 ">
-                                Harga
+                                class="font-header text-black opacity-50 text-base font-normal hover:bg-gray-50 border-b border-gray-100 md:hover:bg-transparent md:border-0 block pl-3 pr-4 py-2 md:hover:text-[#FE5E44] md:p-0 dark:lg:hover:bg-transparent dark:hover:bg-slate-600 dark:text-primary2hover dark:hover:text-slate-50 dark:border-slate-600 ">
+                                Keahlian
                             </a>
                         </li>
                         <li>
                             <a href="#about"
-                                class="link font-header  text-black opacity-50 text-base font-normal hover:bg-gray-50 border-b border-gray-100 md:hover:bg-transparent md:border-0 block pl-3 pr-4 py-2 md:hover:text-primary md:p-0 dark:lg:hover:bg-transparent dark:hover:bg-slate-600 dark:text-primary2hover dark:hover:text-slate-50 dark:border-slate-600 ">
-                                Testimoni
+                                class="font-header  text-black opacity-50 text-base font-normal hover:bg-gray-50 border-b border-gray-100 md:hover:bg-transparent md:border-0 block pl-3 pr-4 py-2 md:hover:text-[#FE5E44] md:p-0 dark:lg:hover:bg-transparent dark:hover:bg-slate-600 dark:text-primary2hover dark:hover:text-slate-50 dark:border-slate-600 ">
+                                About
                             </a>
                         </li>
                         <li>
                             <a href="#faq"
-                                class="link font-header text-white text-base font-semibold bg-[#FE5E44] gap-[15px] py-[10px] px-[20px] rounded-[5px] h-[40px] shadow-md shadow-[#ff563a24] block">
-                                Download
-                                <svg class="inline-block" width="20" height="20" viewBox="0 0 20 20" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
+                                class="group transition-all font-header text-white text-base font-semibold bg-[#FE5E44] gap-[15px] py-[10px] px-[20px] rounded-[5px] h-[40px] shadow-md shadow-[#ff563a24] block">
+                                Project
+                                <svg class="inline-block group-hover:ml-2" width="20" height="20" viewBox="0 0 20 20"
+                                    fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path
                                         d="M4.16665 10.8333H14.05L11.025 14.4667C10.9549 14.5509 10.9022 14.6482 10.8697 14.7528C10.8373 14.8575 10.8257 14.9675 10.8358 15.0766C10.8561 15.297 10.9631 15.5002 11.1333 15.6417C11.3035 15.7831 11.5229 15.8512 11.7432 15.8309C11.9636 15.8105 12.1669 15.7035 12.3083 15.5333L16.475 10.5333C16.503 10.4936 16.5281 10.4518 16.55 10.4083C16.55 10.3667 16.5916 10.3417 16.6083 10.3C16.6461 10.2045 16.6659 10.1027 16.6666 10C16.6659 9.89727 16.6461 9.79556 16.6083 9.70001C16.6083 9.65834 16.5666 9.63334 16.55 9.59167C16.5281 9.54822 16.503 9.50644 16.475 9.46667L12.3083 4.46667C12.23 4.3726 12.1318 4.29695 12.0209 4.2451C11.91 4.19325 11.7891 4.16647 11.6666 4.16667C11.4719 4.16629 11.2832 4.23411 11.1333 4.35834C11.0489 4.4283 10.9792 4.51421 10.9281 4.61117C10.8769 4.70813 10.8454 4.81422 10.8354 4.92336C10.8253 5.03251 10.8369 5.14257 10.8694 5.24724C10.9019 5.35191 10.9548 5.44913 11.025 5.53334L14.05 9.16667H4.16665C3.94563 9.16667 3.73367 9.25447 3.57739 9.41075C3.42111 9.56703 3.33331 9.77899 3.33331 10C3.33331 10.221 3.42111 10.433 3.57739 10.5893C3.73367 10.7455 3.94563 10.8333 4.16665 10.8333Z"
                                         fill="white" />
@@ -124,30 +125,33 @@
                 <div class="flex flex-col items-start  w-full lg:pl-0 lg:w-1/2">
                     <div class="pl-8">
                         <h1 class="font-main font-normal text-5xl leading-[60px] text-[#0E144A] lg:pr-4">
-                            Sebuah cara mudah mengatur jadwal kuliah kamu
+                            Sebuah personal web portofolio
                         </h1>
-                        <h2 class="font-header font-normal text-lg text-[#6F6F6F]
-                                                pb-10 lg:pr-4">
-                            Datang kuliah terlambat karena ketiduran itu tidak
-                            masalah; datang kuliah karena lupa jadwal itu
-                            sangatlah tidak keren.
-                            Aplikasi ini adalah sahabat kamu sekarang, brodie~
+                        <h2 class="font-header font-normal text-lg text-[#6F6F6F] pb-10 pt-4 lg:pr-5">
+                            Belajar programming karena diri nolep itu tidak masalah;
+                            belajar programming karena prospek karir itu sangatlah tidak keren brodie~.
                         </h2>
                         <div class="flex flex-row items-start gap-[15px] pb-20">
-                            <div
-                                class="flex flex-row justify-center items-center py-[15px] px-[50px] gap-[10px] bg-[#FE5E44] shadow-lg  rounded-[5px]">
-                                <p class="font-header font-semibold text-base
-                                                                               leading-5 text-white">
-                                    Learn More
-                                </p>
-                            </div>
-                            <div
-                                class="flex flex-row justify-center items-center py-[15px] px-[50px] gap-[10px] bg-[#fe5e441a] border border-solid border-[#fe5e4433]">
-                                <p class="font-header font-semibold text-base
-                                                                       leading-5 text-[#FE5E44]">
-                                    Learn More
-                                </p>
-                            </div>
+                            <a href="#">
+                                <button
+                                    class="flex flex-row justify-center items-center py-[15px] px-[50px] gap-[10px] bg-[#FE5E44] shadow-lg  rounded-[5px]">
+                                    <p
+                                        class="font-header font-semibold text-base
+                                                                                                               leading-5 text-white">
+                                        Mengapa?
+                                    </p>
+                                </button>
+                            </a>
+                            <a href="#">
+                                <button
+                                    class="flex flex-row justify-center items-center py-[15px] px-[50px] gap-[10px] bg-[#fe5e441a] border border-solid border-[#fe5e4433]">
+                                    <p class="font-header font-semibold text-base
+                                                                   leading-5 text-[#FE5E44]">
+                                        Project
+                                    </p>
+                                </button>
+                            </a>
+
                         </div>
                     </div>
                     <!-- testimoni -->
@@ -231,13 +235,12 @@
                     <!-- deskripsi -->
                     <div class="flex flex-col items-start w-full pl-8 lg:w-[75%] lg:pr-14 lg:h-[27.25rem] ">
                         <h1 class="font-main font-normal text-[2.375rem] leading-[42px] text-[#0E144A] pb-2 ">
-                            Kenapa Kamu Sangat Harus Pakai Aplikasi Yang Keren Ini?
+                            Kenapa Kamu Sangat Harus Mempekerjakan Saya?
                         </h1>
                         <p class="font-header font-normal text-lg text-[#0E144A] opacity-60 pt-3 pb-10">
-                            Sejujurnya aplikasi kita ini seringkali bermasalah. Kadang-kadang gak bisa submit data,
+                            Sejujurnya kemampuan saya masih cupu sih. Kadang-kadang malas belajar,
                             kadang
-                            dibukanya lambat, kadang
-                            tiba-tiba logout sendiri, untung gak berdua.
+                            rajin, untung masih hidup.
                         </p>
                         <!-- donwlod quantity -->
                         <div class="flex flex-row items-start gap-[42px] h-[52px] pb-10">
@@ -736,27 +739,7 @@
                         </a>
 
                     </div>
-                    <div class="lg:pt-8 lg:flex lg:flex-row">
-                        <!-- portofolio box -->
-                        <a href="https://github.com/Dimas-oktavian17" class="flex justify-center items-center"
-                            target="_blank">
-                            <div class="flex flex-col items-center w-[95%]  bg-white  lg:w-1/2  group  lg:mb-0">
-                                <div href="" class="ease-in-out duration-500 group-hover:scale-50 ">
-                                    <div class="w-full pt-4">
-                                        <figure>
-                                            <img src="./asset/icon/github.svg" alt="portofolio" class="w-full">
-                                        </figure>
-                                    </div>
-                                    <div class="flex flex-col items-center ">
-                                        <h1 class="font-header text-3xl  text-black py-4 ">Huddle
-                                            Landing-Page
-                                        </h1>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
 
-                    </div>
                 </div>
             </div>
         </div>
@@ -811,24 +794,29 @@
         <!-- footer -->
         <div class="flex flex-col items-center p-[6.25rem] gap-[30px] bg-white">
             <div class="container">
-                <div class="flex flex-row items-start">
+                <div class="flex flex-row items-start gap-[60px]">
                     <!-- satu -->
-                    <div class="flex flex-col items-start gap-5">
+                    <div class="flex flex-col items-start gap-5 w-full lg:w-[27rem]">
                         <figure>
                             <img src="./asset/icon/image 3.svg" alt="logo">
                         </figure>
                         <!-- title -->
+                        <h1 class="font-main font-normal text-lg text-black">
+                            Zeitplan
+                        </h1>
                         <div class="flex flex-row items-center gap-[10px]">
+                            <h2 class="font-header font-normal text-base text-[#0E144A] opacity-60 pb-[6.5rem]">Sebuah
+                                aplikasi yang
+                                membantu kamu untuk membuat jadwal kuliah, jadwal mabar, jadwal makan, jadwal liga
+                                inggris,
+                                dan
+                                jadwal-jadwal lainnya. Walaupun banyak error, setidaknya kami sudah berusaha semaksimal
+                                mungkin.</h2>
 
                         </div>
-                        <h2 class="font-header font-normal text-base text-[#0E144A] opacity-60 pb-[6.5rem]">Sebuah
-                            aplikasi yang
-                            membantu kamu untuk membuat jadwal kuliah, jadwal mabar, jadwal makan, jadwal liga inggris,
-                            dan
-                            jadwal-jadwal lainnya. Walaupun banyak error, setidaknya kami sudah berusaha semaksimal
-                            mungkin.</h2>
                         <p class="font-header font-semibold text-sm tetx-[#0E144A] opacity-60 pb-[18px] tracking-wider">
-                            COPYRIGHT (C) 2021. DESIGN BY NAUVAL</p>
+                            COPYRIGHT (C) 2021. DESIGN BY NAUVAL
+                        </p>
                     </div>
                     <!-- dua -->
                     <div class="flex flex-col items-start gap-5">
@@ -837,22 +825,65 @@
                         </h1>
                         <!-- List -->
                         <div class="flex flex-col items-start gap-[10px]">
-                            <ul>
-                                <li class="font-header font-semibold text-base text-[#0c1b4d99]">Beranda</li>
-                                <li class="font-header font-semibold text-base text-[#0c1b4d99]">Fitur-fitur</li>
-                                <li class="font-header font-semibold text-base text-[#0c1b4d99]">Harga</li>
-                                <li class="font-header font-semibold text-base text-[#0c1b4d99]">Testimoni</li>
-                                <li class="font-header font-semibold text-base text-[#0c1b4d99]">Donwload</li>
-                            </ul>
+                            <div class="font-header font-semibold text-base text-[#0c1b4d99]">Beranda</div>
+                            <div class="font-header font-semibold text-base text-[#0c1b4d99]">Fitur-fitur</div>
+                            <div class="font-header font-semibold text-base text-[#0c1b4d99]">Harga</div>
+                            <div class="font-header font-semibold text-base text-[#0c1b4d99]">Testimoni</div>
+                            <div class="font-header font-semibold text-base text-[#0c1b4d99]">Donwload</div>
+
                         </div>
                     </div>
                     <!-- tiga -->
                     <div class="flex flex-col items-start gap-5">
-
+                        <h1 class="font-main font-normal text-lg text-black">
+                            Sitemap
+                        </h1>
+                        <!-- List -->
+                        <div class="flex flex-col items-start gap-[10px]">
+                            <div class="font-header font-semibold text-base text-[#0c1b4d99]">Beranda</div>
+                            <div class="font-header font-semibold text-base text-[#0c1b4d99]">Fitur-fitur</div>
+                            <div class="font-header font-semibold text-base text-[#0c1b4d99]">Harga</div>
+                            <div class="font-header font-semibold text-base text-[#0c1b4d99]">Testimoni</div>
+                            <div class="font-header font-semibold text-base text-[#0c1b4d99]">Donwload</div>
+                        </div>
                     </div>
                     <!-- empat -->
                     <div class="flex flex-col items-start gap-5">
+                        <!-- title -->
+                        <h1 class="font-main font-normal text-lg text-black">
+                            Tetep Terhubung
+                        </h1>
+                        <p class="font-header font-normal text-base text-[#0c1b4d96]">
+                            Lihat kami pansos di sosial media berikut:
+                        </p>
+                        <!-- wrapper -->
+                        <div class="flex flex-row justify-center items-center gap-[10px]">
+                            <!-- box -->
+                            <a href="https://www.instagram.com/dimas_okr/">
+                                <div
+                                    class="flex flex-row justify-center items-center p-[10px] gap-[10px] rounded-[100px] bg-[#fe5e440d]">
+                                    <!-- icon -->
+                                    <img src="./asset/icon/instagram (2).svg" alt="icon">
+                                </div>
+                            </a>
+                            <a href="https://github.com/Dimas-oktavian17">
+                                <!-- box -->
+                                <div
+                                    class="flex flex-row justify-center items-center p-[10px] gap-[10px] rounded-[100px] bg-[#fe5e440d]">
+                                    <!-- icon -->
+                                    <img src="./asset/icon/github.svg" alt="icon">
+                                </div>
+                            </a>
+                            <a href="https://www.facebook.com/dimas.oktavian.5055/">
+                                <!-- box -->
+                                <div
+                                    class="flex flex-row justify-center items-center p-[10px] gap-[10px] rounded-[100px] bg-[#fe5e440d]">
+                                    <!-- icon -->
+                                    <img src="./asset/icon/facebook (2).svg" alt="icon">
+                                </div>
+                            </a>
 
+                        </div>
                     </div>
 
                 </div>
