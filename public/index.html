@@ -119,6 +119,7 @@
     </header>
     <!-- main section -->
     <main class="pt-16 " id="main">
+        <!-- Home -->
         <div class="container">
             <div class="pb-16 bg-main lg:flex lg:flex-row">
                 <!-- deksripsi -->
@@ -134,7 +135,7 @@
                         <div class="flex flex-row items-start gap-[15px] pb-20">
                             <a href="#">
                                 <button
-                                    class="flex flex-row justify-center items-center py-[15px] px-[50px] gap-[10px] bg-[#FE5E44] shadow-lg  rounded-[5px]">
+                                    class="flex flex-row justify-center items-center py-[15px] px-[25px]  lg:px-[50px] gap-[10px] bg-[#FE5E44] shadow-lg  rounded-[5px]">
                                     <p
                                         class="font-header font-semibold text-base
                                                                                                                leading-5 text-white">
@@ -144,7 +145,7 @@
                             </a>
                             <a href="#">
                                 <button
-                                    class="flex flex-row justify-center items-center py-[15px] px-[50px] gap-[10px] bg-[#fe5e441a] border border-solid border-[#fe5e4433]">
+                                    class="flex flex-row justify-center items-center py-[15px] px-[25px] lg:px-[50px] gap-[10px] bg-[#fe5e441a] border border-solid border-[#fe5e4433]">
                                     <p class="font-header font-semibold text-base
                                                                    leading-5 text-[#FE5E44]">
                                         Project
@@ -163,21 +164,21 @@
                                 <div class="flex flex-row justify-center items-center w-5 h-5 bg-[#FFC93F]">
                                     <img src="./asset/icon/Vector.svg" alt="star">
                                 </div>
-                                <div class="flex flex-row justify-center items-center w-5 h-5 bg-gray-300">
+                                <div class="flex flex-row justify-center items-center w-5 h-5 bg-gray-300 starSatu">
                                     <img src="./asset/icon/Vector.svg" alt="star">
                                 </div>
-                                <div class="flex flex-row justify-center items-center w-5 h-5 bg-gray-300">
+                                <div class="flex flex-row justify-center items-center w-5 h-5 bg-gray-300 starDua">
                                     <img src="./asset/icon/Vector.svg" alt="star">
                                 </div>
-                                <div class="flex flex-row justify-center items-center w-5 h-5 bg-gray-300">
+                                <div class="flex flex-row justify-center items-center w-5 h-5 bg-gray-300 starTiga">
                                     <img src="./asset/icon/Vector.svg" alt="star">
                                 </div>
-                                <div class="flex flex-row justify-center items-center w-5 h-5 bg-gray-300">
+                                <div class="flex flex-row justify-center items-center w-5 h-5 bg-gray-300 starEmpat">
                                     <img src="./asset/icon/Vector.svg" alt="star">
                                 </div>
                             </div>
                             <!-- deskripsi -->
-                            <p class="font-poppins font-normal text-base text-[#0E144A]">
+                            <p class="font-poppins font-normal text-base text-[#0E144A]" id="text">
                                 “Aplikasi sialan, ini gw jadi kagak bisa alesan lagi buat bolos kelas Pak Sanusi
                                 yang galak itu! Tapi aku sekarang jadi
                                 rajin kuliah, terima kasih garena!”
@@ -198,7 +199,7 @@
                                 </div>
                                 <div class="flex flex-row items-start gap-[10px] lg:h-[2.188rem] lg:w-20">
                                     <button
-                                        class="group hover:bg-red-400 transition-all w-9 h-9 rounded-[50%] bg-[#FE5E44] flex justify-center items-center">
+                                        class="group hover:bg-red-400 transition-all w-9 h-9 rounded-[50%] bg-[#FE5E44] flex justify-center items-center btn">
                                         <svg class=" group-hover:fill-slate-300" width="9" height="15"
                                             viewBox="0 0 9 15" fill="white" xmlns="http://www.w3.org/2000/svg">
                                             <path d="M7.41667 13.3333L1.58334 7.49996L7.41667 1.66663" stroke="#FE5E44"
@@ -207,7 +208,7 @@
 
                                     </button>
                                     <button
-                                        class="group hover:bg-red-400 transition-all w-9 h-9 rounded-[50%] bg-[#FE5E44] flex justify-center items-center">
+                                        class="group hover:bg-red-400 transition-all w-9 h-9 rounded-[50%] bg-[#FE5E44] flex justify-center items-center btn-2">
                                         <svg class=" group-hover:fill-slate-300" width="9" height="15"
                                             viewBox="0 0 9 15" fill="white" xmlns="http://www.w3.org/2000/svg">
                                             <path d="M1.58331 13.3333L7.41665 7.49996L1.58331 1.66663" stroke="#FE5E44"
@@ -246,18 +247,20 @@
                         <div class="flex flex-row items-start gap-[42px] h-[52px] pb-10">
                             <!-- box -->
                             <div class="flex flex-col items-start gap-[10px] h-[52px]">
-                                <h1 class="font-inter font-normal text-xs  text-[#0c1b4d99] lg:tracking-widest">
-                                    TOTAL DON’TLOUD
+                                <h1
+                                    class="font-inter font-normal text-xs  text-[#0c1b4d99] uppercase lg:tracking-widest">
+                                    complete project
                                 </h1>
-                                <p class="font-inter font-semibold text-[#0C1B4D]">1,501,234</p>
+                                <p class="font-inter font-semibold text-[#0C1B4D]" id="total">+</p>
                             </div>
                             <span class=" w-[1px] h-[52px] bg-[#0c1b4d99] opacity-10"></span>
                             <!-- box -->
                             <div class="flex flex-col items-start gap-[10px] h-[52px]">
-                                <h1 class="font-inter font-normal text-xs  text-[#0c1b4d99] lg:tracking-widest">
-                                    TOTAL USERS
+                                <h1
+                                    class="font-inter font-normal text-xs  text-[#0c1b4d99] uppercase lg:tracking-widest">
+                                    experience
                                 </h1>
-                                <p class="font-inter font-semibold text-[#0C1B4D]">1,318,829</p>
+                                <p class="font-inter font-semibold text-[#0C1B4D]">-1 years</p>
                             </div>
                         </div>
                     </div>
@@ -266,120 +269,121 @@
                         <!-- wraper -->
                         <div class="flex flex-col items-start gap-[30px]  lg:pb-0 lg:flex-row lg:w-[40%]">
                             <!-- box -->
-                            <div
-                                class="flex flex-col items-center p-10 mx-5  gap-[25px] bg-[#fe5e440d] rounded-lg lg:rounded-none lg:mx-0 lg:items-start">
-                                <!-- icon & title -->
+                            <a href="#" class="group transition-all duration-1000">
                                 <div
-                                    class="flex flex-col items-center gap-5 lg:w-[11.25rem] lg:h-[3.125rem] lg:flex-row">
-                                    <!-- icon -->
+                                    class="transition-all duration-1000 group-hover:bg-[#fe5e4433] flex flex-col items-center p-10 mx-5  gap-[25px] bg-[#fe5e440d] rounded-lg  lg:rounded-none lg:mx-0 lg:items-start">
+                                    <!-- icon & title -->
                                     <div
-                                        class="flex flex-row items-start p-[13px] gap-[10px] w-[50px] h-[50px] bg-[#fe5e4433]">
-                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M12 8C16.9706 8 21 6.65685 21 5C21 3.34315 16.9706 2 12 2C7.02944 2 3 3.34315 3 5C3 6.65685 7.02944 8 12 8Z"
-                                                stroke="#FE5E44" stroke-width="2" stroke-linecap="round"
-                                                stroke-linejoin="round" />
-                                            <path d="M21 12C21 13.66 17 15 12 15C7 15 3 13.66 3 12" stroke="#FE5E44"
-                                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                                            <path d="M3 5V19C3 20.66 7 22 12 22C17 22 21 20.66 21 19V5" stroke="#FE5E44"
-                                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                                        </svg>
+                                        class="flex flex-col items-center gap-5 lg:w-[11.25rem] lg:h-[3.125rem] lg:flex-row">
+                                        <!-- icon -->
+                                        <div
+                                            class="transition-all duration-1000 group-hover:bg-white flex flex-row items-start p-[13px] gap-[10px] w-[50px] h-[50px] bg-[#fe5e4433]">
+                                            <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg"
+                                                viewBox="0 0 576 512" fill="#FE5E44">
+                                                <!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                                                <path stroke="#FE5E44" stroke-width="2" stroke-linecap="round"
+                                                    d="M386.539 111.485l15.096 248.955-10.979-.275c-36.232-.824-71.64 8.783-102.657 27.997-31.016-19.214-66.424-27.997-102.657-27.997-45.564 0-82.07 10.705-123.516 27.723L93.117 129.6c28.546-11.803 61.484-18.115 92.226-18.115 41.173 0 73.836 13.175 102.657 42.544 27.723-28.271 59.013-41.721 98.539-42.544zM569.07 448c-25.526 0-47.485-5.215-70.542-15.645-34.31-15.645-69.993-24.978-107.871-24.978-38.977 0-74.934 12.901-102.657 40.623-27.723-27.723-63.68-40.623-102.657-40.623-37.878 0-73.561 9.333-107.871 24.978C55.239 442.236 32.731 448 8.303 448H6.93L49.475 98.859C88.726 76.626 136.486 64 181.775 64 218.83 64 256.984 71.685 288 93.095 319.016 71.685 357.17 64 394.225 64c45.289 0 93.049 12.626 132.3 34.859L569.07 448zm-43.368-44.741l-34.036-280.246c-30.742-13.999-67.248-21.41-101.009-21.41-38.428 0-74.385 12.077-102.657 38.702-28.272-26.625-64.228-38.702-102.657-38.702-33.761 0-70.267 7.411-101.009 21.41L50.298 403.259c47.211-19.487 82.894-33.486 135.045-33.486 37.604 0 70.817 9.606 102.657 29.644 31.84-20.038 65.052-29.644 102.657-29.644 52.151 0 87.834 13.999 135.045 33.486z" />
+                                            </svg>
+                                        </div>
+                                        <p class="font-header font-semibold text-lg text-black">Self Learner</p>
                                     </div>
-                                    <p class="font-header font-semibold text-lg text-black">Aplikasi Gratis</p>
+                                    <p class="font-header font-normal text-base text-black text-center lg:text-left">
+                                        Selalu siap belajar secara mandiri, untuk terus mengikuti perkembangan
+                                        teknologi-teknologi terbaru.
+                                    </p>
                                 </div>
-                                <p class="font-header font-normal text-base text-black text-center lg:text-left">
-                                    Semua fitur di aplikasi ini adalah gratis, tapi data privasi kamu akan kami jual ke
-                                    agen khusus US.
-                                </p>
-                            </div>
+                            </a>
                             <!-- box -->
-                            <div
-                                class="flex flex-col items-center p-10 mx-5  gap-[25px] bg-[#fe5e440d] rounded-lg lg:rounded-none lg:mx-0 lg:items-start">
-                                <!-- icon & title -->
+                            <a href="#" class="group transition-all duration-1000">
                                 <div
-                                    class="flex flex-col items-center gap-5 lg:w-[11.25rem] lg:h-[3.125rem] lg:flex-row">
-                                    <!-- icon -->
+                                    class="transition-all duration-1000 group-hover:bg-[#fe5e4433] flex flex-col items-center p-10 mx-5  gap-[25px] bg-[#fe5e440d] rounded-lg lg:rounded-none lg:mx-0 lg:items-start">
+                                    <!-- icon & title -->
                                     <div
-                                        class="flex flex-row items-start p-[13px] gap-[10px] w-[50px] h-[50px] bg-[#fe5e4433]">
-                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M12 8C16.9706 8 21 6.65685 21 5C21 3.34315 16.9706 2 12 2C7.02944 2 3 3.34315 3 5C3 6.65685 7.02944 8 12 8Z"
-                                                stroke="#FE5E44" stroke-width="2" stroke-linecap="round"
-                                                stroke-linejoin="round" />
-                                            <path d="M21 12C21 13.66 17 15 12 15C7 15 3 13.66 3 12" stroke="#FE5E44"
-                                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                                            <path d="M3 5V19C3 20.66 7 22 12 22C17 22 21 20.66 21 19V5" stroke="#FE5E44"
-                                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                                        </svg>
+                                        class="flex flex-col items-center gap-5 lg:w-[11.25rem] lg:h-[3.125rem] lg:flex-row">
+                                        <!-- icon -->
+                                        <div
+                                            class="transition-all duration-1000 group-hover:bg-white flex flex-row items-start p-[13px] gap-[10px] w-[50px] h-[50px] bg-[#fe5e4433]">
+                                            <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg"
+                                                xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
+                                                viewBox="0 0 256 256" xml:space="preserve" fill="none">
+                                                <defs>
+                                                </defs>
+                                                <g style="stroke-dasharray: none;  stroke-linejoin: miter; stroke-miterlimit: 10; fill: none; fill-rule: nonzero; opacity: 1;"
+                                                    transform="translate(1.4065934065934016 1.4065934065934016) scale(2.81 2.81)">
+                                                    <path stroke="#FE5E44" stroke-width="2" stroke-linecap="round"
+                                                        d="M 51.658 90 H 18.559 c -3.062 0 -5.552 -2.49 -5.552 -5.552 V 60.863 c 0 -1.664 -0.573 -3.294 -1.657 -4.715 C 6.396 49.66 3.868 41.57 4.231 33.37 C 5.037 15.178 19.934 0.527 38.146 0.014 c 9.575 -0.269 18.598 3.26 25.433 9.935 l 10.241 9.84 c 1.341 1.288 2.337 2.907 2.881 4.681 c 0.014 0.045 0.024 0.091 0.032 0.138 c 1.228 7.803 4.056 17.003 8.898 28.954 c 0.332 1.068 0.154 2.109 -0.459 2.938 c -0.612 0.829 -1.556 1.305 -2.586 1.305 H 70.545 c -0.553 0 -1 -0.447 -1 -1 s 0.447 -1 1 -1 h 12.042 c 0.39 0 0.746 -0.18 0.978 -0.493 s 0.299 -0.708 0.185 -1.08 c -4.857 -11.979 -7.722 -21.299 -8.98 -29.241 c -0.449 -1.424 -1.255 -2.723 -2.334 -3.76 l -10.247 -9.846 c -6.449 -6.3 -14.964 -9.622 -23.985 -9.373 C 21.033 2.497 6.988 16.309 6.229 33.458 c -0.343 7.732 2.041 15.36 6.71 21.477 c 1.353 1.771 2.067 3.821 2.067 5.928 v 23.585 c 0 1.958 1.594 3.552 3.552 3.552 h 33.099 c 1.958 0 3.552 -1.594 3.552 -3.552 V 80.54 c 0 -0.553 0.447 -1 1 -1 s 1 0.447 1 1 v 3.908 C 57.21 87.51 54.72 90 51.658 90 z" />
+                                                    <path stroke="#FE5E44" stroke-width="2" stroke-linecap="round"
+                                                        d="M 69.077 81.54 H 42.11 c -0.552 0 -1 -0.447 -1 -1 s 0.448 -1 1 -1 h 26.967 c 3.238 0 5.873 -2.635 5.873 -5.873 V 56.806 c 0 -0.553 0.447 -1 1 -1 s 1 0.447 1 1 v 16.861 C 76.95 78.008 73.418 81.54 69.077 81.54 z" />
+                                                    <path stroke="#FE5E44" stroke-width="2" stroke-linecap="round"
+                                                        d="M 46.155 56.308 c -1.568 0 -3.094 -0.813 -3.932 -2.265 c -0.475 -0.823 -1.374 -1.3 -2.307 -1.258 c -0.608 0.029 -1.221 0.029 -1.824 0 c -0.941 -0.046 -1.839 0.436 -2.314 1.257 c -1.249 2.164 -4.026 2.908 -6.19 1.66 l -4.676 -2.7 c -1.048 -0.605 -1.797 -1.582 -2.111 -2.751 c -0.313 -1.169 -0.152 -2.39 0.453 -3.438 c 0.475 -0.822 0.438 -1.85 -0.095 -2.682 c -0.153 -0.239 -0.301 -0.481 -0.444 -0.729 c -0.143 -0.248 -0.279 -0.498 -0.409 -0.749 c -0.454 -0.878 -1.325 -1.423 -2.274 -1.423 c -2.498 0 -4.53 -2.033 -4.53 -4.531 V 31.3 c 0 -2.498 2.032 -4.531 4.53 -4.531 c 0.951 0 1.812 -0.526 2.247 -1.374 c 0.277 -0.538 0.583 -1.07 0.912 -1.581 c 0.515 -0.799 0.539 -1.805 0.065 -2.627 c -0.605 -1.048 -0.767 -2.27 -0.454 -3.438 c 0.313 -1.169 1.063 -2.146 2.111 -2.751 l 4.676 -2.7 c 1.047 -0.605 2.269 -0.766 3.438 -0.453 s 2.146 1.063 2.751 2.111 c 0.474 0.822 1.351 1.305 2.308 1.259 c 0.601 -0.03 1.216 -0.029 1.824 0 c 0.956 0.055 1.84 -0.435 2.313 -1.257 c 0.606 -1.05 1.583 -1.799 2.752 -2.113 c 1.169 -0.313 2.389 -0.152 3.438 0.453 l 4.676 2.7 c 1.048 0.605 1.798 1.583 2.111 2.751 c 0.313 1.169 0.152 2.39 -0.453 3.438 c -0.475 0.821 -0.438 1.849 0.096 2.681 c 0.152 0.238 0.3 0.48 0.443 0.728 c 0.144 0.249 0.279 0.498 0.409 0.748 c 0.455 0.879 1.327 1.425 2.275 1.425 c 2.498 0 4.53 2.032 4.53 4.53 V 36.7 c 0 2.498 -2.032 4.53 -4.53 4.531 c 0 0 0 0 -0.001 0 c -0.95 0 -1.811 0.526 -2.246 1.375 c -0.277 0.539 -0.584 1.07 -0.912 1.58 c -0.515 0.799 -0.539 1.806 -0.064 2.627 c 0.605 1.048 0.766 2.27 0.453 3.438 c -0.313 1.169 -1.063 2.146 -2.111 2.751 l -4.676 2.7 C 47.7 56.112 46.923 56.308 46.155 56.308 z M 40.044 50.782 c 1.612 0 3.097 0.851 3.91 2.26 c 0.338 0.586 0.884 1.005 1.538 1.18 c 0.651 0.176 1.334 0.086 1.92 -0.252 l 4.676 -2.7 c 0.585 -0.338 1.004 -0.884 1.179 -1.536 c 0.176 -0.652 0.086 -1.335 -0.253 -1.92 c -0.851 -1.475 -0.807 -3.28 0.115 -4.711 c 0.293 -0.456 0.567 -0.931 0.814 -1.412 c 0.78 -1.517 2.321 -2.46 4.023 -2.46 h 0.001 c 1.396 0 2.532 -1.136 2.532 -2.531 V 31.3 c 0 -1.395 -1.135 -2.53 -2.53 -2.53 c -1.699 0 -3.251 -0.96 -4.051 -2.505 c -0.116 -0.224 -0.238 -0.447 -0.365 -0.668 c -0.127 -0.219 -0.259 -0.436 -0.396 -0.649 c -0.938 -1.465 -0.993 -3.29 -0.144 -4.761 c 0.697 -1.208 0.281 -2.758 -0.927 -3.456 l -4.676 -2.7 c -0.584 -0.338 -1.264 -0.428 -1.92 -0.253 c -0.653 0.175 -1.198 0.593 -1.536 1.179 c -0.852 1.476 -2.426 2.338 -4.144 2.257 c -0.544 -0.026 -1.092 -0.026 -1.63 0 c -1.684 0.085 -3.286 -0.782 -4.137 -2.256 c -0.338 -0.586 -0.884 -1.005 -1.537 -1.18 c -0.649 -0.175 -1.333 -0.085 -1.92 0.253 l -4.676 2.7 c -0.585 0.338 -1.004 0.884 -1.179 1.537 c -0.175 0.653 -0.085 1.334 0.253 1.92 c 0.851 1.474 0.807 3.279 -0.115 4.71 c -0.293 0.456 -0.567 0.931 -0.814 1.412 c -0.78 1.518 -2.322 2.46 -4.024 2.46 c -1.396 0 -2.532 1.135 -2.532 2.531 V 36.7 c 0 1.396 1.135 2.531 2.53 2.531 c 1.7 0 3.252 0.96 4.051 2.505 c 0.116 0.224 0.238 0.447 0.365 0.668 c 0.127 0.22 0.259 0.437 0.396 0.649 c 0.938 1.464 0.994 3.289 0.144 4.761 c -0.338 0.585 -0.428 1.268 -0.253 1.92 c 0.175 0.653 0.593 1.198 1.179 1.536 l 4.676 2.7 c 1.208 0.696 2.759 0.282 3.457 -0.927 c 0.852 -1.475 2.436 -2.349 4.144 -2.256 c 0.539 0.025 1.088 0.025 1.631 0 C 39.895 50.783 39.97 50.782 40.044 50.782 z" />
+                                                    <path stroke="#FE5E44" stroke-width="2" stroke-linecap="round"
+                                                        d="M 39 47.784 c -7.601 0 -13.784 -6.184 -13.784 -13.784 S 31.399 20.216 39 20.216 c 7.601 0 13.785 6.184 13.785 13.784 S 46.601 47.784 39 47.784 z M 39 22.216 c -6.498 0 -11.784 5.286 -11.784 11.784 S 32.502 45.784 39 45.784 c 6.498 0 11.785 -5.286 11.785 -11.784 S 45.498 22.216 39 22.216 z" />
+                                                </g>
+                                            </svg>
+                                        </div>
+                                        <p class="font-header font-semibold text-lg text-black">Problem Solver</p>
                                     </div>
-                                    <p class="font-header font-semibold text-lg text-black">Aplikasi Gratis</p>
+                                    <p class="font-header font-normal text-base text-black text-center lg:text-left">
+                                        Selalu siap memecahkan masalah, baik dengan bantuan google maupun dengan
+                                        kemampuan
+                                        sendiri.
+                                    </p>
                                 </div>
-                                <p class="font-header font-normal text-base text-black text-center lg:text-left">
-                                    Semua fitur di aplikasi ini adalah gratis, tapi data privasi kamu akan kami jual ke
-                                    agen khusus US.
-                                </p>
-                            </div>
+                            </a>
+
                         </div>
                         <!-- wraper -->
                         <div class="flex flex-col items-start gap-[30px]  lg:pb-0 lg:flex-row lg:w-[40%]">
                             <!-- box -->
-                            <div
-                                class="flex flex-col items-center p-10 mx-5  gap-[25px] bg-[#fe5e440d] rounded-lg lg:rounded-none lg:mx-0 lg:items-start">
-                                <!-- icon & title -->
+                            <a href="" class="group transition-all duration-1000">
                                 <div
-                                    class="flex flex-col items-center gap-5 lg:w-[11.25rem] lg:h-[3.125rem] lg:flex-row">
-                                    <!-- icon -->
+                                    class="transition-all duration-1000 group-hover:bg-[#fe5e4433] flex flex-col items-center p-10 mx-5  gap-[25px] bg-[#fe5e440d] rounded-lg lg:rounded-none lg:mx-0 lg:items-start">
+                                    <!-- icon & title -->
                                     <div
-                                        class="flex flex-row items-start p-[13px] gap-[10px] w-[50px] h-[50px] bg-[#fe5e4433]">
-                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M12 8C16.9706 8 21 6.65685 21 5C21 3.34315 16.9706 2 12 2C7.02944 2 3 3.34315 3 5C3 6.65685 7.02944 8 12 8Z"
-                                                stroke="#FE5E44" stroke-width="2" stroke-linecap="round"
-                                                stroke-linejoin="round" />
-                                            <path d="M21 12C21 13.66 17 15 12 15C7 15 3 13.66 3 12" stroke="#FE5E44"
-                                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                                            <path d="M3 5V19C3 20.66 7 22 12 22C17 22 21 20.66 21 19V5" stroke="#FE5E44"
-                                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                                        </svg>
+                                        class="flex flex-col items-center gap-5 lg:w-[11.25rem] lg:h-[3.125rem] lg:flex-row">
+                                        <!-- icon -->
+                                        <div
+                                            class="transition-all duration-1000 group-hover:bg-white flex flex-row items-start p-[13px] gap-[10px] w-[50px] h-[50px] bg-[#fe5e4433]">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                fill="#FE5E44" class="bi bi-lightning" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M5.52.359A.5.5 0 0 1 6 0h4a.5.5 0 0 1 .474.658L8.694 6H12.5a.5.5 0 0 1 .395.807l-7 9a.5.5 0 0 1-.873-.454L6.823 9.5H3.5a.5.5 0 0 1-.48-.641l2.5-8.5zM6.374 1 4.168 8.5H7.5a.5.5 0 0 1 .478.647L6.78 13.04 11.478 7H8a.5.5 0 0 1-.474-.658L9.306 1H6.374z" />
+                                            </svg>
+                                        </div>
+                                        <p class="font-header font-semibold text-lg text-black">Responsive</p>
                                     </div>
-                                    <p class="font-header font-semibold text-lg text-black">Aplikasi Gratis</p>
+                                    <p class="font-header font-normal text-base text-black text-center lg:text-left">
+                                        Selalu siap & tanggap, apabila ada hal" penting dalam kerja tim maupun individu.
+                                    </p>
                                 </div>
-                                <p class="font-header font-normal text-base text-black text-center lg:text-left">
-                                    Semua fitur di aplikasi ini adalah gratis, tapi data privasi kamu akan kami jual ke
-                                    agen khusus US.
-                                </p>
-                            </div>
+                            </a>
                             <!-- box -->
-                            <div
-                                class="flex flex-col items-center p-10 mx-5  gap-[25px] bg-[#fe5e440d] rounded-lg lg:rounded-none lg:mx-0 lg:items-start">
-                                <!-- icon & title -->
+                            <a href="#" class="group transition-all duration-1000">
                                 <div
-                                    class="flex flex-col items-center gap-5 lg:w-[11.25rem] lg:h-[3.125rem] lg:flex-row">
-                                    <!-- icon -->
+                                    class="transition-all duration-1000 group-hover:bg-[#fe5e4433] flex flex-col items-center p-10 mx-5  gap-[25px] bg-[#fe5e440d] rounded-lg lg:rounded-none lg:mx-0 lg:items-start">
+                                    <!-- icon & title -->
                                     <div
-                                        class="flex flex-row items-start p-[13px] gap-[10px] w-[50px] h-[50px] bg-[#fe5e4433]">
-                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M12 8C16.9706 8 21 6.65685 21 5C21 3.34315 16.9706 2 12 2C7.02944 2 3 3.34315 3 5C3 6.65685 7.02944 8 12 8Z"
-                                                stroke="#FE5E44" stroke-width="2" stroke-linecap="round"
-                                                stroke-linejoin="round" />
-                                            <path d="M21 12C21 13.66 17 15 12 15C7 15 3 13.66 3 12" stroke="#FE5E44"
-                                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                                            <path d="M3 5V19C3 20.66 7 22 12 22C17 22 21 20.66 21 19V5" stroke="#FE5E44"
-                                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                                        </svg>
+                                        class="flex flex-col items-center gap-5 lg:w-[11.25rem] lg:h-[3.125rem] lg:flex-row">
+                                        <!-- icon -->
+                                        <div
+                                            class="transition-all duration-1000 group-hover:bg-white flex flex-row items-start p-[13px] gap-[10px] w-[50px] h-[50px] bg-[#fe5e4433]">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                fill="#FE5E44" class="bi bi-clock" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z" />
+                                                <path
+                                                    d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z" />
+                                            </svg>
+                                        </div>
+                                        <p class="font-header font-semibold text-lg text-black">Time Management</p>
                                     </div>
-                                    <p class="font-header font-semibold text-lg text-black">Aplikasi Gratis</p>
+                                    <p class="font-header font-normal text-base text-black text-center lg:text-left">
+                                        Selalu siap mengatur jadwal & waktu dengan baik, selalu memproitaskan hal"
+                                        terpenting dahulu.
+                                    </p>
                                 </div>
-                                <p class="font-header font-normal text-base text-black text-center lg:text-left">
-                                    Semua fitur di aplikasi ini adalah gratis, tapi data privasi kamu akan kami jual ke
-                                    agen khusus US.
-                                </p>
-                            </div>
+                            </a>
+
                         </div>
                     </div>
                 </div>
@@ -399,69 +403,51 @@
                     <!-- deskripsi -->
                     <div class="flex flex-col items-start  pt-8 lg:w-1/2">
                         <h1 class="font-main font-normal text-[38px] leading-[52px] text-[#0E144A] pl-8 pb-2">
-                            Memangnya ada fitur apa aja sih di aplikasi yang katanya keren ini? Jadi penasaran
+                            Memangnya punya keahlian apa? Jadi penasaran
                             nich~
                         </h1>
                         <p class="font-header font-normal text-lg text-[#0E144A] opacity-60 pt-3 pb-10 pl-8">
-                            Aplikasi sekeren ini akan membuat kamu tidak
-                            dapat memberi alasan apapun untuk bolos matkul
-                            dosen (HAHA MAMPUS!). Lagian
-                            lo kuliah tapi jarang masuk, titip absen doang!
+                            Keahlian saya ngga seberapa sih, karena baru mulai belajar juga tahun lalu. Daripada
+                            penasaran, mari kita check!
                         </p>
                         <!-- wraper -->
-                        <div class="flex flex-col items-center  gap-[30px] pb-6 lg:pl-8 lg:flex-row lg:items-start">
+                        <div class="flex flex-col items-center  gap-[30px]  pb-6 lg:pl-8 lg:flex-row lg:items-start">
                             <!-- box -->
                             <div
                                 class="flex flex-col items-center text-center lg:text-left lg:items-start gap-[10px] h-[8.813rem]">
                                 <!-- icon & deksripsi -->
-                                <svg width="35" height="36" viewBox="0 0 35 36" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <g clip-path="url(#clip0_248_476)">
-                                        <path
-                                            d="M7.29166 7.79171C5.01386 9.05118 3.22264 11.0362 2.20294 13.4309C1.18324 15.8257 0.993637 18.4927 1.66429 21.0076C2.33494 23.5226 3.82732 25.741 5.90403 27.3101C7.98075 28.8791 10.5225 29.7086 13.125 29.6667H26.25C27.0955 29.6657 27.9344 29.5177 28.7292 29.2292M32.9729 25.2188C33.4428 24.1094 33.6304 22.901 33.5191 21.7014C33.4078 20.5018 33.001 19.3484 32.3351 18.3445C31.6691 17.3405 30.7648 16.5172 29.7029 15.9481C28.6411 15.379 27.4547 15.0819 26.25 15.0834H24.4125C23.8172 12.7391 22.508 10.6378 20.6661 9.07016C18.8242 7.50257 16.5406 6.54619 14.1312 6.33337L32.9729 25.2188Z"
-                                            stroke="#FE5E44" stroke-width="2" stroke-linecap="round"
-                                            stroke-linejoin="round" />
-                                        <path d="M1.45834 1.95837L33.5417 34.0417" stroke="#FE5E44" stroke-width="2"
-                                            stroke-linecap="round" stroke-linejoin="round" />
-                                    </g>
-                                    <defs>
-                                        <clipPath id="clip0_248_476">
-                                            <rect width="35" height="35" fill="white" transform="translate(0 0.5)" />
-                                        </clipPath>
-                                    </defs>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" fill="none">
+                                    <path stroke="#FE5E44" stroke-width="2" stroke-linecap="round"
+                                        d="M41,5H7l3,34l14,4l14-4L41,5L41,5z" />
+                                    <path d="M24 8L24 39.9 35.2 36.7 37.7 8z" />
+                                    <path stroke="#FE5E44" stroke-width="2" stroke-linecap="round"
+                                        d="M24,25v-4h8.6l-0.7,11.5L24,35.1v-4.2l4.1-1.4l0.3-4.5H24z M32.9,17l0.3-4H24v4H32.9z" />
+                                    <path stroke="#FE5E44" stroke-width="2" stroke-linecap="round"
+                                        d="M24,30.9v4.2l-7.9-2.6L15.7,27h4l0.2,2.5L24,30.9z M19.1,17H24v-4h-9.1l0.7,12H24v-4h-4.6L19.1,17z" />
                                 </svg>
                                 <h1 class="font-main font-normal text-base text-[#0E144A] ">
-                                    Tidak Tersimpan Otomatis
+                                    HTML-5
                                 </h1>
                                 <p class="font-header font-normal text-base text-[#0E144A] opacity-60 px-8 lg:px-0">
-                                    Kalo lo pelupa ya udah dah, jadwal lo bakal gak kesimpen tuh.
+                                    Sebagai canvas dalam membangun sebuah website.
                                 </p>
                             </div>
                             <!-- box -->
                             <div
                                 class="flex flex-col items-center text-center lg:text-left lg:items-start gap-[10px] h-[8.813rem]">
                                 <!-- icon & deksripsi -->
-                                <svg width="35" height="36" viewBox="0 0 35 36" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <g clip-path="url(#clip0_248_476)">
-                                        <path
-                                            d="M7.29166 7.79171C5.01386 9.05118 3.22264 11.0362 2.20294 13.4309C1.18324 15.8257 0.993637 18.4927 1.66429 21.0076C2.33494 23.5226 3.82732 25.741 5.90403 27.3101C7.98075 28.8791 10.5225 29.7086 13.125 29.6667H26.25C27.0955 29.6657 27.9344 29.5177 28.7292 29.2292M32.9729 25.2188C33.4428 24.1094 33.6304 22.901 33.5191 21.7014C33.4078 20.5018 33.001 19.3484 32.3351 18.3445C31.6691 17.3405 30.7648 16.5172 29.7029 15.9481C28.6411 15.379 27.4547 15.0819 26.25 15.0834H24.4125C23.8172 12.7391 22.508 10.6378 20.6661 9.07016C18.8242 7.50257 16.5406 6.54619 14.1312 6.33337L32.9729 25.2188Z"
-                                            stroke="#FE5E44" stroke-width="2" stroke-linecap="round"
-                                            stroke-linejoin="round" />
-                                        <path d="M1.45834 1.95837L33.5417 34.0417" stroke="#FE5E44" stroke-width="2"
-                                            stroke-linecap="round" stroke-linejoin="round" />
-                                    </g>
-                                    <defs>
-                                        <clipPath id="clip0_248_476">
-                                            <rect width="35" height="35" fill="white" transform="translate(0 0.5)" />
-                                        </clipPath>
-                                    </defs>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" fill="none"
+                                    baseProfile="basic">
+                                    <path stroke="#FE5E44" stroke-width="2" stroke-linecap="round"
+                                        d="M6,42V6h36v36H6z" />
+                                    <path stroke="#FE5E44" stroke-width="2" stroke-linecap="round"
+                                        d="M29.538,32.947c0.692,1.124,1.444,2.201,3.037,2.201c1.338,0,2.04-0.665,2.04-1.585 c0-1.101-0.726-1.492-2.198-2.133l-0.807-0.344c-2.329-0.988-3.878-2.226-3.878-4.841c0-2.41,1.845-4.244,4.728-4.244 c2.053,0,3.528,0.711,4.592,2.573l-2.514,1.607c-0.553-0.988-1.151-1.377-2.078-1.377c-0.946,0-1.545,0.597-1.545,1.377 c0,0.964,0.6,1.354,1.985,1.951l0.807,0.344C36.452,29.645,38,30.839,38,33.523C38,36.415,35.716,38,32.65,38 c-2.999,0-4.702-1.505-5.65-3.368L29.538,32.947z M17.952,33.029c0.506,0.906,1.275,1.603,2.381,1.603 c1.058,0,1.667-0.418,1.667-2.043V22h3.333v11.101c0,3.367-1.953,4.899-4.805,4.899c-2.577,0-4.437-1.746-5.195-3.368 L17.952,33.029z" />
                                 </svg>
                                 <h1 class="font-main font-normal text-base text-[#0E144A]">
-                                    Tidak Tersimpan Otomatis
+                                    JAVASCRIPT
                                 </h1>
                                 <p class="font-header font-normal text-base text-[#0E144A] opacity-60 px-8 lg:px-0">
-                                    Kalo lo pelupa ya udah dah, jadwal lo bakal gak kesimpen tuh.
+                                    Scripting language, berfungsi untuk membuat website lebih dinamis & interaktif.
                                 </p>
                             </div>
                         </div>
@@ -471,58 +457,38 @@
                             <div
                                 class="flex flex-col items-center text-center lg:text-left lg:items-start gap-[10px] h-[8.813rem]">
                                 <!-- icon & deksripsi -->
-                                <svg width="35" height="36" viewBox="0 0 35 36" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <g clip-path="url(#clip0_248_476)">
-                                        <path
-                                            d="M7.29166 7.79171C5.01386 9.05118 3.22264 11.0362 2.20294 13.4309C1.18324 15.8257 0.993637 18.4927 1.66429 21.0076C2.33494 23.5226 3.82732 25.741 5.90403 27.3101C7.98075 28.8791 10.5225 29.7086 13.125 29.6667H26.25C27.0955 29.6657 27.9344 29.5177 28.7292 29.2292M32.9729 25.2188C33.4428 24.1094 33.6304 22.901 33.5191 21.7014C33.4078 20.5018 33.001 19.3484 32.3351 18.3445C31.6691 17.3405 30.7648 16.5172 29.7029 15.9481C28.6411 15.379 27.4547 15.0819 26.25 15.0834H24.4125C23.8172 12.7391 22.508 10.6378 20.6661 9.07016C18.8242 7.50257 16.5406 6.54619 14.1312 6.33337L32.9729 25.2188Z"
-                                            stroke="#FE5E44" stroke-width="2" stroke-linecap="round"
-                                            stroke-linejoin="round" />
-                                        <path d="M1.45834 1.95837L33.5417 34.0417" stroke="#FE5E44" stroke-width="2"
-                                            stroke-linecap="round" stroke-linejoin="round" />
-                                    </g>
-                                    <defs>
-                                        <clipPath id="clip0_248_476">
-                                            <rect width="35" height="35" fill="white" transform="translate(0 0.5)" />
-                                        </clipPath>
-                                    </defs>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" fill="none">
+                                    <path stroke="#FE5E44" stroke-width="2" stroke-linecap="round"
+                                        d="M41,5H7l3,34l14,4l14-4L41,5L41,5z" />
+                                    <path stroke="#FE5E44" stroke-width="2" stroke-linecap="round"
+                                        d="M24 8L24 39.9 35.2 36.7 37.7 8z" />
+                                    <path stroke="#FE5E44" stroke-width="2" stroke-linecap="round"
+                                        d="M33.1 13L24 13 24 17 28.9 17 28.6 21 24 21 24 25 28.4 25 28.1 29.5 24 30.9 24 35.1 31.9 32.5 32.6 21 32.6 21z" />
+                                    <path stroke="#FE5E44" stroke-width="2" stroke-linecap="round"
+                                        d="M24,13v4h-8.9l-0.3-4H24z M19.4,21l0.2,4H24v-4H19.4z M19.8,27h-4l0.3,5.5l7.9,2.6v-4.2l-4.1-1.4L19.8,27z" />
                                 </svg>
-                                <h1
-                                    class="font-main font-normal text-base
-                                                                                                            text-[#0E144A]">
-                                    Tidak Tersimpan Otomatis
+                                <h1 class="font-main font-normal text-base text-[#0E144A]">
+                                    CSS
                                 </h1>
                                 <p class="font-header font-normal text-base text-[#0E144A] opacity-60 px-8 lg:px-0">
-                                    Kalo lo pelupa ya udah dah, jadwal lo bakal gak kesimpen tuh.
+                                    Sebagai styling pada halaman suatu website.
                                 </p>
                             </div>
                             <!-- box -->
                             <div
                                 class="flex flex-col items-center text-center lg:text-left lg:items-start gap-[10px] h-[8.813rem]">
                                 <!-- icon & deksripsi -->
-                                <svg width="35" height="36" viewBox="0 0 35 36" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <g clip-path="url(#clip0_248_476)">
-                                        <path
-                                            d="M7.29166 7.79171C5.01386 9.05118 3.22264 11.0362 2.20294 13.4309C1.18324 15.8257 0.993637 18.4927 1.66429 21.0076C2.33494 23.5226 3.82732 25.741 5.90403 27.3101C7.98075 28.8791 10.5225 29.7086 13.125 29.6667H26.25C27.0955 29.6657 27.9344 29.5177 28.7292 29.2292M32.9729 25.2188C33.4428 24.1094 33.6304 22.901 33.5191 21.7014C33.4078 20.5018 33.001 19.3484 32.3351 18.3445C31.6691 17.3405 30.7648 16.5172 29.7029 15.9481C28.6411 15.379 27.4547 15.0819 26.25 15.0834H24.4125C23.8172 12.7391 22.508 10.6378 20.6661 9.07016C18.8242 7.50257 16.5406 6.54619 14.1312 6.33337L32.9729 25.2188Z"
-                                            stroke="#FE5E44" stroke-width="2" stroke-linecap="round"
-                                            stroke-linejoin="round" />
-                                        <path d="M1.45834 1.95837L33.5417 34.0417" stroke="#FE5E44" stroke-width="2"
-                                            stroke-linecap="round" stroke-linejoin="round" />
-                                    </g>
-                                    <defs>
-                                        <clipPath id="clip0_248_476">
-                                            <rect width="35" height="35" fill="white" transform="translate(0 0.5)" />
-                                        </clipPath>
-                                    </defs>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" fill="none">
+                                    <path stroke="#FE5E44" stroke-width="2" stroke-linecap="round"
+                                        d="M24,9.604c-6.4,0-10.4,3.199-12,9.597c2.4-3.199,5.2-4.398,8.4-3.599 c1.826,0.456,3.131,1.781,4.576,3.247C27.328,21.236,30.051,24,36,24c6.4,0,10.4-3.199,12-9.598c-2.4,3.199-5.2,4.399-8.4,3.6 c-1.825-0.456-3.13-1.781-4.575-3.247C32.672,12.367,29.948,9.604,24,9.604L24,9.604z M12,24c-6.4,0-10.4,3.199-12,9.598 c2.4-3.199,5.2-4.399,8.4-3.599c1.825,0.457,3.13,1.781,4.575,3.246c2.353,2.388,5.077,5.152,11.025,5.152 c6.4,0,10.4-3.199,12-9.598c-2.4,3.199-5.2,4.399-8.4,3.599c-1.826-0.456-3.131-1.781-4.576-3.246C20.672,26.764,17.949,24,12,24 L12,24z" />
                                 </svg>
-                                <h1
-                                    class="font-main font-normal text-base
-                                                                                                                                        text-[#0E144A]">
-                                    Tidak Tersimpan Otomatis
+                                <h1 class="font-main font-normal 
+                                text-base  text-[#0E144A]">
+                                    TAILWINDCSS
                                 </h1>
                                 <p class="font-header font-normal text-base text-[#0E144A] opacity-60 px-8 lg:px-0">
-                                    Kalo lo pelupa ya udah dah, jadwal lo bakal gak kesimpen tuh.
+                                    Sebuah framework CSS yang bertujuan mempermudah & membuat kode css jauh lebih
+                                    efisien.
                                 </p>
                             </div>
                         </div>
@@ -537,28 +503,27 @@
                 <div class="flex flex-col items-center py-[6.25rem]">
                     <h1
                         class="font-main font-normal text-[38px] leading-[52px] text-center text-[#0E144A] px-2 lg:px-60">
-                        Main catur sambil bersepeda,
-                        beda harga beda fitur
+                        Tentang Saya
                     </h1>
                     <p
                         class="font-header font-normal text-lg leading-8 text-center text-[#0E144A] px-6 opacity-60 pt-5 pb-[6.25rem] lg:px-56">
-                        Aplikasi ini gratis sebenernya,
-                        brodie. Tapi kalo mau bayar gapapa juga sih, untuk gantinya kami kasih fitur yang
-                        spesial buat kamu!
+                        Sedikit bioadata & informasi terkait diri saya.Mau baca silahkan, ngga mau juga silahkan!
                     </p>
                 </div>
                 <div class="flex justify-center items-center">
-                    <div class="lg:w-1/2">
-                        <div class="flex flex-col items-start pb-8 lg:items-center bg-white shadow-lg rounded-xl ">
+                    <div class=" w-10/12 lg:w-1/2">
+                        <div class="flex flex-col items-start pb-8 lg:items-center bg-white shadow-lg rounded-xl "
+                            id="card">
                             <figure>
-                                <img src="" alt="">
+                                <img src="./asset/profil/IMG_20220901_171009_870.jpg" alt="profil" class="rounded-t-xl">
                             </figure>
-                            <h1
-                                class="font-inter font-semibold text-sm tracking-widest text-[#FE5E44] pb-5 pl-8 lg:pl-0">
+                            <h1 class=" font-inter font-semibold text-sm tracking-widest text-[#FE5E44] pb-5 pl-8 pt-2
+                                    lg:pl-0">
                                 Manusia Nolep
                             </h1>
                             <h2 class="font-main font-normal text-4xl text-[#0C0E2B] pb-[5px] pl-8 lg:pl-0">Dimas
-                                Oktavian</h2>
+                                Oktavian
+                            </h2>
                             <p class="font-header font-normal text-lg text-[#0c0e2b99] pb-5 pr-8 pl-8
                              lg:px-12 lg:text-center">
                                 Seorang Nolepers yang binggung
@@ -568,9 +533,9 @@
                             <!-- List -->
                             <div class="flex flex-col pl-8 pb-8 lg:pl-0">
                                 <!-- wraper row lg for list -->
-                                <div class="lg:flex lg:flex-row">
-                                    <!-- centang -->
-                                    <div class="flex flex-row items-center gap-[15px] lg:pr-2 ">
+                                <div class="pb-1 lg:pb-2 lg:flex lg:flex-row">
+                                    <!-- centang-->
+                                    <div class="flex flex-row items-center gap-[15px] lg:pr-2 pb-1    ">
                                         <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
                                             xmlns="http://www.w3.org/2000/svg">
                                             <circle cx="10" cy="10" r="10" fill="#F1FEF8" />
@@ -578,10 +543,11 @@
                                                 stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                                         </svg>
                                         <p class="font-header font-normal text-lg text-[#0C0E2B]">
-                                            Jadwal Tak Terbatas
+                                            Waktu luang++
                                         </p>
                                     </div>
-                                    <div class="flex flex-row items-center gap-[15px] lg:pl-2">
+                                    <!-- centang -->
+                                    <div class="flex flex-row items-center gap-[15px] lg:pl-2 ">
                                         <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
                                             xmlns="http://www.w3.org/2000/svg">
                                             <circle cx="10" cy="10" r="10" fill="#F1FEF8" />
@@ -589,14 +555,15 @@
                                                 stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                                         </svg>
                                         <p class="font-header font-normal text-lg text-[#0C0E2B]">
-                                            Jadwal Tak Terbatas
+                                            Penasaran
                                         </p>
                                     </div>
                                 </div>
+
                                 <!-- wraper row lg for list -->
-                                <div class="lg:flex lg:flex-row">
+                                <div class="pt-1 lg:pt-2 lg:flex lg:flex-row">
                                     <!-- centang -->
-                                    <div class="flex flex-row items-center gap-[15px] lg:pr-2">
+                                    <div class="flex flex-row items-center gap-[15px] lg:pr-2  ">
                                         <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
                                             xmlns="http://www.w3.org/2000/svg">
                                             <circle cx="10" cy="10" r="10" fill="#F1FEF8" />
@@ -604,10 +571,10 @@
                                                 stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                                         </svg>
                                         <p class="font-header font-normal text-lg text-[#0C0E2B]">
-                                            Jadwal Tak Terbatas
+                                            Masalah oriented
                                         </p>
                                     </div>
-                                    <div class="flex flex-row items-center gap-[15px] lg:pl-2">
+                                    <div class="flex flex-row items-center gap-[15px] lg:pl-2 pt-1 ">
                                         <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
                                             xmlns="http://www.w3.org/2000/svg">
                                             <circle cx="10" cy="10" r="10" fill="#F1FEF8" />
@@ -615,41 +582,17 @@
                                                 stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                                         </svg>
                                         <p class="font-header font-normal text-lg text-[#0C0E2B]">
-                                            Jadwal Tak Terbatas
+                                            Ingin jadi FE
                                         </p>
                                     </div>
                                 </div>
-                                <!-- wraper row lg for list -->
-                                <div class="lg:flex lg:flex-row">
-                                    <!-- centang -->
-                                    <div class="flex flex-row items-center gap-[15px] lg:pr-2">
-                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <circle cx="10" cy="10" r="10" fill="#F1FEF8" />
-                                            <path d="M15.2001 7.19995L8.6001 13.6L5.6001 10.6909" stroke="#28F09D"
-                                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                                        </svg>
-                                        <p class="font-header font-normal text-lg text-[#0C0E2B]">
-                                            Jadwal Tak Terbatas
-                                        </p>
-                                    </div>
-                                    <div class="flex flex-row items-center gap-[15px] lg:pl-2">
-                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <circle cx="10" cy="10" r="10" fill="#F1FEF8" />
-                                            <path d="M15.2001 7.19995L8.6001 13.6L5.6001 10.6909" stroke="#28F09D"
-                                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                                        </svg>
-                                        <p class="font-header font-normal text-lg text-[#0C0E2B]">
-                                            Jadwal Tak Terbatas
-                                        </p>
-                                    </div>
-                                </div>
+
                             </div>
                             <div
                                 class="flex justify-self-center self-center lg:block lg:justify-self-auto lg:self-auto">
-                                <button class="flex flex-row justify-center items-center py-[15px] px-[50px] gap-[10px] bg-[#FE5E44] rounded-[5px] shadow-lg shadow-[#ff563a24] font-header font-semibold text-base text-white 
-                                            lg:w-80">
+                                <button
+                                    class="flex flex-row justify-center items-center py-[15px] px-[50px] gap-[10px] bg-[#FE5E44] rounded-[5px] shadow-lg shadow-[#ff563a24] font-header font-semibold text-base text-white lg:w-80"
+                                    id="closeBtn">
                                     Tutup
                                 </button>
                             </div>
@@ -669,13 +612,12 @@
         <!-- Portofolio -->
         <div class="flex flex-col items-center py-[6.25rem] bg-[#fe5e4414]">
             <!-- header deskripsi -->
-            <div class="flex flex-col items-start lg:w-[35.438rem]">
+            <div class="flex flex-col items-center lg:w-[35.438rem]">
                 <h1 class="font-main font-normal text-[38px] leading-[52px] text-center text-[#0E144A] pb-[20px]">
-                    Apa kata umat manusia tentang aplikasi keren ini?
+                    Project
                 </h1>
                 <p class="font-header text-lg text-center text-[#0E144A] opacity-60 px-6 lg:px-0">
-                    Kami tidak memfilter semua review, males soalnya. Jadi semua yang ditampilkan di sini semuanya asli
-                    tanpa reksadana.
+                    Daftar riwayat project pribadi yang pernah saya lakukan, maupun untuk pihak lain.
                 </p>
             </div>
             <!-- hasil project portofolio -->
