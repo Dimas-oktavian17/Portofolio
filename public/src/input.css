@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+/*  */
+* {
+  @apply scroll-smooth;
+}
 /* Setting container  */
 .bg-main {
   background: linear-gradient(180deg, rgba(255, 244, 242, 0.4) 0%, #fff0ee 100%)
@@ -22,3 +26,20 @@
   padding-top: 2rem !important;
   padding-bottom: 2rem !important;
 }
+
+/* @layer components {
+  #hamburger > div > p:nth-child(1) {
+    @apply rotate-45 origin-bottom-left bg-primary dark:bg-primary2hover;
+  }
+}
+@layer components {
+  #hamburger > div > p:nth-child(2) {
+    @apply scale-0;
+  }
+}
+/* this */
+/* @layer components {
+  #hamburger > div > p:nth-child(3) {
+    @apply -rotate-[45deg] origin-top-left w-[30px] bg-primary dark:bg-primary2hover;
+  }
+} */
