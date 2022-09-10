@@ -88,6 +88,7 @@ var swiper = new Swiper(".mySwiper", {
   },
 });
 
+console.error("test");
 // Hamburger active
 document
   .querySelector("[data-collapse-toggle]")
