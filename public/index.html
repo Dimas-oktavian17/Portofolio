@@ -72,30 +72,30 @@
                         class="flex-col md:flex-row flex md:items-center md:space-x-8 mt-4 md:mt-0 md:mr-8 md:text-sm  t-medium">
                         <li>
                             <a href="#beranda"
-                                class="transition-all text-[#FE5E44] hover:text-[#fe5d4478] font-header font-semibold text-base block pl-3 pr-4 py-2 rounded md:bg-transparent  md:p-0  dark:bg-slate-700 dark:text-slate-50 dark:hover:text-slate-100 lg:dark:bg-transparent "
+                                class="transition-all duration-500 text-[#FE5E44] hover:text-[#fe5d4478] font-header font-semibold text-base block pl-3 pr-4 py-2 rounded md:bg-transparent  md:p-0  dark:bg-slate-700 dark:text-slate-50 dark:hover:text-slate-100 lg:dark:bg-transparent "
                                 aria-current="page">Beranda</a>
                         </li>
                         <li>
                             <a href="#fitur"
-                                class="font-header transition-all text-black opacity-50 text-base font-normal hover:bg-gray-50 border-b border-gray-100 md:hover:bg-transparent md:border-0 block pl-3 pr-4 py-2 md:hover:text-[#FE5E44] md:p-0 dark:lg:hover:bg-transparent dark:hover:bg-slate-600 dark:text-primary2hover dark:hover:text-slate-50 dark:border-slate-600 ">
+                                class="font-header transition-all duration-500 text-black opacity-50 text-base font-normal hover:bg-gray-50 border-b border-gray-100 md:hover:bg-transparent md:border-0 block pl-3 pr-4 py-2 md:hover:text-[#FE5E44] md:p-0 dark:lg:hover:bg-transparent dark:hover:bg-slate-600 dark:text-primary2hover dark:hover:text-slate-50 dark:border-slate-600 ">
                                 Mengapa?
                             </a>
                         </li>
                         <li>
                             <a href="#teknologi"
-                                class="font-header transition-all text-black opacity-50 text-base font-normal hover:bg-gray-50 border-b border-gray-100 md:hover:bg-transparent md:border-0 block pl-3 pr-4 py-2 md:hover:text-[#FE5E44] md:p-0 dark:lg:hover:bg-transparent dark:hover:bg-slate-600 dark:text-primary2hover dark:hover:text-slate-50 dark:border-slate-600 ">
+                                class="font-header transition-all duration-500 text-black opacity-50 text-base font-normal hover:bg-gray-50 border-b border-gray-100 md:hover:bg-transparent md:border-0 block pl-3 pr-4 py-2 md:hover:text-[#FE5E44] md:p-0 dark:lg:hover:bg-transparent dark:hover:bg-slate-600 dark:text-primary2hover dark:hover:text-slate-50 dark:border-slate-600 ">
                                 Keahlian
                             </a>
                         </li>
                         <li>
                             <a href="#about"
-                                class="font-header transition-all text-black opacity-50 text-base font-normal hover:bg-gray-50 border-b border-gray-100 md:hover:bg-transparent md:border-0 block pl-3 pr-4 py-2 md:hover:text-[#FE5E44] md:p-0 dark:lg:hover:bg-transparent dark:hover:bg-slate-600 dark:text-primary2hover dark:hover:text-slate-50 dark:border-slate-600 ">
+                                class="font-header transition-all duration-500 text-black opacity-50 text-base font-normal hover:bg-gray-50 border-b border-gray-100 md:hover:bg-transparent md:border-0 block pl-3 pr-4 py-2 md:hover:text-[#FE5E44] md:p-0 dark:lg:hover:bg-transparent dark:hover:bg-slate-600 dark:text-primary2hover dark:hover:text-slate-50 dark:border-slate-600 ">
                                 About
                             </a>
                         </li>
                         <li>
                             <a href="#project"
-                                class="group transition-all font-header text-white text-base font-semibold bg-[#FE5E44] gap-[15px] py-[10px] px-[20px] rounded-[5px] h-[40px] shadow-md shadow-[#ff563a24] block">
+                                class="group transition-all duration-500 font-header text-white text-base font-semibold bg-[#FE5E44] gap-[15px] py-[10px] px-[20px] rounded-[5px] h-[40px] shadow-md shadow-[#ff563a24] block">
                                 Project
                                 <svg class="inline-block transition-all group-hover:ml-2" width="20" height="20"
                                     viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1223,17 +1223,37 @@
                         </h1>
                         <!-- List -->
                         <div class="flex flex-col items-start gap-[10px]">
-                            <div class="font-header font-semibold text-base text-[#0c1b4d99]">
-                                Beranda</div>
-                            <div class="font-header font-semibold text-base text-[#0c1b4d99]">
-                                Fitur-fitur</div>
-                            <div class="font-header font-semibold text-base text-[#0c1b4d99]">
-                                Harga</div>
-                            <div class="font-header font-semibold text-base text-[#0c1b4d99]">
-                                Testimoni</div>
-                            <div class="font-header font-semibold text-base text-[#0c1b4d99]">
-                                Donwload</div>
-
+                            <a href="#beranda" class="group">
+                                <div class="font-header font-semibold text-base 
+                                text-[#0c1b4d99] group-hover:text-[#0c1b4d49] transition-all
+                                duration-500">
+                                    Beranda
+                                </div>
+                            </a>
+                            <a href="#fitur" class="group">
+                                <div class="font-header font-semibold text-base text-[#0c1b4d99]
+                                    group-hover:text-[#0c1b4d49] transition-all duration-500">
+                                    Mengapa
+                                </div>
+                            </a>
+                            <a href="#teknologi" class="group">
+                                <div class="font-header font-semibold text-base text-[#0c1b4d99]
+                                group-hover:text-[#0c1b4d49] transition-all duration-500">
+                                    Keahlian
+                                </div>
+                            </a>
+                            <a href="#about" class="group">
+                                <div class="font-header font-semibold text-base text-[#0c1b4d99]
+                                group-hover:text-[#0c1b4d49] transition-all duration-500">
+                                    About
+                                </div>
+                            </a>
+                            <a href="#project" class="group">
+                                <div class="font-header font-semibold text-base text-[#0c1b4d99]
+                                group-hover:text-[#0c1b4d49] transition-all duration-500">
+                                    Project
+                                </div>
+                            </a>
                         </div>
                     </div>
                     <!-- Tiga -->
@@ -1251,7 +1271,7 @@
                             <!-- box -->
                             <a href="https://www.instagram.com/dimas_okr/" class="group">
                                 <div
-                                    class="flex flex-row justify-center items-center p-[10px] gap-[10px] rounded-[100px] bg-[#fe5e440d]  transition-all group-hover:bg-[#fe5d4423]">
+                                    class="flex flex-row justify-center items-center p-[10px] gap-[10px] rounded-[100px] bg-[#fe5e440d]  transition-all duration-500 group-hover:bg-[#fe5d4423]">
                                     <!-- icon -->
                                     <svg width="25" height="24" viewBox="0 0 25 24" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
@@ -1269,7 +1289,7 @@
                             <a href="https://github.com/Dimas-oktavian17" class="group">
                                 <!-- box -->
                                 <div
-                                    class="flex flex-row justify-center items-center p-[10px] gap-[10px] rounded-[100px] bg-[#fe5e440d] transition-all group-hover:bg-[#fe5d4423]">
+                                    class="flex flex-row justify-center items-center p-[10px] gap-[10px] rounded-[100px] bg-[#fe5e440d] transition-all duration-500 group-hover:bg-[#fe5d4423]">
                                     <!-- icon -->
                                     <img src="./asset/icon/github.svg" alt="icon">
                                 </div>
@@ -1277,12 +1297,11 @@
                             <a href="https://www.facebook.com/dimas.oktavian.5055/" class="group">
                                 <!-- box -->
                                 <div
-                                    class="flex flex-row justify-center items-center p-[10px] gap-[10px] rounded-[100px] bg-[#fe5e440d] transition-all group-hover:bg-[#fe5d4423]">
+                                    class="flex flex-row justify-center items-center p-[10px] gap-[10px] rounded-[100px] bg-[#fe5e440d] transition-all duration-500 group-hover:bg-[#fe5d4423]">
                                     <!-- icon -->
                                     <img src="./asset/icon/facebook (2).svg" alt="icon">
                                 </div>
                             </a>
-
                         </div>
                     </div>
 
