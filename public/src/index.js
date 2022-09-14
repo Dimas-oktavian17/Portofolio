@@ -108,6 +108,7 @@ const form = document.forms["submit-to-google-sheet"];
 const btnKirim = document.querySelector(".btn-kirim");
 const btnLoading = document.getElementById("btn-loading");
 const myAlert = document.getElementById("alert-3");
+const alertClose = document.querySelector('[aria-label="Close"]');
 
 form.addEventListener("submit", (e) => {
   // if btn-submit di click
@@ -123,7 +124,12 @@ form.addEventListener("submit", (e) => {
       console.log("Success!", response);
       // tampilkan alert
       myAlert.classList.toggle("hidden");
+      // close alert
+      alertClose.addEventListener("click", () => {
+        myAlert.classList.toggle("hidden");
+      });
       // reset form'nya
+
       form.reset();
     })
     .catch((error) => console.error("Error!", error.message));
