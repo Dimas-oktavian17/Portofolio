@@ -100,3 +100,31 @@ document.getElementById("mobile-menu-3").addEventListener("click", () => {
   document.getElementById("mobile-menu-3").classList.toggle("hidden");
   document.querySelector("[data-collapse-toggle").classList.toggle("active");
 });
+
+// Contact form
+const scriptURL =
+  "https://script.google.com/macros/s/AKfycbxMG5sEz9hel9z8UzDQwKm46OU-Ej19o-6-BJ0RjVXHuf2hOQz_WfcmaJoaDh9BYKGi/exec";
+const form = document.forms["submit-to-google-sheet"];
+const btnKirim = document.querySelector(".btn-kirim");
+const btnLoading = document.getElementById("btn-loading");
+const myAlert = document.getElementById("alert-3");
+
+form.addEventListener("submit", (e) => {
+  // if btn-submit di click
+  // tampilkan btn-loading, remove btn-submit
+  btnLoading.classList.toggle("hidden");
+  btnKirim.classList.toggle("hidden");
+  e.preventDefault();
+  fetch(scriptURL, { method: "POST", body: new FormData(form) })
+    .then((response) => {
+      // tampilkan btn-submit, remove btn-loading
+      btnLoading.classList.toggle("hidden");
+      btnKirim.classList.toggle("hidden");
+      console.log("Success!", response);
+      // tampilkan alert
+      myAlert.classList.toggle("hidden");
+      // reset form'nya
+      form.reset();
+    })
+    .catch((error) => console.error("Error!", error.message));
+});
