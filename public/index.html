@@ -5,7 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Zeitplan – Landing Page UI Design (Community)</title>
+    <title>The Zeitplan – Personal Portofolio</title>
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./asset/icon/image 3.svg" type="image/x-icon">
     <!-- Font family (patua one,poppins,source-code-pro) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -33,8 +35,9 @@
         <nav class="border-gray-200 px-2 mb-10 font-header " id="nav">
             <div class="fixed max-w-5xl mx-auto py-8  z-[999] w-[95%]  flex flex-wrap  justify-between
                  rounded-xl lg:w-[98%] ">
-                <a href="#beranda" class="flex">
-                    <img src="./asset/icon/image 3.svg" alt="logo" class="pl-4">
+                <a href="#beranda" class="flex transition-all group">
+                    <img src="./asset/icon/image 3.svg" alt="logo"
+                        class="transition-all group-hover:rotate-[30deg] pl-4">
                     <span class="self-center font-poppins font-semibold text-lg tracking-wider text-black pl-4">
                         ZEITPLAN
                     </span>
@@ -42,7 +45,7 @@
                 <div class="flex  md:order-2">
                     <button data-collapse-toggle="mobile-menu-3" type="button"
                         class="md:hidden group text-gray-400 hover:text-gray-900 rounded-lg inline-flex items-center justify-center"
-                        aria-controls="mobile-menu-3" aria-expanded="false" id="hamburger">
+                        aria-controls="mobile-menu-3" aria-expanded="false">
                         <span class="sr-only">Open main menu</span>
                         <div class="flex flex-col items-end ">
                             <p class="bg-black transition duration-300 ease-in-out w-[30px] h-[5px] rounded-lg ">
@@ -115,7 +118,7 @@
     <main class="pt-16 ">
         <!-- Home -->
         <div class="container">
-            <div class="pb-16 bg-main lg:flex lg:flex-row">
+            <div class="pb-16 lg:flex lg:flex-row">
                 <!-- deksripsi -->
                 <div class="flex flex-col items-start  w-full lg:pl-0 lg:w-1/2">
                     <div class="pl-8">
@@ -173,7 +176,7 @@
                                 </div>
                             </div>
                             <!-- deskripsi -->
-                            <p class="font-poppins font-normal text-base text-[#0E144A]" id="text">
+                            <p class="font-poppins font-normal text-base text-[#0E144A]" aria-label="text-testimoni">
                                 “Aplikasi sialan, ini gw jadi kagak bisa alesan lagi buat bolos kelas Pak Sanusi
                                 yang galak itu! Tapi aku sekarang jadi
                                 rajin kuliah, terima kasih garena!”
@@ -192,8 +195,9 @@
                                         </p>
                                     </div>
                                 </div>
+                                <!-- button section -->
                                 <div class="flex flex-row items-start gap-[10px] lg:h-[2.188rem] lg:w-20">
-                                    <button
+                                    <button name="back"
                                         class="group hover:bg-red-400 transition-all w-9 h-9 rounded-[50%] bg-[#FE5E44] flex justify-center items-center btn">
                                         <svg class=" group-hover:fill-slate-300" width="9" height="15"
                                             viewBox="0 0 9 15" fill="white" xmlns="http://www.w3.org/2000/svg">
@@ -202,7 +206,7 @@
                                         </svg>
 
                                     </button>
-                                    <button
+                                    <button name="next"
                                         class="group hover:bg-red-400 transition-all w-9 h-9 rounded-[50%] bg-[#FE5E44] flex justify-center items-center btn-2">
                                         <svg class=" group-hover:fill-slate-300" width="9" height="15"
                                             viewBox="0 0 9 15" fill="white" xmlns="http://www.w3.org/2000/svg">
@@ -801,7 +805,7 @@
                         <div class="flex flex-col items-start pb-8 lg:items-center bg-white shadow-lg rounded-xl w-11/12  md:w-[31%] lg:w-[32%] swiper-slide
                                     transition-all duration-500" id="card" data-aos="fade-up">
                             <figure>
-                                <img src="./asset/project/desktop-design.jpg" alt="project"
+                                <img src="./asset/project/product-card.jpg" alt="project"
                                     class="rounded-t-xl block object-cover w-full h-full transition-all duration-500  hover:scale-95 hover:cursor-pointer">
                             </figure>
                             <h1
@@ -1122,6 +1126,63 @@
                                 </div>
                             </div>
                         </div>
+                        <!-- card -->
+                        <div class="flex flex-col items-start pb-8 lg:items-center bg-white shadow-lg rounded-xl w-11/12  md:w-[31%] lg:w-[32%] swiper-slide
+                                    transition-all duration-500" id="card" data-aos="fade-up">
+                            <figure>
+                                <img src="./asset/project/shortLink.png" alt="project"
+                                    class="rounded-t-xl block object-cover w-full h-full transition-all duration-500  hover:scale-95 hover:cursor-pointer">
+                            </figure>
+                            <h1
+                                class=" font-inter font-semibold text-sm tracking-widest text-[#FE5E44] pb-5 pl-8 pt-2 lg:pl-0">
+                                PROJECT
+                            </h1>
+                            <h2 class="font-main font-normal text-4xl text-[#0C0E2B] lg:text-center pb-8 pl-8 lg:pl-0">
+                                Shortly URL
+                            </h2>
+                            <!-- List -->
+                            <div class="flex flex-col pl-8 pb-8 lg:pl-0">
+                                <!-- wraper row lg for list -->
+                                <div class="pb-1 lg:pb-2 lg:flex lg:flex-row">
+                                    <!-- centang-->
+                                    <a href="https://github.com/Dimas-oktavian17/url-shortening-api-master.git"
+                                        target="_blank" class="group transition-all">
+                                        <div class="flex flex-row items-center gap-[15px] pb-2 lg:pb-0 lg:pr-2 ">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                fill="#FE5E44"
+                                                class="bi bi-github transition-all group-hover:rotate-45 "
+                                                viewBox="0 0 16 16">
+                                                <path
+                                                    d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
+                                            </svg>
+                                            <p class="font-header font-normal text-lg text-[#0C0E2B]">
+                                                Repository
+                                            </p>
+
+                                        </div>
+                                    </a>
+                                    <!-- centang -->
+                                    <a href="https://url-shortening-api-master-vite-project.vercel.app/"
+                                        class="group transition-all">
+                                        <div class="flex flex-row items-center gap-[15px] pt-2 lg:pt-0 lg:pl-2 ">
+                                            <?xml version="1.0" ?><svg
+                                                class=" transition-all group-hover:rotate-[30deg]" width="24"
+                                                height="24" id="Layer_1_1_" fill="#FE5E44"
+                                                style="enable-background:new 0 0 16 16;" version="1.1"
+                                                viewBox="0 0 16 16" xml:space="preserve"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                <path
+                                                    d="M11,0C8.243,0,6,2.243,6,5c0,1.198,0.441,2.284,1.146,3.147l-7,7l0.707,0.707l7-7C8.716,9.559,9.802,10,11,10  c2.757,0,5-2.243,5-5S13.757,0,11,0z M11,9C8.791,9,7,7.209,7,5c0-2.209,1.791-4,4-4s4,1.791,4,4C15,7.209,13.209,9,11,9z" />
+                                            </svg>
+                                            <p class="font-header font-normal text-lg text-[#0C0E2B]">
+                                                Preview
+                                            </p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <div class="swiper-pagination text-[#FE5E4433] opacity-20"></div>
                 </div>
@@ -1177,7 +1238,7 @@
 
                         <!-- end alert triger -->
                         <form name="submit-to-google-sheet" class="space-y-6" action="#">
-                            <h5 class="font-main text-xl font-medium text-gray-900 dark:text-white">Send message</h5>
+                            <h1 class="font-main text-xl font-medium text-gray-900 dark:text-white">Send message</h1>
                             <div>
                                 <label for="text
                                     class=" font-header block mb-2 text-sm font-medium text-gray-900
@@ -1247,18 +1308,13 @@
                         <div class="flex flex-row items-center gap-[10px]">
                             <h2 class="font-header font-normal text-base text-[#0E144A] opacity-60 pb-[6.5rem]">
                                 Sebuah
-                                aplikasi yang
-                                membantu kamu untuk membuat jadwal
-                                kuliah, jadwal mabar, jadwal makan,
-                                jadwal liga
-                                inggris,
-                                dan
-                                jadwal-jadwal lainnya. Walaupun
-                                banyak error, setidaknya kami sudah
-                                berusaha semaksimal
-                                mungkin.</h2>
-
+                                website portofolio sedherhana yang di buat dengan HTML,TailwindCss,& sedikit Javascript.
+                            </h2>
                         </div>
+                        <p
+                            class="font-header font-semibold text-sm tetx-[#0E144A] opacity-60 md:pb-[18px] tracking-wider">
+                            COPYRIGHT (C) 2022. CREATE BY DIMAS_OKR
+                        </p>
                         <p class="font-header font-semibold text-sm tetx-[#0E144A] opacity-60 pb-[18px] tracking-wider">
                             COPYRIGHT (C) 2021. DESIGN BY NAUVAL
                         </p>
@@ -1316,7 +1372,8 @@
                         <!-- wrapper -->
                         <div class="flex flex-row justify-center items-center gap-[10px]">
                             <!-- box -->
-                            <a href="https://www.instagram.com/dimas_okr/" class="group">
+                            <a aria-label="visited my instagram" href="https://www.instagram.com/dimas_okr/"
+                                class="group">
                                 <div
                                     class="flex flex-row justify-center items-center p-[10px] gap-[10px] rounded-[100px] bg-[#fe5e440d]  transition-all duration-500 group-hover:bg-[#fe5d4423]">
                                     <!-- icon -->
@@ -1333,7 +1390,7 @@
                                     </svg>
                                 </div>
                             </a>
-                            <a href="https://github.com/Dimas-oktavian17" class="group">
+                            <a aria-label="visited my github" href="https://github.com/Dimas-oktavian17" class="group">
                                 <!-- box -->
                                 <div
                                     class="flex flex-row justify-center items-center p-[10px] gap-[10px] rounded-[100px] bg-[#fe5e440d] transition-all duration-500 group-hover:bg-[#fe5d4423]">
@@ -1341,7 +1398,8 @@
                                     <img src="./asset/icon/github.svg" alt="icon">
                                 </div>
                             </a>
-                            <a href="https://www.facebook.com/dimas.oktavian.5055/" class="group">
+                            <a aria-label="visited my facebook" href="https://www.facebook.com/dimas.oktavian.5055/"
+                                class="group">
                                 <!-- box -->
                                 <div
                                     class="flex flex-row justify-center items-center p-[10px] gap-[10px] rounded-[100px] bg-[#fe5e440d] transition-all duration-500 group-hover:bg-[#fe5d4423]">

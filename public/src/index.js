@@ -3,11 +3,13 @@ let starOne = document.querySelector(".starSatu");
 let starTwo = document.querySelector(".starDua");
 let starThree = document.querySelector(".starTiga");
 let starFour = document.querySelector(".starEmpat");
-let text = document.querySelector("#text");
-let isi =
+let deskripsiTestimoni = document.querySelector(
+  '[aria-label="text-testimoni"]'
+);
+let isiTestimoni =
   "“Aplikasi sialan, ini gw jadi kagak bisa alesan lagi buat bolos kelas Pak Sanusi yang galak itu! Tapi aku sekarang jadi rajin kuliah, terima kasih garena!”";
 document.querySelector(".btn").addEventListener("click", () => {
-  text.textContent = isi;
+  deskripsiTestimoni.textContent = isiTestimoni;
   starOne.classList.remove("bg-[#FFC93F]");
   starTwo.classList.remove("bg-[#FFC93F]");
   starThree.classList.remove("bg-[#FFC93F]");
@@ -18,9 +20,8 @@ document.querySelector(".btn").addEventListener("click", () => {
   starFour.classList.add("bg-gray-300");
 });
 document.querySelector(".btn-2").addEventListener("click", () => {
-  text.textContent =
+  deskripsiTestimoni.textContent =
     "“Sebenernya ngga jago-jago amat sih cuma bisa basic-basic, masalah skill tinggal belajar nanti.”";
-
   starOne.classList.remove("bg-gray-300");
   starTwo.classList.remove("bg-gray-300");
   starThree.classList.remove("bg-gray-300");
