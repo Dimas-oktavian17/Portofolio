@@ -29,22 +29,19 @@
     <link rel="stylesheet" href="./src/dist/aos.css">
 </head>
 
-<body class=" box-border bg-main overflow-x-hidden" id="beranda">
+<body class="box-border overflow-x-hidden bg-main" id="beranda">
     <!-- header section -->
     <header class="container ">
-        <nav class="border-gray-200 px-2 mb-10 font-header " id="nav">
+        <nav class="px-2 mb-10 border-gray-200 font-header " id="nav">
             <div class="fixed max-w-5xl mx-auto py-8  z-[999] w-[95%]  flex flex-wrap  justify-between
                  rounded-xl lg:w-[98%] ">
                 <a href="#beranda" class="flex transition-all group">
                     <img src="./asset/icon/image 3.svg" alt="logo"
                         class="transition-all group-hover:rotate-[30deg] pl-4">
-                    <span class="self-center font-poppins font-semibold text-lg tracking-wider text-black pl-4">
-                        ZEITPLAN
-                    </span>
                 </a>
-                <div class="flex  md:order-2">
+                <div class="flex md:order-2">
                     <button data-collapse-toggle="mobile-menu-3" type="button"
-                        class="md:hidden group text-gray-400 hover:text-gray-900 rounded-lg inline-flex items-center justify-center"
+                        class="inline-flex items-center justify-center text-gray-400 rounded-lg md:hidden group hover:text-gray-900"
                         aria-controls="mobile-menu-3" aria-expanded="false">
                         <span class="sr-only">Open main menu</span>
                         <div class="flex flex-col items-end ">
@@ -55,7 +52,7 @@
                             <p class="bg-black transition duration-300 ease-in-out w-[30px] h-[5px] rounded-lg ">
                             </p>
                         </div>
-                        <svg class="w-6 h-6 hidden" id="hamburger" fill="currentColor" viewBox="0 0 20 20"
+                        <svg class="hidden w-6 h-6" id="hamburger" fill="currentColor" viewBox="0 0 20 20"
                             xmlns="http://www.w3.org/2000/svg">
                             <path fill-rule="evenodd"
                                 d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
@@ -69,10 +66,10 @@
                         </svg>
                     </button>
                 </div>
-                <div class="hidden backdrop-blur-md md:backdrop-blur-0 md:flex justify-between md:justify-end items-center w-full md:w-auto md:order-3"
+                <div class="items-center justify-between hidden w-full backdrop-blur-md md:backdrop-blur-0 md:flex md:justify-end md:w-auto md:order-3"
                     id="mobile-menu-3">
                     <ul
-                        class="flex-col md:flex-row flex md:items-center md:space-x-8 mt-4 md:mt-0 md:mr-8 md:text-sm  t-medium">
+                        class="flex flex-col mt-4 md:flex-row md:items-center md:space-x-8 md:mt-0 md:mr-8 md:text-sm t-medium">
                         <li>
                             <a href="#beranda"
                                 class="transition-all duration-500 text-[#FE5E44] hover:text-[#fe5d4478] font-header font-semibold text-base block pl-3 pr-4 py-2 rounded md:bg-transparent  md:p-0  dark:bg-slate-700 dark:text-slate-50 dark:hover:text-slate-100 lg:dark:bg-transparent "
@@ -88,12 +85,6 @@
                             <a href="#teknologi"
                                 class="font-header transition-all duration-500 text-black opacity-50 text-base font-normal hover:bg-gray-50 border-b border-gray-100 md:hover:bg-transparent md:border-0 block pl-3 pr-4 py-2 md:hover:text-[#FE5E44] md:p-0 dark:lg:hover:bg-transparent dark:hover:bg-slate-600 dark:text-primary2hover dark:hover:text-slate-50 dark:border-slate-600 ">
                                 Keahlian
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#about"
-                                class="font-header transition-all duration-500 text-black opacity-50 text-base font-normal hover:bg-gray-50 border-b border-gray-100 md:hover:bg-transparent md:border-0 block pl-3 pr-4 py-2 md:hover:text-[#FE5E44] md:p-0 dark:lg:hover:bg-transparent dark:hover:bg-slate-600 dark:text-primary2hover dark:hover:text-slate-50 dark:border-slate-600 ">
-                                About
                             </a>
                         </li>
                         <li>
@@ -120,26 +111,26 @@
         <div class="container">
             <div class="pb-16 lg:flex lg:flex-row">
                 <!-- deksripsi -->
-                <div class="flex flex-col items-start  w-full lg:pl-0 lg:w-1/2">
+                <div class="flex flex-col items-start w-full lg:pl-0 lg:w-1/2">
                     <div class="pl-8">
                         <h1 class="font-main font-normal text-5xl leading-[60px] text-[#0E144A] lg:pr-4">
                             Sebuah personal web portofolio
                         </h1>
                         <h2 class="font-header font-normal text-lg text-[#6F6F6F] pb-10 pt-4 lg:pr-5">
-                            Belajar programming karena diri nolep itu tidak masalah;
-                            belajar programming karena prospek karir itu sangatlah tidak keren brodie~.
+                            Saya seorang pemuda yang memiliki passion khususnya dibidang front end development, dan saya
+                            tetap belajar untuk mengikuti perkembangan teknologi
                         </h2>
                         <div class="flex flex-row items-start gap-[15px] pb-20">
-                            <a href="#fitur" class="group transition-all">
+                            <a href="#fitur" class="transition-all group">
                                 <button
                                     class="flex flex-row justify-center items-center py-[15px] px-[25px]  lg:px-[50px] gap-[10px] bg-[#FE5E44] shadow-lg  rounded-[5px]
                                             group-hover:shadow-md group-hover:bg-[#fe5d44ac] transition-all duration-500">
-                                    <p class="font-header font-semibold text-base leading-5 text-white">
+                                    <p class="text-base font-semibold leading-5 text-white font-header">
                                         Mengapa?
                                     </p>
                                 </button>
                             </a>
-                            <a href="#project" class="group transition-all">
+                            <a href="#project" class="transition-all group">
                                 <button
                                     class="flex flex-row justify-center items-center py-[15px] px-[25px] lg:px-[50px] gap-[10px] 
                                              bg-[#fe5e441a] border border-solid border-[#fe5e4433] group-hover:bg-[#fe5d447d] group-hover:shadow-lg transition-all duration-500">
@@ -151,72 +142,6 @@
                                 </button>
                             </a>
 
-                        </div>
-                    </div>
-                    <!-- testimoni -->
-                    <div class="flex flex-col self-center pt-20 w-72 lg:self-start lg:w-[31.313rem] lg:h-[15.813rem]">
-                        <div class="flex flex-col items-start p-[1.875rem] gap-5 bg-white rounded-md 
-                        shadow-[#fe5e441a] shadow-lg">
-                            <!-- star -->
-                            <div class="flex flex-row items-start gap-[5px] w-[7.5rem] h-5">
-                                <div class="flex flex-row justify-center items-center w-5 h-5 bg-[#FFC93F]">
-                                    <img src="./asset/icon/Vector.svg" alt="star">
-                                </div>
-                                <div class="flex flex-row justify-center items-center w-5 h-5 bg-gray-300 starSatu">
-                                    <img src="./asset/icon/Vector.svg" alt="star">
-                                </div>
-                                <div class="flex flex-row justify-center items-center w-5 h-5 bg-gray-300 starDua">
-                                    <img src="./asset/icon/Vector.svg" alt="star">
-                                </div>
-                                <div class="flex flex-row justify-center items-center w-5 h-5 bg-gray-300 starTiga">
-                                    <img src="./asset/icon/Vector.svg" alt="star">
-                                </div>
-                                <div class="flex flex-row justify-center items-center w-5 h-5 bg-gray-300 starEmpat">
-                                    <img src="./asset/icon/Vector.svg" alt="star">
-                                </div>
-                            </div>
-                            <!-- deskripsi -->
-                            <p class="font-poppins font-normal text-base text-[#0E144A]" aria-label="text-testimoni">
-                                “Aplikasi sialan, ini gw jadi kagak bisa alesan lagi buat bolos kelas Pak Sanusi
-                                yang galak itu! Tapi aku sekarang jadi
-                                rajin kuliah, terima kasih garena!”
-                            </p>
-                            <!-- footer -->
-                            <div class="flex flex-col justify-between items-center gap-[10px]  lg:h-[3.438rem] lg:w-[25.563rem]
-                                        lg:flex-row lg:justify-between lg:items-center">
-                                <div class="flex flex-row items-center gap-5 lg:h-[3.438rem] lg:w-[17.875rem]">
-                                    <img src="./asset/profil/unsplash_SE4Xc1WvIkU.svg" alt="profil">
-                                    <div class="flex flex-col items-start gap-1 lg:w-[13.188rem] lg:h-[2.875rem]">
-                                        <h1 class="font-poppins font-medium text-base text-black">
-                                            P-Star 7
-                                        </h1>
-                                        <p class="font-poppins font-medium text-[12px] text-[#0E144A] opacity-60">
-                                            Mahasiswa Boating School Ny. Puff
-                                        </p>
-                                    </div>
-                                </div>
-                                <!-- button section -->
-                                <div class="flex flex-row items-start gap-[10px] lg:h-[2.188rem] lg:w-20">
-                                    <button name="back"
-                                        class="group hover:bg-red-400 transition-all w-9 h-9 rounded-[50%] bg-[#FE5E44] flex justify-center items-center btn">
-                                        <svg class=" group-hover:fill-slate-300" width="9" height="15"
-                                            viewBox="0 0 9 15" fill="white" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M7.41667 13.3333L1.58334 7.49996L7.41667 1.66663" stroke="#FE5E44"
-                                                stroke-width="0" stroke-linecap="round" stroke-linejoin="round" />
-                                        </svg>
-
-                                    </button>
-                                    <button name="next"
-                                        class="group hover:bg-red-400 transition-all w-9 h-9 rounded-[50%] bg-[#FE5E44] flex justify-center items-center btn-2">
-                                        <svg class=" group-hover:fill-slate-300" width="9" height="15"
-                                            viewBox="0 0 9 15" fill="white" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M1.58331 13.3333L7.41665 7.49996L1.58331 1.66663" stroke="#FE5E44"
-                                                stroke-width="0" stroke-linecap="round" stroke-linejoin="round" />
-                                        </svg>
-
-                                    </button>
-                                </div>
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -239,9 +164,8 @@
                             Kenapa Kamu Sangat Harus Mempekerjakan Saya?
                         </h1>
                         <p class="font-header font-normal text-lg text-[#0E144A] opacity-60 pt-3 pb-10">
-                            Sejujurnya kemampuan saya masih cupu sih. Kadang-kadang malas belajar,
-                            kadang
-                            rajin, untung masih hidup.
+                            Saya telah mendalami bidang Front-End web development sejak kelas 2 SMK, dan saya memiliki
+                            gairah yang tinggi untuk bekerja dibidang teknologi.
                         </p>
                         <!-- donwlod quantity -->
                         <div class="flex flex-row items-start gap-[42px] h-[52px] pb-10">
@@ -269,7 +193,7 @@
                         <!-- wraper -->
                         <div class="flex flex-col items-start gap-[30px]  lg:pb-0 lg:flex-row lg:w-[40%]">
                             <!-- box -->
-                            <a href="#" class="group transition-all duration-1000">
+                            <a href="#" class="transition-all duration-1000 group">
                                 <div
                                     class="transition-all duration-1000 group-hover:bg-[#fe5e4433] flex flex-col items-center p-10 mx-5  gap-[25px] bg-[#fe5e440d] rounded-lg  lg:rounded-none lg:mx-0 lg:items-start">
                                     <!-- icon & title -->
@@ -285,16 +209,16 @@
                                                     d="M386.539 111.485l15.096 248.955-10.979-.275c-36.232-.824-71.64 8.783-102.657 27.997-31.016-19.214-66.424-27.997-102.657-27.997-45.564 0-82.07 10.705-123.516 27.723L93.117 129.6c28.546-11.803 61.484-18.115 92.226-18.115 41.173 0 73.836 13.175 102.657 42.544 27.723-28.271 59.013-41.721 98.539-42.544zM569.07 448c-25.526 0-47.485-5.215-70.542-15.645-34.31-15.645-69.993-24.978-107.871-24.978-38.977 0-74.934 12.901-102.657 40.623-27.723-27.723-63.68-40.623-102.657-40.623-37.878 0-73.561 9.333-107.871 24.978C55.239 442.236 32.731 448 8.303 448H6.93L49.475 98.859C88.726 76.626 136.486 64 181.775 64 218.83 64 256.984 71.685 288 93.095 319.016 71.685 357.17 64 394.225 64c45.289 0 93.049 12.626 132.3 34.859L569.07 448zm-43.368-44.741l-34.036-280.246c-30.742-13.999-67.248-21.41-101.009-21.41-38.428 0-74.385 12.077-102.657 38.702-28.272-26.625-64.228-38.702-102.657-38.702-33.761 0-70.267 7.411-101.009 21.41L50.298 403.259c47.211-19.487 82.894-33.486 135.045-33.486 37.604 0 70.817 9.606 102.657 29.644 31.84-20.038 65.052-29.644 102.657-29.644 52.151 0 87.834 13.999 135.045 33.486z" />
                                             </svg>
                                         </div>
-                                        <p class="font-header font-semibold text-lg text-black">Self Learner</p>
+                                        <p class="text-lg font-semibold text-black font-header">Self Learner</p>
                                     </div>
-                                    <p class="font-header font-normal text-base text-black text-center lg:text-left">
+                                    <p class="text-base font-normal text-center text-black font-header lg:text-left">
                                         Selalu siap belajar secara mandiri, untuk terus mengikuti perkembangan
                                         teknologi-teknologi terbaru.
                                     </p>
                                 </div>
                             </a>
                             <!-- box -->
-                            <a href="#" class="group transition-all duration-1000">
+                            <a href="#" class="transition-all duration-1000 group">
                                 <div
                                     class="transition-all duration-1000 group-hover:bg-[#fe5e4433] flex flex-col items-center p-10 mx-5  gap-[25px] bg-[#fe5e440d] rounded-lg lg:rounded-none lg:mx-0 lg:items-start">
                                     <!-- icon & title -->
@@ -321,9 +245,9 @@
                                                 </g>
                                             </svg>
                                         </div>
-                                        <p class="font-header font-semibold text-lg text-black">Problem Solver</p>
+                                        <p class="text-lg font-semibold text-black font-header">Problem Solver</p>
                                     </div>
-                                    <p class="font-header font-normal text-base text-black text-center lg:text-left">
+                                    <p class="text-base font-normal text-center text-black font-header lg:text-left">
                                         Selalu siap memecahkan masalah, baik dengan bantuan google maupun dengan
                                         kemampuan
                                         sendiri.
@@ -335,7 +259,7 @@
                         <!-- wraper -->
                         <div class="flex flex-col items-start gap-[30px]  lg:pb-0 lg:flex-row lg:w-[40%]">
                             <!-- box -->
-                            <a href="" class="group transition-all duration-1000">
+                            <a href="" class="transition-all duration-1000 group">
                                 <div
                                     class="transition-all duration-1000 group-hover:bg-[#fe5e4433] flex flex-col items-center p-10 mx-5  gap-[25px] bg-[#fe5e440d] rounded-lg lg:rounded-none lg:mx-0 lg:items-start">
                                     <!-- icon & title -->
@@ -350,15 +274,15 @@
                                                     d="M5.52.359A.5.5 0 0 1 6 0h4a.5.5 0 0 1 .474.658L8.694 6H12.5a.5.5 0 0 1 .395.807l-7 9a.5.5 0 0 1-.873-.454L6.823 9.5H3.5a.5.5 0 0 1-.48-.641l2.5-8.5zM6.374 1 4.168 8.5H7.5a.5.5 0 0 1 .478.647L6.78 13.04 11.478 7H8a.5.5 0 0 1-.474-.658L9.306 1H6.374z" />
                                             </svg>
                                         </div>
-                                        <p class="font-header font-semibold text-lg text-black">Responsive</p>
+                                        <p class="text-lg font-semibold text-black font-header">Responsive</p>
                                     </div>
-                                    <p class="font-header font-normal text-base text-black text-center lg:text-left">
+                                    <p class="text-base font-normal text-center text-black font-header lg:text-left">
                                         Selalu siap & tanggap, apabila ada hal" penting dalam kerja tim maupun individu.
                                     </p>
                                 </div>
                             </a>
                             <!-- box -->
-                            <a href="#" class="group transition-all duration-1000">
+                            <a href="#" class="transition-all duration-1000 group">
                                 <div
                                     class="transition-all duration-1000 group-hover:bg-[#fe5e4433] flex flex-col items-center p-10 mx-5  gap-[25px] bg-[#fe5e440d] rounded-lg lg:rounded-none lg:mx-0 lg:items-start">
                                     <!-- icon & title -->
@@ -375,9 +299,9 @@
                                                     d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z" />
                                             </svg>
                                         </div>
-                                        <p class="font-header font-semibold text-lg text-black">Time Management</p>
+                                        <p class="text-lg font-semibold text-black font-header">Time Management</p>
                                     </div>
-                                    <p class="font-header font-normal text-base text-black text-center lg:text-left">
+                                    <p class="text-base font-normal text-center text-black font-header lg:text-left">
                                         Selalu siap mengatur jadwal & waktu dengan baik, selalu memproitaskan hal"
                                         terpenting dahulu.
                                     </p>
@@ -403,14 +327,13 @@
                         </figure>
                     </div>
                     <!-- deskripsi -->
-                    <div class="flex flex-col items-start  pt-8 lg:w-1/2">
+                    <div class="flex flex-col items-start pt-8 lg:w-1/2">
                         <h1 class="font-main font-normal text-[38px] leading-[52px] text-[#0E144A] pl-8 pb-2">
-                            Memangnya punya keahlian apa? Jadi penasaran
-                            nich~
+                            Memangnya punya keahlian apa?
                         </h1>
                         <p class="font-header font-normal text-lg text-[#0E144A] opacity-60 pt-3 pb-10 pl-8">
-                            Keahlian saya ngga seberapa sih, karena baru mulai belajar juga tahun lalu. Daripada
-                            penasaran, mari kita check!
+                            Saya memiliki beberapa keahlian khusus'nya dibidang Front-End Development, berikut keahlian
+                            saya:
                         </p>
                         <!-- wraper -->
                         <div class="flex flex-col items-center  gap-[30px]  pb-6 lg:pl-8 lg:flex-row lg:items-start">
@@ -499,118 +422,6 @@
 
             </div>
         </div>
-        <!-- about -->
-        <div class="bg-[#fe5e440d]" id="about">
-            <div class="container">
-                <div class="flex flex-col items-center py-[6.25rem]">
-                    <h1
-                        class="font-main font-normal text-[38px] leading-[52px] text-center text-[#0E144A] px-2 lg:px-60">
-                        Tentang Saya
-                    </h1>
-                    <p
-                        class="font-header font-normal text-lg leading-8 text-center text-[#0E144A] px-6 opacity-60 pt-5 pb-[6.25rem] lg:px-56">
-                        Sedikit bioadata & informasi terkait diri saya.Mau baca silahkan, ngga mau juga silahkan!
-                    </p>
-                </div>
-                <div class="flex justify-center items-center">
-                    <div class=" w-10/12 lg:w-1/2">
-                        <div class="flex flex-col items-start pb-8 lg:items-center bg-white shadow-lg rounded-xl "
-                            id="card" data-aos="fade-up">
-                            <figure>
-                                <img src="./asset/profil/IMG_20220901_171009_870.jpg" alt="profil" class="rounded-t-xl">
-                            </figure>
-                            <h1 class=" font-inter font-semibold text-sm tracking-widest text-[#FE5E44] pb-5 pl-8 pt-2
-                                    lg:pl-0">
-                                Manusia Nolep
-                            </h1>
-                            <h2 class="font-main font-normal text-4xl text-[#0C0E2B] pb-[5px] pl-8 lg:pl-0">Dimas
-                                Oktavian
-                            </h2>
-                            <p class="font-header font-normal text-lg text-[#0c0e2b99] pb-5 pr-8 pl-8
-                             lg:px-12 lg:text-center">
-                                Seorang Nolepers yang binggung
-                                melakukan apa dan akhirnya menjadi pecandu programming!
-                                Mengapa memilih progamming?
-                            </p>
-                            <!-- List -->
-                            <div class="flex flex-col pl-8 pb-8 lg:pl-0">
-                                <!-- wraper row lg for list -->
-                                <div class="pb-1 lg:pb-2 lg:flex lg:flex-row">
-                                    <!-- centang-->
-                                    <div class="flex flex-row items-center gap-[15px] lg:pr-2 pb-1    ">
-                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <circle cx="10" cy="10" r="10" fill="#F1FEF8" />
-                                            <path d="M15.2001 7.19995L8.6001 13.6L5.6001 10.6909" stroke="#28F09D"
-                                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                                        </svg>
-                                        <p class="font-header font-normal text-lg text-[#0C0E2B]">
-                                            Waktu luang++
-                                        </p>
-                                    </div>
-                                    <!-- centang -->
-                                    <div class="flex flex-row items-center gap-[15px] lg:pl-2 ">
-                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <circle cx="10" cy="10" r="10" fill="#F1FEF8" />
-                                            <path d="M15.2001 7.19995L8.6001 13.6L5.6001 10.6909" stroke="#28F09D"
-                                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                                        </svg>
-                                        <p class="font-header font-normal text-lg text-[#0C0E2B]">
-                                            Penasaran
-                                        </p>
-                                    </div>
-                                </div>
-
-                                <!-- wraper row lg for list -->
-                                <div class="pt-1 lg:pt-2 lg:flex lg:flex-row">
-                                    <!-- centang -->
-                                    <div class="flex flex-row items-center gap-[15px] lg:pr-2  ">
-                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <circle cx="10" cy="10" r="10" fill="#F1FEF8" />
-                                            <path d="M15.2001 7.19995L8.6001 13.6L5.6001 10.6909" stroke="#28F09D"
-                                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                                        </svg>
-                                        <p class="font-header font-normal text-lg text-[#0C0E2B]">
-                                            Masalah oriented
-                                        </p>
-                                    </div>
-                                    <div class="flex flex-row items-center gap-[15px] lg:pl-2 pt-1 ">
-                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <circle cx="10" cy="10" r="10" fill="#F1FEF8" />
-                                            <path d="M15.2001 7.19995L8.6001 13.6L5.6001 10.6909" stroke="#28F09D"
-                                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                                        </svg>
-                                        <p class="font-header font-normal text-lg text-[#0C0E2B]">
-                                            Ingin jadi FE
-                                        </p>
-                                    </div>
-                                </div>
-
-                            </div>
-                            <div
-                                class="flex justify-self-center self-center lg:block lg:justify-self-auto lg:self-auto">
-                                <button
-                                    class="flex flex-row justify-center items-center py-[15px] px-[50px] gap-[10px] bg-[#FE5E44] rounded-[5px] shadow-lg shadow-[#ff563a24] font-header font-semibold text-base text-white lg:w-80"
-                                    id="closeBtn">
-                                    Tutup
-                                </button>
-                            </div>
-
-                        </div>
-                        <p class="font-header text-base text-center text-[#0E144A99] opacity-60 pt-28 px-6 lg:px-0">
-                            Harap Diingat: Harga di atas belum termasuk KKM, dan harga sewaktu-waktu bisa
-                            berubah secara mendadak seperti pengumuman
-                            PPKM darurat.
-                        </p>
-                    </div>
-                </div>
-
-
-            </div>
-        </div>
         <!-- Portofolio -->
         <div class="flex flex-col items-center py-[6.25rem] bg-[#fe5e4414] scroll-mt-8" id="project">
             <!-- header deskripsi -->
@@ -627,33 +438,39 @@
                 <div class="py-8 swiper mySwiper">
                     <!-- wrapper -->
                     <div
-                        class="flex flex-row justify-between swiper-wrapper max-w-xs md:max-w-sm lg:max-w-4xl xl:max-w-5xl">
+                        class="flex flex-row justify-between max-w-xs swiper-wrapper md:max-w-sm lg:max-w-4xl xl:max-w-5xl">
                         <!-- card -->
                         <div class="flex flex-col items-start pb-8 lg:items-center bg-white shadow-lg rounded-xl w-11/12  md:w-[31%] lg:w-[32%] swiper-slide
                                     transition-all duration-500" id="card" data-aos="fade-up">
                             <figure>
-                                <img src="./asset/project/interactive-rating-page.jpg" alt="project"
-                                    class="rounded-t-xl block object-cover w-full h-full transition-all duration-500  hover:scale-95 hover:cursor-pointer">
+                                <img src="./asset/project/Screenshot 2023-03-29 132420.png" alt="project"
+                                    class="block object-cover w-full h-full transition-all duration-500 rounded-t-xl hover:scale-95 hover:cursor-pointer">
                             </figure>
                             <h1
                                 class=" font-inter font-semibold text-sm tracking-widest text-[#FE5E44] pb-5 pl-8 pt-2 lg:pl-0">
                                 PROJECT
                             </h1>
                             <h2 class="font-main font-normal text-4xl text-[#0C0E2B] lg:text-center pb-8 pl-8 lg:pl-0">
-                                Interactive rating component
+                                MSTSKP
                             </h2>
-
+                            <p
+                                class="font-main font-normal text-base text-[#0C0E2B] opacity-80 lg:text-center pb-8 pl-8 lg:pl-0">
+                                Merupakan sebuah website slincing dari figma, dibuat dengan VueJs dan tetap dimaintance.
+                                username:username
+                                password:username123
+                                jika ingin mengakses
+                            </p>
                             <!-- List -->
-                            <div class="flex flex-col pl-8 pb-8 lg:pl-0">
+                            <div class="flex flex-col pb-8 pl-8 lg:pl-0">
                                 <!-- wraper row lg for list -->
                                 <div class="pb-1 lg:pb-2 lg:flex lg:flex-row">
                                     <!-- centang-->
-                                    <a href="https://github.com/Dimas-oktavian17/interactive-rating-component-main.git"
-                                        target="_blank" class="group transition-all">
+                                    <a href="https://github.com/Dimas-oktavian17/Mtskp--arrayid.git" target="_blank"
+                                        class="transition-all group">
                                         <div class="flex flex-row items-center gap-[15px] pb-2 lg:pb-0 lg:pr-2 ">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                                 fill="#FE5E44"
-                                                class="bi bi-github transition-all group-hover:rotate-45 "
+                                                class="transition-all bi bi-github group-hover:rotate-45 "
                                                 viewBox="0 0 16 16">
                                                 <path
                                                     d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
@@ -661,12 +478,10 @@
                                             <p class="font-header font-normal text-lg text-[#0C0E2B]">
                                                 Repository
                                             </p>
-
                                         </div>
                                     </a>
                                     <!-- centang -->
-                                    <a href="https://dimas-oktavian17.github.io/interactive-rating-component-main/interactive-rating-component-main/"
-                                        class="group transition-all">
+                                    <a href="https://mstskp-id.vercel.app/" class="transition-all group">
                                         <div class="flex flex-row items-center gap-[15px] pt-2 lg:pt-0 lg:pl-2 ">
                                             <?xml version="1.0" ?><svg
                                                 class=" transition-all group-hover:rotate-[30deg]" width="24"
@@ -690,41 +505,27 @@
                         <div class="flex flex-col items-start pb-8 lg:items-center bg-white shadow-lg rounded-xl w-11/12  md:w-[31%] lg:w-[32%] swiper-slide
                                     transition-all duration-500" id="card" data-aos="fade-up">
                             <figure>
-                                <img src="./asset/project/qr-code-card.jpg" alt="project"
-                                    class="rounded-t-xl block object-cover w-full h-full transition-all duration-500  hover:scale-95 hover:cursor-pointer">
+                                <img src="./asset/project/Screenshot 2023-03-29 132920.png" alt="project"
+                                    class="block object-cover w-full h-full transition-all duration-500 rounded-t-xl hover:scale-95 hover:cursor-pointer">
                             </figure>
                             <h1
                                 class=" font-inter font-semibold text-sm tracking-widest text-[#FE5E44] pb-5 pl-8 pt-2 lg:pl-0">
                                 PROJECT
                             </h1>
                             <h2 class="font-main font-normal text-4xl text-[#0C0E2B] lg:text-center pb-8 pl-8 lg:pl-0">
-                                QR code card
+                                Website PPDB SMK Kawung 1
                             </h2>
-
+                            <p
+                                class="font-main font-normal text-base text-[#0C0E2B] opacity-80 lg:text-center pb-8 pl-8 lg:pl-0">
+                                Merupakan sebuah website untuk pendaftaran siswa baru, & ini merupakan permintaan
+                                project dari pihak sekolah.
+                            </p>
                             <!-- List -->
-                            <div class="flex flex-col pl-8 pb-8 lg:pl-0">
+                            <div class="flex flex-col pb-8 pl-8 lg:pl-0">
                                 <!-- wraper row lg for list -->
                                 <div class="pb-1 lg:pb-2 lg:flex lg:flex-row">
-                                    <!-- centang-->
-                                    <a href="https://github.com/Dimas-oktavian17/interactive-rating-component-main.git"
-                                        target="_blank" class="group transition-all">
-                                        <div class="flex flex-row items-center gap-[15px] pb-2 lg:pb-0 lg:pr-2 ">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                                fill="#FE5E44"
-                                                class="bi bi-github transition-all group-hover:rotate-45 "
-                                                viewBox="0 0 16 16">
-                                                <path
-                                                    d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
-                                            </svg>
-                                            <p class="font-header font-normal text-lg text-[#0C0E2B]">
-                                                Repository
-                                            </p>
-
-                                        </div>
-                                    </a>
                                     <!-- centang -->
-                                    <a href="https://dimas-oktavian17.github.io/qr-code-component-main/qr-code-component-main/"
-                                        class="group transition-all">
+                                    <a href="https://psb.smkkawung1sby.sch.id/" class="transition-all group">
                                         <div class="flex flex-row items-center gap-[15px] pt-2 lg:pt-0 lg:pl-2 ">
                                             <?xml version="1.0" ?><svg
                                                 class=" transition-all group-hover:rotate-[30deg]" width="24"
@@ -748,409 +549,33 @@
                         <div class="flex flex-col items-start pb-8 lg:items-center bg-white shadow-lg rounded-xl w-11/12  md:w-[31%] lg:w-[32%] swiper-slide
                                      transition-all duration-500" id="card" data-aos="fade-up">
                             <figure>
-                                <img src="./asset/project/stats-preview-card.jpg" alt="project"
-                                    class="rounded-t-xl block object-cover w-full h-full transition-all duration-500  hover:scale-95 hover:cursor-pointer">
-                            </figure>
-                            <h1
-                                class=" font-inter font-semibold text-sm tracking-widest text-[#FE5E44] pb-5 pl-8 pt-2 lg:pl-0">
-                                PROJECT
-                            </h1>
-                            <h2 class="font-main font-normal text-4xl text-[#0C0E2B] lg:text-center pb-8 pl-8 lg:pl-0">
-                                Stats preview card
-                            </h2>
-                            <!-- List -->
-                            <div class="flex flex-col pl-8 pb-8 lg:pl-0">
-                                <!-- wraper row lg for list -->
-                                <div class="pb-1 lg:pb-2 lg:flex lg:flex-row">
-                                    <!-- centang-->
-                                    <a href="https://github.com/Dimas-oktavian17/stats-preview-card-component-main.git"
-                                        target="_blank" class="group transition-all">
-                                        <div class="flex flex-row items-center gap-[15px] pb-2 lg:pb-0 lg:pr-2 ">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                                fill="#FE5E44"
-                                                class="bi bi-github transition-all group-hover:rotate-45 "
-                                                viewBox="0 0 16 16">
-                                                <path
-                                                    d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
-                                            </svg>
-                                            <p class="font-header font-normal text-lg text-[#0C0E2B]">
-                                                Repository
-                                            </p>
-
-                                        </div>
-                                    </a>
-                                    <!-- centang -->
-                                    <a href="https://dimas-oktavian17.github.io/stats-preview-card-component-main/stats-preview-card-component-main/"
-                                        class="group transition-all">
-                                        <div class="flex flex-row items-center gap-[15px] pt-2 lg:pt-0 lg:pl-2 ">
-                                            <?xml version="1.0" ?><svg
-                                                class=" transition-all group-hover:rotate-[30deg]" width="24"
-                                                height="24" id="Layer_1_1_" fill="#FE5E44"
-                                                style="enable-background:new 0 0 16 16;" version="1.1"
-                                                viewBox="0 0 16 16" xml:space="preserve"
-                                                xmlns="http://www.w3.org/2000/svg"
-                                                xmlns:xlink="http://www.w3.org/1999/xlink">
-                                                <path
-                                                    d="M11,0C8.243,0,6,2.243,6,5c0,1.198,0.441,2.284,1.146,3.147l-7,7l0.707,0.707l7-7C8.716,9.559,9.802,10,11,10  c2.757,0,5-2.243,5-5S13.757,0,11,0z M11,9C8.791,9,7,7.209,7,5c0-2.209,1.791-4,4-4s4,1.791,4,4C15,7.209,13.209,9,11,9z" />
-                                            </svg>
-                                            <p class="font-header font-normal text-lg text-[#0C0E2B]">
-                                                Preview
-                                            </p>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- card -->
-                        <div class="flex flex-col items-start pb-8 lg:items-center bg-white shadow-lg rounded-xl w-11/12  md:w-[31%] lg:w-[32%] swiper-slide
-                                    transition-all duration-500" id="card" data-aos="fade-up">
-                            <figure>
-                                <img src="./asset/project/product-card.jpg" alt="project"
-                                    class="rounded-t-xl block object-cover w-full h-full transition-all duration-500  hover:scale-95 hover:cursor-pointer">
-                            </figure>
-                            <h1
-                                class=" font-inter font-semibold text-sm tracking-widest text-[#FE5E44] pb-5 pl-8 pt-2 lg:pl-0">
-                                PROJECT
-                            </h1>
-                            <h2 class="font-main font-normal text-4xl text-[#0C0E2B] lg:text-center pb-8 pl-8 lg:pl-0">
-                                Product preview card
-                            </h2>
-
-                            <!-- List -->
-                            <div class="flex flex-col pl-8 pb-8 lg:pl-0">
-                                <!-- wraper row lg for list -->
-                                <div class="pb-1 lg:pb-2 lg:flex lg:flex-row">
-                                    <!-- centang-->
-                                    <a href="https://github.com/Dimas-oktavian17/product-preview-card-component-main.git"
-                                        target="_blank" class="group transition-all">
-                                        <div class="flex flex-row items-center gap-[15px] pb-2 lg:pb-0 lg:pr-2 ">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                                fill="#FE5E44"
-                                                class="bi bi-github transition-all group-hover:rotate-45 "
-                                                viewBox="0 0 16 16">
-                                                <path
-                                                    d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
-                                            </svg>
-                                            <p class="font-header font-normal text-lg text-[#0C0E2B]">
-                                                Repository
-                                            </p>
-
-                                        </div>
-                                    </a>
-                                    <!-- centang -->
-                                    <a href="https://dimas-oktavian17.github.io/product-preview-card-component-main/product-preview-card-component-main/"
-                                        class="group transition-all">
-                                        <div class="flex flex-row items-center gap-[15px] pt-2 lg:pt-0 lg:pl-2 ">
-                                            <?xml version="1.0" ?><svg
-                                                class=" transition-all group-hover:rotate-[30deg]" width="24"
-                                                height="24" id="Layer_1_1_" fill="#FE5E44"
-                                                style="enable-background:new 0 0 16 16;" version="1.1"
-                                                viewBox="0 0 16 16" xml:space="preserve"
-                                                xmlns="http://www.w3.org/2000/svg"
-                                                xmlns:xlink="http://www.w3.org/1999/xlink">
-                                                <path
-                                                    d="M11,0C8.243,0,6,2.243,6,5c0,1.198,0.441,2.284,1.146,3.147l-7,7l0.707,0.707l7-7C8.716,9.559,9.802,10,11,10  c2.757,0,5-2.243,5-5S13.757,0,11,0z M11,9C8.791,9,7,7.209,7,5c0-2.209,1.791-4,4-4s4,1.791,4,4C15,7.209,13.209,9,11,9z" />
-                                            </svg>
-                                            <p class="font-header font-normal text-lg text-[#0C0E2B]">
-                                                Preview
-                                            </p>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- card -->
-                        <div class="flex flex-col items-start pb-8 lg:items-center bg-white shadow-lg rounded-xl w-11/12  md:w-[31%] lg:w-[32%] swiper-slide
-                                  transition-all duration-500" id="card" data-aos="fade-up">
-                            <figure>
-                                <img src="./asset/project/single-huddle-page.jpg" alt="project"
-                                    class="rounded-t-xl block object-cover w-full h-full transition-all duration-500  hover:scale-95 hover:cursor-pointer">
-                            </figure>
-                            <h1
-                                class=" font-inter font-semibold text-sm tracking-widest text-[#FE5E44] pb-5 pl-8 pt-2 lg:pl-0">
-                                PROJECT
-                            </h1>
-                            <h2 class="font-main font-normal text-4xl text-[#0C0E2B] lg:text-center pb-8 pl-8 lg:pl-0">
-                                Single huddle landing page
-                            </h2>
-                            <!-- List -->
-                            <div class="flex flex-col pl-8 pb-8 lg:pl-0">
-                                <!-- wraper row lg for list -->
-                                <div class="pb-1 lg:pb-2 lg:flex lg:flex-row">
-                                    <!-- centang-->
-                                    <a href="https://github.com/Dimas-oktavian17/huddle-landing-page-with-single-introductory-section-master.git"
-                                        target="_blank" class="group transition-all">
-                                        <div class="flex flex-row items-center gap-[15px] pb-2 lg:pb-0 lg:pr-2 ">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                                fill="#FE5E44"
-                                                class="bi bi-github transition-all group-hover:rotate-45 "
-                                                viewBox="0 0 16 16">
-                                                <path
-                                                    d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
-                                            </svg>
-                                            <p class="font-header font-normal text-lg text-[#0C0E2B]">
-                                                Repository
-                                            </p>
-
-                                        </div>
-                                    </a>
-                                    <!-- centang -->
-                                    <a href="https://dimas-oktavian17.github.io/huddle-landing-page-with-single-introductory-section-master/huddle-landing-page-with-single-introductory-section-master/"
-                                        class="group transition-all">
-                                        <div class="flex flex-row items-center gap-[15px] pt-2 lg:pt-0 lg:pl-2 ">
-                                            <?xml version="1.0" ?><svg
-                                                class=" transition-all group-hover:rotate-[30deg]" width="24"
-                                                height="24" id="Layer_1_1_" fill="#FE5E44"
-                                                style="enable-background:new 0 0 16 16;" version="1.1"
-                                                viewBox="0 0 16 16" xml:space="preserve"
-                                                xmlns="http://www.w3.org/2000/svg"
-                                                xmlns:xlink="http://www.w3.org/1999/xlink">
-                                                <path
-                                                    d="M11,0C8.243,0,6,2.243,6,5c0,1.198,0.441,2.284,1.146,3.147l-7,7l0.707,0.707l7-7C8.716,9.559,9.802,10,11,10  c2.757,0,5-2.243,5-5S13.757,0,11,0z M11,9C8.791,9,7,7.209,7,5c0-2.209,1.791-4,4-4s4,1.791,4,4C15,7.209,13.209,9,11,9z" />
-                                            </svg>
-                                            <p class="font-header font-normal text-lg text-[#0C0E2B]">
-                                                Preview
-                                            </p>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- card -->
-                        <div class="flex flex-col items-start pb-8 lg:items-center bg-white shadow-lg rounded-xl w-11/12  md:w-[31%] lg:w-[32%] swiper-slide
-                                    transition-all duration-500" id="card" data-aos="fade-up">
-                            <figure>
-                                <img src="./asset/project/huble-landing-page1.jpg.png" alt="project"
-                                    class="rounded-t-xl block object-cover w-full h-full transition-all duration-500  hover:scale-95 hover:cursor-pointer">
-                            </figure>
-                            <h1
-                                class=" font-inter font-semibold text-sm tracking-widest text-[#FE5E44] pb-5 pl-8 pt-2 lg:pl-0">
-                                PROJECT
-                            </h1>
-                            <h2 class="font-main font-normal text-4xl text-[#0C0E2B] lg:text-center pb-8 pl-8 lg:pl-0">
-                                Huddle landing page
-                            </h2>
-
-                            <!-- List -->
-                            <div class="flex flex-col pl-8 pb-8 lg:pl-0">
-                                <!-- wraper row lg for list -->
-                                <div class="pb-1 lg:pb-2 lg:flex lg:flex-row">
-                                    <!-- centang-->
-                                    <a href="https://github.com/Dimas-oktavian17/huddle-landing-page-with-alternating-feature-blocks-master.git"
-                                        target="_blank" class="group transition-all">
-                                        <div class="flex flex-row items-center gap-[15px] pb-2 lg:pb-0 lg:pr-2 ">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                                fill="#FE5E44"
-                                                class="bi bi-github transition-all group-hover:rotate-45 "
-                                                viewBox="0 0 16 16">
-                                                <path
-                                                    d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
-                                            </svg>
-                                            <p class="font-header font-normal text-lg text-[#0C0E2B]">
-                                                Repository
-                                            </p>
-
-                                        </div>
-                                    </a>
-                                    <!-- centang -->
-                                    <a href="https://dimas-oktavian17.github.io/huddle-landing-page-with-alternating-feature-blocks-master/huddle-landing-page-with-alternating-feature-blocks-master/"
-                                        class="group transition-all">
-                                        <div class="flex flex-row items-center gap-[15px] pt-2 lg:pt-0 lg:pl-2 ">
-                                            <?xml version="1.0" ?><svg
-                                                class=" transition-all group-hover:rotate-[30deg]" width="24"
-                                                height="24" id="Layer_1_1_" fill="#FE5E44"
-                                                style="enable-background:new 0 0 16 16;" version="1.1"
-                                                viewBox="0 0 16 16" xml:space="preserve"
-                                                xmlns="http://www.w3.org/2000/svg"
-                                                xmlns:xlink="http://www.w3.org/1999/xlink">
-                                                <path
-                                                    d="M11,0C8.243,0,6,2.243,6,5c0,1.198,0.441,2.284,1.146,3.147l-7,7l0.707,0.707l7-7C8.716,9.559,9.802,10,11,10  c2.757,0,5-2.243,5-5S13.757,0,11,0z M11,9C8.791,9,7,7.209,7,5c0-2.209,1.791-4,4-4s4,1.791,4,4C15,7.209,13.209,9,11,9z" />
-                                            </svg>
-                                            <p class="font-header font-normal text-lg text-[#0C0E2B]">
-                                                Preview
-                                            </p>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- card -->
-                        <div class="flex flex-col items-start pb-8 lg:items-center bg-white shadow-lg rounded-xl w-11/12  md:w-[31%] lg:w-[32%] swiper-slide
-                                    transition-all duration-500" id="card" data-aos="fade-up">
-                            <figure>
-                                <img src="./asset/project/projectPpdb.png" alt="project"
-                                    class="rounded-t-xl block object-cover w-full h-full transition-all duration-500  hover:scale-95 hover:cursor-pointer">
-                            </figure>
-                            <h1
-                                class=" font-inter font-semibold text-sm tracking-widest text-[#FE5E44] pb-5 pl-8 pt-2 lg:pl-0">
-                                PROJECT
-                            </h1>
-                            <h2 class="font-main font-normal text-4xl text-[#0C0E2B] lg:text-center pb-8 pl-8 lg:pl-0">
-                                ppdb website display for smk kawung 1
-                            </h2>
-                            <!-- List -->
-                            <div class="flex flex-col pl-8 pb-8 lg:pl-0">
-                                <!-- wraper row lg for list -->
-                                <div class="pb-1 lg:pb-2 lg:flex lg:flex-row">
-                                    <!-- centang-->
-                                    <a href="https://github.com/Dimas-oktavian17/web-ppdb.git" target="_blank"
-                                        class="group transition-all">
-                                        <div class="flex flex-row items-center gap-[15px] pb-2 lg:pb-0 lg:pr-2 ">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                                fill="#FE5E44"
-                                                class="bi bi-github transition-all group-hover:rotate-45 "
-                                                viewBox="0 0 16 16">
-                                                <path
-                                                    d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
-                                            </svg>
-                                            <p class="font-header font-normal text-lg text-[#0C0E2B]">
-                                                Repository
-                                            </p>
-
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- card -->
-                        <div class="flex flex-col items-start pb-8 lg:items-center bg-white shadow-lg rounded-xl w-11/12  md:w-[31%] lg:w-[32%] swiper-slide
-                                    transition-all duration-500" id="card" data-aos="fade-up">
-                            <figure>
-                                <img src="./asset/project/repository.png" alt="project"
-                                    class="rounded-t-xl block object-cover w-full h-full transition-all duration-500  hover:scale-95 hover:cursor-pointer">
-                            </figure>
-                            <h1
-                                class=" font-inter font-semibold text-sm tracking-widest text-[#FE5E44] pb-5 pl-8 pt-2 lg:pl-0">
-                                PROJECT
-                            </h1>
-                            <h2 class="font-main font-normal text-4xl text-[#0C0E2B] lg:text-center pb-8 pl-8 lg:pl-0">
-                                Quora reading list
-                            </h2>
-                            <!-- List -->
-                            <div class="flex flex-col pl-8 pb-8 lg:pl-0">
-                                <!-- wraper row lg for list -->
-                                <div class="pb-1 lg:pb-2 lg:flex lg:flex-row">
-                                    <!-- centang-->
-                                    <a href="https://github.com/Dimas-oktavian17/Repository-Me.git" target="_blank"
-                                        class="group transition-all">
-                                        <div class="flex flex-row items-center gap-[15px] pb-2 lg:pb-0 lg:pr-2 ">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                                fill="#FE5E44"
-                                                class="bi bi-github transition-all group-hover:rotate-45 "
-                                                viewBox="0 0 16 16">
-                                                <path
-                                                    d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
-                                            </svg>
-                                            <p class="font-header font-normal text-lg text-[#0C0E2B]">
-                                                Repository
-                                            </p>
-
-                                        </div>
-                                    </a>
-                                    <!-- centang -->
-                                    <a href="https://dimas-oktavian17.github.io/Repository-Me/"
-                                        class="group transition-all">
-                                        <div class="flex flex-row items-center gap-[15px] pt-2 lg:pt-0 lg:pl-2 ">
-                                            <?xml version="1.0" ?><svg
-                                                class=" transition-all group-hover:rotate-[30deg]" width="24"
-                                                height="24" id="Layer_1_1_" fill="#FE5E44"
-                                                style="enable-background:new 0 0 16 16;" version="1.1"
-                                                viewBox="0 0 16 16" xml:space="preserve"
-                                                xmlns="http://www.w3.org/2000/svg"
-                                                xmlns:xlink="http://www.w3.org/1999/xlink">
-                                                <path
-                                                    d="M11,0C8.243,0,6,2.243,6,5c0,1.198,0.441,2.284,1.146,3.147l-7,7l0.707,0.707l7-7C8.716,9.559,9.802,10,11,10  c2.757,0,5-2.243,5-5S13.757,0,11,0z M11,9C8.791,9,7,7.209,7,5c0-2.209,1.791-4,4-4s4,1.791,4,4C15,7.209,13.209,9,11,9z" />
-                                            </svg>
-                                            <p class="font-header font-normal text-lg text-[#0C0E2B]">
-                                                Preview
-                                            </p>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- card -->
-                        <div class="flex flex-col items-start pb-8 lg:items-center bg-white shadow-lg rounded-xl w-11/12  md:w-[31%] lg:w-[32%] swiper-slide
-                                    transition-all duration-500" id="card" data-aos="fade-up">
-                            <figure>
-                                <img src="./asset/project/loveCode.png" alt="project"
-                                    class="rounded-t-xl block object-cover w-full h-full transition-all duration-500  hover:scale-95 hover:cursor-pointer">
-                            </figure>
-                            <h1
-                                class=" font-inter font-semibold text-sm tracking-widest text-[#FE5E44] pb-5 pl-8 pt-2 lg:pl-0">
-                                PROJECT
-                            </h1>
-                            <h2 class="font-main font-normal text-4xl text-[#0C0E2B] lg:text-center pb-8 pl-8 lg:pl-0">
-                                Love code
-                            </h2>
-                            <!-- List -->
-                            <div class="flex flex-col pl-8 pb-8 lg:pl-0">
-                                <!-- wraper row lg for list -->
-                                <div class="pb-1 lg:pb-2 lg:flex lg:flex-row">
-                                    <!-- centang-->
-                                    <a href="https://github.com/Dimas-oktavian17/Love-code.git" target="_blank"
-                                        class="group transition-all">
-                                        <div class="flex flex-row items-center gap-[15px] pb-2 lg:pb-0 lg:pr-2 ">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                                fill="#FE5E44"
-                                                class="bi bi-github transition-all group-hover:rotate-45 "
-                                                viewBox="0 0 16 16">
-                                                <path
-                                                    d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
-                                            </svg>
-                                            <p class="font-header font-normal text-lg text-[#0C0E2B]">
-                                                Repository
-                                            </p>
-
-                                        </div>
-                                    </a>
-                                    <!-- centang -->
-                                    <a href="https://dimas-oktavian17.github.io/Love-code/public/"
-                                        class="group transition-all">
-                                        <div class="flex flex-row items-center gap-[15px] pt-2 lg:pt-0 lg:pl-2 ">
-                                            <?xml version="1.0" ?><svg
-                                                class=" transition-all group-hover:rotate-[30deg]" width="24"
-                                                height="24" id="Layer_1_1_" fill="#FE5E44"
-                                                style="enable-background:new 0 0 16 16;" version="1.1"
-                                                viewBox="0 0 16 16" xml:space="preserve"
-                                                xmlns="http://www.w3.org/2000/svg"
-                                                xmlns:xlink="http://www.w3.org/1999/xlink">
-                                                <path
-                                                    d="M11,0C8.243,0,6,2.243,6,5c0,1.198,0.441,2.284,1.146,3.147l-7,7l0.707,0.707l7-7C8.716,9.559,9.802,10,11,10  c2.757,0,5-2.243,5-5S13.757,0,11,0z M11,9C8.791,9,7,7.209,7,5c0-2.209,1.791-4,4-4s4,1.791,4,4C15,7.209,13.209,9,11,9z" />
-                                            </svg>
-                                            <p class="font-header font-normal text-lg text-[#0C0E2B]">
-                                                Preview
-                                            </p>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- card -->
-                        <div class="flex flex-col items-start pb-8 lg:items-center bg-white shadow-lg rounded-xl w-11/12  md:w-[31%] lg:w-[32%] swiper-slide
-                                    transition-all duration-500" id="card" data-aos="fade-up">
-                            <figure>
                                 <img src="./asset/project/shortLink.png" alt="project"
-                                    class="rounded-t-xl block object-cover w-full h-full transition-all duration-500  hover:scale-95 hover:cursor-pointer">
+                                    class="block object-cover w-full h-full transition-all duration-500 rounded-t-xl hover:scale-95 hover:cursor-pointer">
                             </figure>
                             <h1
                                 class=" font-inter font-semibold text-sm tracking-widest text-[#FE5E44] pb-5 pl-8 pt-2 lg:pl-0">
                                 PROJECT
                             </h1>
                             <h2 class="font-main font-normal text-4xl text-[#0C0E2B] lg:text-center pb-8 pl-8 lg:pl-0">
-                                Shortly URL
+                                Short Url
                             </h2>
+                            <p
+                                class="font-main font-normal text-base text-[#0C0E2B] opacity-80 lg:text-center pb-8 pl-8 lg:pl-0">
+                                Merupakan sebuah website untuk mengenerate link menjadi pendek menggunakan public api,
+                                website ini merupakan
+                                hasil dari tantangan front-end mentor
+                            </p>
                             <!-- List -->
-                            <div class="flex flex-col pl-8 pb-8 lg:pl-0">
+                            <div class="flex flex-col pb-8 pl-8 lg:pl-0">
                                 <!-- wraper row lg for list -->
                                 <div class="pb-1 lg:pb-2 lg:flex lg:flex-row">
                                     <!-- centang-->
                                     <a href="https://github.com/Dimas-oktavian17/url-shortening-api-master.git"
-                                        target="_blank" class="group transition-all">
+                                        target="_blank" class="transition-all group">
                                         <div class="flex flex-row items-center gap-[15px] pb-2 lg:pb-0 lg:pr-2 ">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                                 fill="#FE5E44"
-                                                class="bi bi-github transition-all group-hover:rotate-45 "
+                                                class="transition-all bi bi-github group-hover:rotate-45 "
                                                 viewBox="0 0 16 16">
                                                 <path
                                                     d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
@@ -1163,7 +588,7 @@
                                     </a>
                                     <!-- centang -->
                                     <a href="https://url-shortening-api-master-vite-project.vercel.app/"
-                                        class="group transition-all">
+                                        class="transition-all group">
                                         <div class="flex flex-row items-center gap-[15px] pt-2 lg:pt-0 lg:pl-2 ">
                                             <?xml version="1.0" ?><svg
                                                 class=" transition-all group-hover:rotate-[30deg]" width="24"
@@ -1180,6 +605,68 @@
                                             </p>
                                         </div>
                                     </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- card -->
+                        <div class="flex flex-col items-start pb-8 lg:items-center bg-white shadow-lg rounded-xl w-11/12  md:w-[31%] lg:w-[32%] swiper-slide
+                                    transition-all duration-500" id="card" data-aos="fade-up">
+                            <figure>
+                                <img src="./asset/project/mountain.png" alt="project"
+                                    class="block object-cover w-full h-full transition-all duration-500 rounded-t-xl hover:scale-95 hover:cursor-pointer">
+                            </figure>
+                            <h1
+                                class=" font-inter font-semibold text-sm tracking-widest text-[#FE5E44] pb-5 pl-8 pt-2 lg:pl-0">
+                                PROJECT
+                            </h1>
+                            <h2 class="font-main font-normal text-4xl text-[#0C0E2B] lg:text-center pb-8 pl-8 lg:pl-0">
+                                Volcano-Project
+                            </h2>
+                            <p
+                                class="font-main font-normal text-base text-[#0C0E2B] opacity-80 lg:text-center pb-8 pl-8 lg:pl-0">
+                                Merupakan sebuah website yang pencariaan jenis" gunung berapi yang ada di
+                                Indonesia, website dibuat dengan bantuan public api.
+                                *Website masih dalam tahapan pengembangan.
+                            </p>
+                            <!-- List -->
+                            <div class="flex flex-col pb-8 pl-8 lg:pl-0">
+                                <!-- wraper row lg for list -->
+                                <div class="pb-1 lg:pb-2 lg:flex lg:flex-row">
+                                    <!-- centang-->
+                                    <a href="https://github.com/Dimas-oktavian17/Volcano-Project.git" target="_blank"
+                                        class="transition-all group">
+                                        <div class="flex flex-row items-center gap-[15px] pb-2 lg:pb-0 lg:pr-2 ">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                fill="#FE5E44"
+                                                class="transition-all bi bi-github group-hover:rotate-45 "
+                                                viewBox="0 0 16 16">
+                                                <path
+                                                    d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
+                                            </svg>
+                                            <p class="font-header font-normal text-lg text-[#0C0E2B]">
+                                                Repository
+                                            </p>
+                                        </div>
+                                    </a>
+                                    <!-- centang -->
+                                    <!-- <a href="https://dimas-oktavian17.github.io/product-preview-card-component-main/product-preview-card-component-main/"
+                                        class="transition-all group">
+                                        <div class="flex flex-row items-center gap-[15px] pt-2 lg:pt-0 lg:pl-2 ">
+                                            <?xml version="1.0" ?><svg
+                                                class=" transition-all group-hover:rotate-[30deg]" width="24"
+                                                height="24" id="Layer_1_1_" fill="#FE5E44"
+                                                style="enable-background:new 0 0 16 16;" version="1.1"
+                                                viewBox="0 0 16 16" xml:space="preserve"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                <path
+                                                    d="M11,0C8.243,0,6,2.243,6,5c0,1.198,0.441,2.284,1.146,3.147l-7,7l0.707,0.707l7-7C8.716,9.559,9.802,10,11,10  c2.757,0,5-2.243,5-5S13.757,0,11,0z M11,9C8.791,9,7,7.209,7,5c0-2.209,1.791-4,4-4s4,1.791,4,4C15,7.209,13.209,9,11,9z" />
+                                            </svg>
+                                            <p class="font-header font-normal text-lg text-[#0C0E2B]">
+                                                Preview
+                                            </p>
+                                        </div>
+                                    </a> -->
                                 </div>
                             </div>
                         </div>
@@ -1202,7 +689,7 @@
             </div>
             <div class="container">
                 <div class="flex flex-col items-center">
-                    <div class="p-4 w-full max-w-xs md:max-w-sm lg:max-w-lg xl:max-w-2xl  bg-white rounded-lg border border-gray-200 shadow-md sm:p-6 md:p-8 dark:bg-gray-800 dark:border-gray-700"
+                    <div class="w-full max-w-xs p-4 bg-white border border-gray-200 rounded-lg shadow-md md:max-w-sm lg:max-w-lg xl:max-w-2xl sm:p-6 md:p-8 dark:bg-gray-800 dark:border-gray-700"
                         data-aos="fade-up">
                         <!-- alert triger -->
                         <div id="alert-3" class="hidden">
@@ -1216,7 +703,7 @@
                                 <span class="sr-only">Info</span>
                                 <div class="ml-3 text-sm font-medium text-green-700 dark:text-green-800">
                                     <span
-                                        class="font-inter font-semibold  hover:text-green-800 dark:hover:text-green-900">
+                                        class="font-semibold font-inter hover:text-green-800 dark:hover:text-green-900">
                                         Terimakasih!
                                     </span>
                                     Pesan anda sudah kami terima
@@ -1226,7 +713,7 @@
                                     data-dismiss-target="#alert-3" aria-label="Close">
                                     <span class="sr-only">Close</span>
                                     <svg aria-hidden="true"
-                                        class="w-5 h-5 group-hover:fill-white transition-all duration-500"
+                                        class="w-5 h-5 transition-all duration-500 group-hover:fill-white"
                                         fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                                         <path fill-rule="evenodd"
                                             d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
@@ -1238,10 +725,10 @@
 
                         <!-- end alert triger -->
                         <form name="submit-to-google-sheet" class="space-y-6" action="#">
-                            <h1 class="font-main text-xl font-medium text-gray-900 dark:text-white">Send message</h1>
+                            <h1 class="text-xl font-medium text-gray-900 font-main dark:text-white">Send message</h1>
                             <div>
                                 <label for="text
-                                    class=" font-header block mb-2 text-sm font-medium text-gray-900
+                                    class=" block mb-2 text-sm font-medium text-gray-900 font-header
                                     dark:text-gray-300">
                                     Your
                                     name</label>
@@ -1273,7 +760,7 @@
                             </button>
                             <button id="btn-loading" type="button" class="hidden w-full text-white bg-[#FE5E44] hover:bg-[#fe5d44d6] focus:ring-4  focus:outline-none  focus:ring-[#FE5E44] font-medium rounded-lg 
                                     text-sm px-5 py-2.5 text-center transition-all duration-500 mt-4 ..." disabled>
-                                <div role="status" class="flex flex-row justify-center items-center">
+                                <div role="status" class="flex flex-row items-center justify-center">
                                     <svg aria-hidden="true"
                                         class="mr-2 w-4 h-4 text-gray-200 animate-spin dark:text-gray-600 fill-[#fe5d4465]"
                                         viewBox="0 0 100 101" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1302,17 +789,15 @@
                             <img src="./asset/icon/image 3.svg" alt="logo">
                         </figure>
                         <!-- title -->
-                        <h1 class="font-main font-normal text-lg text-black">
-                            Zeitplan
-                        </h1>
+
                         <div class="flex flex-row items-center gap-[10px]">
-                            <h2 class="font-header font-normal text-base text-[#0E144A] opacity-60 pb-[6.5rem]">
-                                Sebuah
-                                website portofolio sedherhana yang di buat dengan HTML,TailwindCss,& sedikit Javascript.
+                            <h2 class="font-header font-normal text-base text-[#0E144A] opacity-60 pb-4">
+                                Sebuah website portofolio yang menggunakan teknologi standart dengan HTML, Tailwindcss,
+                                Javascript. Website portofolio ini merupakan website sementara, karena website
+                                portofolio yang terbaru dan lebih cantik masih dalam tahap pengembangan.
                             </h2>
                         </div>
-                        <p
-                            class="font-header font-semibold text-sm tetx-[#0E144A] opacity-60 md:pb-[18px] tracking-wider">
+                        <p class="font-header font-semibold text-sm tetx-[#0E144A] opacity-60 tracking-wider">
                             COPYRIGHT (C) 2022. CREATE BY DIMAS_OKR
                         </p>
                         <p class="font-header font-semibold text-sm tetx-[#0E144A] opacity-60 pb-[18px] tracking-wider">
@@ -1321,7 +806,7 @@
                     </div>
                     <!-- dua -->
                     <div class="flex flex-col items-start gap-5">
-                        <h1 class="font-main font-normal text-lg text-black">
+                        <h1 class="text-lg font-normal text-black font-main">
                             Sitemap
                         </h1>
                         <!-- List -->
@@ -1345,12 +830,6 @@
                                     Keahlian
                                 </div>
                             </a>
-                            <a href="#about" class="group">
-                                <div class="font-header font-semibold text-base text-[#0c1b4d99]
-                                group-hover:text-[#0c1b4d49] transition-all duration-500">
-                                    About
-                                </div>
-                            </a>
                             <a href="#project" class="group">
                                 <div class="font-header font-semibold text-base text-[#0c1b4d99]
                                 group-hover:text-[#0c1b4d49] transition-all duration-500">
@@ -1362,31 +841,24 @@
                     <!-- Tiga -->
                     <div class="flex flex-col items-start gap-5">
                         <!-- title -->
-                        <h1 class="font-main font-normal text-lg text-black">
+                        <h1 class="text-lg font-normal text-black font-main">
                             Tetep Terhubung
                         </h1>
                         <p class="font-header font-normal text-base text-[#0c1b4d96]">
-                            Lihat kami pansos di sosial media
+                            Lihat sosial media kita
                             berikut:
                         </p>
                         <!-- wrapper -->
                         <div class="flex flex-row justify-center items-center gap-[10px]">
                             <!-- box -->
-                            <a aria-label="visited my instagram" href="https://www.instagram.com/dimas_okr/"
-                                class="group">
+                            <a aria-label="visited my telegram" href="https://t.me/DmsOkr" class="group">
                                 <div
                                     class="flex flex-row justify-center items-center p-[10px] gap-[10px] rounded-[100px] bg-[#fe5e440d]  transition-all duration-500 group-hover:bg-[#fe5d4423]">
                                     <!-- icon -->
-                                    <svg width="25" height="24" viewBox="0 0 25 24" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#FE5E44"
+                                        class="transition-all bi bi-telegram" viewBox=" 0 0 16 16">
                                         <path
-                                            d="M17.6666 2H7.66663C4.9052 2 2.66663 4.23858 2.66663 7V17C2.66663 19.7614 4.9052 22 7.66663 22H17.6666C20.428 22 22.6666 19.7614 22.6666 17V7C22.6666 4.23858 20.428 2 17.6666 2Z"
-                                            stroke="#FE5E44" stroke-linecap="round" stroke-linejoin="round" />
-                                        <path
-                                            d="M16.6666 11.3698C16.7901 12.2021 16.6479 13.052 16.2604 13.7988C15.8729 14.5456 15.2598 15.1512 14.5083 15.5295C13.7567 15.9077 12.9051 16.0394 12.0744 15.9057C11.2438 15.7721 10.4764 15.3799 9.88148 14.785C9.28656 14.1901 8.89437 13.4227 8.76071 12.592C8.62704 11.7614 8.7587 10.9097 9.13696 10.1582C9.51523 9.40667 10.1208 8.79355 10.8676 8.40605C11.6144 8.01856 12.4644 7.8764 13.2966 7.99981C14.1456 8.1257 14.9315 8.52128 15.5383 9.12812C16.1452 9.73496 16.5408 10.5209 16.6666 11.3698Z"
-                                            stroke="#FE5E44" stroke-linecap="round" stroke-linejoin="round" />
-                                        <path d="M18.1666 6.5H18.1766" stroke="#FE5E44" stroke-linecap="round"
-                                            stroke-linejoin="round" />
+                                            d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.287 5.906c-.778.324-2.334.994-4.666 2.01-.378.15-.577.298-.595.442-.03.243.275.339.69.47l.175.055c.408.133.958.288 1.243.294.26.006.549-.1.868-.32 2.179-1.471 3.304-2.214 3.374-2.23.05-.012.12-.026.166.016.047.041.042.12.037.141-.03.129-1.227 1.241-1.846 1.817-.193.18-.33.307-.358.336a8.154 8.154 0 0 1-.188.186c-.38.366-.664.64.015 1.088.327.216.589.393.85.571.284.194.568.387.936.629.093.06.183.125.27.187.331.236.63.448.997.414.214-.02.435-.22.547-.82.265-1.417.786-4.486.906-5.751a1.426 1.426 0 0 0-.013-.315.337.337 0 0 0-.114-.217.526.526 0 0 0-.31-.093c-.3.005-.763.166-2.984 1.09z" />
                                     </svg>
                                 </div>
                             </a>
@@ -1396,15 +868,6 @@
                                     class="flex flex-row justify-center items-center p-[10px] gap-[10px] rounded-[100px] bg-[#fe5e440d] transition-all duration-500 group-hover:bg-[#fe5d4423]">
                                     <!-- icon -->
                                     <img src="./asset/icon/github.svg" alt="icon">
-                                </div>
-                            </a>
-                            <a aria-label="visited my facebook" href="https://www.facebook.com/dimas.oktavian.5055/"
-                                class="group">
-                                <!-- box -->
-                                <div
-                                    class="flex flex-row justify-center items-center p-[10px] gap-[10px] rounded-[100px] bg-[#fe5e440d] transition-all duration-500 group-hover:bg-[#fe5d4423]">
-                                    <!-- icon -->
-                                    <img src="./asset/icon/facebook (2).svg" alt="icon">
                                 </div>
                             </a>
                         </div>
